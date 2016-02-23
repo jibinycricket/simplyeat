@@ -9,6 +9,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+#bourbon
+gem 'bourbon'
+gem 'neat'
+gem 'bitters'
+
 group :development, :test do
   gem 'web-console', '~> 2.0'
 	gem 'sqlite3'
