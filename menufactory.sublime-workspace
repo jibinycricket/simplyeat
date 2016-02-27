@@ -1,0 +1,1181 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"prim",
+				"primary-color"
+			],
+			[
+				"pi",
+				"picture	(_form.html.erb)"
+			],
+			[
+				"is",
+				"isNew	(_form.html.erb)"
+			],
+			[
+				"menu",
+				"menu_path	(_header.html.erb)"
+			],
+			[
+				"se",
+				"sections"
+			],
+			[
+				"aria",
+				"aria-haspopup"
+			],
+			[
+				"dropd",
+				"dropdown-toggle"
+			],
+			[
+				"drop",
+				"dropdown-toggle"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"link",
+				"link_to"
+			],
+			[
+				"nav",
+				"navbar	(_header.html.erb)"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"cont",
+				"contact	(app.rb)"
+			],
+			[
+				"sear",
+				"searchWord"
+			],
+			[
+				"fix",
+				"fixed	(bootstrap-theme.min.css)"
+			],
+			[
+				"super",
+				"supertable	(custom.css)"
+			],
+			[
+				"searc",
+				"searchWord	(app.rb)"
+			],
+			[
+				"colo",
+				"color:white	(homepage.erb)"
+			],
+			[
+				"st",
+				"style	Attr"
+			],
+			[
+				"fet",
+				"fetch	(app.rb)"
+			],
+			[
+				"par",
+				"params	(app.rb)"
+			],
+			[
+				"gree",
+				"greeting_card"
+			],
+			[
+				"greet",
+				"greeting_card	(form.erb)"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"in",
+				"inline-table"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"fall",
+				"fallenKingYam"
+			],
+			[
+				"heal",
+				"health"
+			],
+			[
+				"kings",
+				"kingsChampion"
+			],
+			[
+				"Max",
+				"maxHealth"
+			],
+			[
+				"chapter3a",
+				"chapter3aCompanion"
+			],
+			[
+				"chap",
+				"chapter3aCompanion"
+			],
+			[
+				"chapter3b",
+				"chapter3bCompanion"
+			],
+			[
+				"ene",
+				"enemy2"
+			],
+			[
+				"clear",
+				"clear_screen"
+			],
+			[
+				"dis",
+				"display_hp"
+			],
+			[
+				"sp",
+				"spacer"
+			],
+			[
+				"valid",
+				"validAttack"
+			],
+			[
+				"skill_",
+				"skill_descriptions"
+			],
+			[
+				"skill",
+				"skill_description"
+			],
+			[
+				"att",
+				"attackChoice"
+			],
+			[
+				"skil",
+				"skill_descriptions	(heroes.rb)"
+			],
+			[
+				"pla",
+				"playerName"
+			],
+			[
+				"mag",
+				"mageUI	(heroes.rb)"
+			],
+			[
+				"minion",
+				"numOfMinions"
+			],
+			[
+				"clas",
+				"classList"
+			],
+			[
+				"nam",
+				"nameList"
+			],
+			[
+				"focu",
+				"focus_state	(heroes.rb)"
+			],
+			[
+				"focus",
+				"focusMoveList	(heroes.rb)"
+			],
+			[
+				"fo",
+				"focus_state	(heroes.rb)"
+			],
+			[
+				"move",
+				"moveList"
+			],
+			[
+				"Ninj",
+				"Ninjitsu"
+			],
+			[
+				"Nin",
+				"Ninjitsu"
+			],
+			[
+				"Ar",
+				"Arrow"
+			],
+			[
+				"Bow",
+				"Bow-merang"
+			],
+			[
+				"hero",
+				"heroDamage"
+			],
+			[
+				"attac",
+				"attackName"
+			],
+			[
+				"max",
+				"maxHealth"
+			],
+			[
+				"elem",
+				"elementWeakness"
+			],
+			[
+				"mons",
+				"monsterElement"
+			],
+			[
+				"ne",
+				"necromancerHealth"
+			],
+			[
+				"ar",
+				"arrowStack"
+			],
+			[
+				"Focu",
+				"focus_state"
+			],
+			[
+				"at",
+				"attackChoice"
+			],
+			[
+				"spel",
+				"spell"
+			],
+			[
+				"cho",
+				"choose_attack	(heroes.rb)"
+			],
+			[
+				"M",
+				"Mage"
+			],
+			[
+				"spell",
+				"spellCount"
+			],
+			[
+				"Fire",
+				"Fireball"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"Cl",
+				"CLASS_NAME"
+			],
+			[
+				"atta",
+				"attackName"
+			],
+			[
+				"req",
+				"require_relative"
+			],
+			[
+				"PHR",
+				"PHRASE_FIRST"
+			],
+			[
+				"snipp",
+				"snippets"
+			],
+			[
+				"ran",
+				"rand"
+			],
+			[
+				"resul",
+				"results"
+			],
+			[
+				"other",
+				"other_names"
+			],
+			[
+				"rand",
+				"rand_words"
+			],
+			[
+				"WORD",
+				"WORD_URL"
+			],
+			[
+				"get",
+				"get_domestic"
+			],
+			[
+				"get_",
+				"get_numoflegs"
+			],
+			[
+				"buck",
+				"bucket_id"
+			],
+			[
+				"abbre",
+				"abbrev"
+			],
+			[
+				"abbr",
+				"abbrev"
+			],
+			[
+				"abbrev",
+				"abbreviation"
+			],
+			[
+				"Mich",
+				"Michigan"
+			],
+			[
+				"inc",
+				"increment_value"
+			],
+			[
+				"list_ap",
+				"list_appender2"
+			],
+			[
+				"end",
+				"end_num"
+			],
+			[
+				"mon",
+				"monster_name"
+			],
+			[
+				"exodi",
+				"exodia_moves	(enemy.rb)"
+			],
+			[
+				"monste",
+				"monster_name"
+			],
+			[
+				"cater",
+				"caterpie	(battle.rb)"
+			],
+			[
+				"chosen",
+				"chosen_path"
+			],
+			[
+				"you",
+				"yourhp"
+			],
+			[
+				"even",
+				"event_choices"
+			],
+			[
+				"clar",
+				"clear_screen"
+			],
+			[
+				"squ",
+				"squirtle_moves	(squirtle.rb)"
+			],
+			[
+				"sto",
+				"story_moveslist"
+			],
+			[
+				"squir",
+				"squirtle_moveslist	(squirtle.rb)"
+			],
+			[
+				"char",
+				"charmander_moves	(charmander.rb)"
+			],
+			[
+				"story",
+				"story_moves"
+			],
+			[
+				"chose",
+				"chosen_starter"
+			],
+			[
+				"bulb",
+				"bulbasaur_moves	(bulbasaur.rb)"
+			],
+			[
+				"chos",
+				"chosen_starter"
+			],
+			[
+				"monster",
+				"monster_health"
+			],
+			[
+				"your",
+				"your_health"
+			],
+			[
+				"dmg_",
+				"dmg_to_you"
+			],
+			[
+				"dmg",
+				"dmg_to_you"
+			],
+			[
+				"monster_",
+				"monster_name"
+			],
+			[
+				"dmg_t",
+				"dmgtaken_yourmonster"
+			],
+			[
+				"dmgtaken",
+				"dmgtaken_yourmonster"
+			],
+			[
+				"DM",
+				"dmgtaken_monster"
+			],
+			[
+				"fullhp",
+				"fullhp_yourmonster"
+			],
+			[
+				"full",
+				"fullhp_monster"
+			],
+			[
+				"bulba",
+				"bulbasaur_moveslist"
+			],
+			[
+				"bul",
+				"bulbasaur_moves"
+			],
+			[
+				"charmand",
+				"charmander_moveslist	(charmander.rb)"
+			],
+			[
+				"batt",
+				"battle1	(battle.rb)"
+			],
+			[
+				"n",
+				"name	(main.rb)"
+			],
+			[
+				"curr",
+				"current_file"
+			],
+			[
+				"amount",
+				"amount_of_crackers"
+			],
+			[
+				"amou",
+				"amount_of_cheese"
+			],
+			[
+				"chees",
+				"cheese_and_crackers"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 144.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"ruby	",
+				"Set Syntax: Ruby"
+			],
+			[
+				"pytho",
+				"Set Syntax: Python"
+			],
+			[
+				"git",
+				"Git: Push"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 457.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/jibin/Documents/Rails/MenuFactory"
+	],
+	"file_history":
+	[
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/controllers/application_controller.rb",
+		"/home/jibin/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/pages/menu.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/models/user.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/models/section.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/models/item.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/uploaders/picture_uploader.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/pages/gallery.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/stylesheets/custom.css.scss",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/Gemfile",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/config/routes.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/controllers/items_controller.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/stylesheets/application.css",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/javascripts/application.js",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/javascripts/custom.js",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/layouts/_header.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/javascripts/fancybox/start_fancy.js",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/stylesheets/fancybox/jquery.fancybox.css",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/controllers/pages_controller.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/items/show.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/layouts/application.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/javascripts/owl_carousel.js",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/db/schema.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/pages/home.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/sections/_form.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/controllers/sections_controller.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/config/application.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/javascripts/fancy_box.js",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/config/environments/development.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/config/initializers/carrierwave.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/pages/_itemModal.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/items/_form.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/sections/edit.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/items/edit.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/pages/_sectionModal.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/javascripts/pages.js",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/javascripts/sections.js",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/items/new.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/sections/new.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/javascripts/items.js",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/db/development.sqlite3",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/sections/show.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/items/index.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/javascripts/pages.coffee",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/sections/_sectionform.html.erb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/sections/show.json.jbuilder",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/javascripts/pages.js.coffee",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/javascripts/items.coffee",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/config/initializers/devise.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/config/environments/production.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/.gitignore",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/uploaders/photos_uploader.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/db/migrate/20151107181044_drop_items.rb",
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/db/migrate/20151107042159_add_id_to_items.rb",
+		"/home/jibin/Documents/Rails/pinterest/app/assets/stylesheets/application.css",
+		"/home/jibin/Documents/Rails/pinterest/app/views/layouts/application.html.erb",
+		"/home/jibin/Documents/Rails/pinterest/app/models/user.rb",
+		"/home/jibin/Documents/Rails/pinterest/app/views/layouts/_header.html.erb",
+		"/home/jibin/Documents/Rails/pinterest/app/views/pins/index.html.erb",
+		"/home/jibin/Documents/Rails/pinterest/app/views/pins/show.html.erb",
+		"/home/jibin/Documents/Rails/pinterest/app/models/pin.rb",
+		"/home/jibin/Documents/Rails/pinterest/app/views/devise/registrations/edit.html.erb",
+		"/home/jibin/Documents/Rails/pinterest/app/views/devise/registrations/new.html.erb",
+		"/home/jibin/Documents/Rails/pinterest/app/controllers/application_controller.rb",
+		"/home/jibin/Documents/Rails/pinterest/app/controllers/pins_controller.rb",
+		"/home/jibin/Documents/Rails/pinterest/Gemfile",
+		"/home/jibin/Documents/Rails/pinterest/db/schema.rb",
+		"/home/jibin/Documents/Rails/pinterest/app/views/pages/_home.html.erb",
+		"/home/jibin/Documents/Rails/pinterest/config/routes.rb",
+		"/home/jibin/Documents/Rails/pinterest/app/assets/javascripts/pins.coffee",
+		"/home/jibin/Documents/Rails/pinterest/app/assets/stylesheets/pins.scss",
+		"/home/jibin/Documents/Rails/pinterest/.gitignore",
+		"/home/jibin/Documents/Rails/pinterest/app/assets/javascripts/application.js",
+		"/home/jibin/Documents/Rails/pinterest/config/environments/production.rb",
+		"/home/jibin/Documents/Rails/pinterest/app/views/pins/_form.html.erb",
+		"/home/jibin/Documents/Rails/pinterest/db/migrate/20151019233018_add_user_id_to_pins.rb",
+		"/home/jibin/Documents/Rails/pinterest/test/models/pin_test.rb",
+		"/home/jibin/Documents/Rails/pinterest/app/views/pins/show.json.jbuilder",
+		"/home/jibin/Documents/Rails/pinterest/README.md",
+		"/home/jibin/Documents/Rails/pinterest/app/views/devise/passwords/edit.html.erb",
+		"/home/jibin/Documents/Rails/pinterest/app/views/devise/passwords/new.html.erb",
+		"/home/jibin/Documents/Rails/pinterest/app/views/devise/sessions/new.html.erb",
+		"/home/jibin/Documents/Rails/pinterest/app/controllers/pages_controller.rb",
+		"/home/jibin/Documents/Rails/pinterest/app/views/devise/mailer/confirmation_instructions.html.erb",
+		"/home/jibin/Documents/Rails/pinterest/app/views/pages/home.html.erb",
+		"/home/jibin/Documents/Ruby/mystuff/DDGame/heroes.rb",
+		"/home/jibin/Documents/Ruby/mystuff/DDGame/heroes.sublime-workspace",
+		"/home/jibin/Desktop/Unison/bin/app.rb",
+		"/home/jibin/Documents/Rails/pinterest/app/assets/stylesheets/custom.css.scss",
+		"/home/jibin/Documents/Rails/pinterest/config/environments/development.rb",
+		"/home/jibin/Documents/Rails/pinterest/config/application.rb",
+		"/home/jibin/Documents/Rails/pinterest/app/views/pages/about.html.erb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/views/homepage.erb",
+		"/ruby",
+		"/documents",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/game_guide.sublime-project",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/game_guide.sublime-workspace",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/public/css/custom.css",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/views/layout.erb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/public/css/bootstrap.css",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/views/contact.erb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/bin/app.rb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/views/classes.erb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/views/archer.erb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/views/error404.erb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/views/mage.erb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/views/swordsman.erb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/views/necromancer.erb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/views/ninja.erb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/views/results.erb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/public/img/swordsman.png",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/public/css/bootstrap-theme.min.css",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/views/warrior.erb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/public/css/bootstrap.min.css",
+		"/home/jibin/Documents/Ruby/mystuff/projects/letter/bin/app.rb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/public/css/bootstrap-theme.css.map",
+		"/home/jibin/Documents/Ruby/mystuff/projects/letter/views/greeting_card.erb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/letter/views/layout.erb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/letter/lib/letter.rb",
+		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/tests/test_Game_Guide.rb",
+		"/home/jibin/Documents/Ruby/mystuff/dict.rb"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"root",
+			"menu-item",
+			"strong",
+			"display:",
+			"picture",
+			"picture_url",
+			"image_url",
+			"attr",
+			"attr_accessible",
+			"attr",
+			"store_dir",
+			"require",
+			"assets",
+			"url",
+			"image",
+			"image_tag",
+			"accordian",
+			"%>\">",
+			"p",
+			"provider",
+			"carrier",
+			"myuploader",
+			"ticket",
+			"edit_ticket_path",
+			"scrip",
+			"owl",
+			"      \n",
+			"destroy",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"destroy",
+			"turbolinks",
+			"#myCarousel",
+			"class=\"active\"",
+			"bootstrap",
+			"validate",
+			"fog",
+			"require",
+			"fog",
+			"avatar",
+			"medium_avatar",
+			"carrier",
+			"idea",
+			"Photo",
+			"activeRecord",
+			"pages/",
+			"edit",
+			"title",
+			"</td>",
+			"<td>",
+			"format.html {",
+			"field",
+			"</div>",
+			"\"></",
+			"field",
+			"devise",
+			"default",
+			"black",
+			"h1",
+			"box",
+			"class=\"active\"",
+			"th",
+			"friend",
+			"I",
+			"friend",
+			"%>,</",
+			"recipient",
+			"friend",
+			"@friend",
+			"<%= @friend %>",
+			"Friend",
+			"NAME",
+			")\n",
+			"Watern",
+			"Ice",
+			"Gaia Quake",
+			"Neptune Wave",
+			"Vulcan Flame",
+			"White Lightning",
+			"Wild Thorns",
+			"Ice Shard",
+			"Fireball",
+			"White Lightning",
+			"Wild Thorns",
+			"Ice Shard",
+			"White Lightning",
+			"Wild Thorns",
+			"Ice Shard",
+			"Wild Thorns",
+			"Ice Shard",
+			"Fireball",
+			"current class",
+			"attack_state",
+			"reinitialize",
+			"prompt",
+			"descriptions",
+			"gedit",
+			"puts \"#{attackName} has dealt #{attackDmg} damage\"",
+			"attr_accessor",
+			":",
+			"attr",
+			"attr_acessor :",
+			"attr_acessor : ",
+			"maxMonsterHp",
+			"monsterHp",
+			"maxMonsterHp",
+			"initialize(Name",
+			"Name",
+			"each_line",
+			"'word",
+			"block",
+			"word",
+			"increment_value",
+			"i",
+			"clear",
+			"chosen_starter",
+			"battle_choices",
+			"end",
+			"bulbasaurn",
+			"True",
+			"print",
+			"start_point",
+			"EX25"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"recipient",
+			"@recipient",
+			"<%= @recipient %>",
+			"<%= @friend %>",
+			"letter",
+			"ex47",
+			"Water",
+			"Watern",
+			"Thorns of Gaia",
+			"Waves of Neptune",
+			"Flames of Vulcan",
+			"Fury of Zeus",
+			"Thorns of Gaia",
+			"Waves of Neptune",
+			"Flames of Vulcan",
+			"Fury of Zeus",
+			"Gaia Quake",
+			"Neptune Wave",
+			"Fury of Zeus",
+			"Gaia Quake",
+			"Neptune Wave",
+			"Gaia''s Quake",
+			"Gaia''s Quake'",
+			"Neptune Wave",
+			"Vulcan Flame",
+			"Vulcan's Flame",
+			"sublime_text",
+			"maxHealth",
+			"health",
+			"maxHealth",
+			"i",
+			"increment_value",
+			"monster_name",
+			"event_choices",
+			"true",
+			"puts",
+			"Ex25"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 112.0
+	},
+	"pinned_build_system": "Packages/Ruby/Ruby.sublime-build",
+	"project": "menufactory.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"user",
+				"Dagwoods/app/models/user.rb"
+			],
+			[
+				"section.",
+				"Dagwoods/app/models/section.rb"
+			],
+			[
+				"item",
+				"Dagwoods/app/models/item.rb"
+			],
+			[
+				"picture",
+				"Dagwoods/app/uploaders/picture_uploader.rb"
+			],
+			[
+				"gemfil",
+				"Dagwoods/Gemfile"
+			],
+			[
+				"menu",
+				"Dagwoods/app/views/pages/menu.html.erb"
+			],
+			[
+				"pagescont",
+				"Dagwoods/app/controllers/pages_controller.rb"
+			],
+			[
+				"applicationcontr",
+				"Dagwoods/app/controllers/application_controller.rb"
+			],
+			[
+				"sche",
+				"Dagwoods/db/schema.rb"
+			],
+			[
+				"schema",
+				"Dagwoods/db/schema.rb"
+			],
+			[
+				"controll",
+				"Dagwoods/app/controllers/pages_controller.rb"
+			],
+			[
+				"uploader",
+				"Dagwoods/app/uploaders/picture_uploader.rb"
+			],
+			[
+				".scs",
+				"Dagwoods/app/assets/stylesheets/custom.css.scss"
+			],
+			[
+				"header",
+				"Dagwoods/app/views/layouts/_header.html.erb"
+			],
+			[
+				"routes",
+				"Dagwoods/config/routes.rb"
+			],
+			[
+				"application.js",
+				"Dagwoods/app/assets/javascripts/application.js"
+			],
+			[
+				"gem",
+				"Dagwoods/Gemfile"
+			],
+			[
+				"application.css",
+				"Dagwoods/app/assets/stylesheets/application.css"
+			],
+			[
+				"application.erb",
+				"Dagwoods/app/views/layouts/application.html.erb"
+			],
+			[
+				"devise",
+				"Dagwoods/config/initializers/devise.rb"
+			],
+			[
+				"application.html",
+				"Dagwoods/app/views/layouts/application.html.erb"
+			],
+			[
+				"development.rb",
+				"Dagwoods/config/environments/development.rb"
+			],
+			[
+				"upl",
+				"Dagwoods/app/uploaders/photos_uploader.rb"
+			],
+			[
+				"application_con",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"index.ht",
+				"app/views/pins/index.html.erb"
+			],
+			[
+				"gitign",
+				".gitignore"
+			],
+			[
+				"prod",
+				"config/environments/production.rb"
+			],
+			[
+				"produc",
+				"config/environments/production.rb"
+			],
+			[
+				"viewpin",
+				"app/views/pins/show.html.erb"
+			],
+			[
+				"controller",
+				"app/controllers/pins_controller.rb"
+			],
+			[
+				"index",
+				"app/views/pins/index.html.erb"
+			],
+			[
+				"pins.rb",
+				"test/models/pin_test.rb"
+			],
+			[
+				"",
+				"Documents/Ruby/mystuff/DDGame/heroes.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "sampl",
+		"selected_items":
+		[
+			[
+				"sampl",
+				"~/Documents/Rails/toy_app/app/models/sampleapp.sublime-project"
+			],
+			[
+				"sample",
+				"~/Documents/Rails/toy_app/app/models/sampleapp.sublime-project"
+			],
+			[
+				"",
+				"~/Documents/MiddleMan/Portfolio/portfolio.sublime-project"
+			],
+			[
+				"pinter",
+				"~/Documents/Rails/pinterest/pinterest.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 231.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
