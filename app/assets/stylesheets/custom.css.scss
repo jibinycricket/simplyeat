@@ -9,6 +9,7 @@ body{
 
 .outer-container{
   @include outer-container(80%);
+  margin: 15px auto auto auto;
 }
 
 //Error Messages

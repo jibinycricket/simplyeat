@@ -9,10 +9,10 @@
           <a href="#!" id="nav-toggle"><span></span></a>
         </div>
         <ul class="nav-list">
-          <li><a href="#!">Home</a></li>
-          <li><a href="#!">Design</a></li>
-          <li><a href="#!">Gallery</a></li>
-          <li><a href="#!">Contact</a></li>
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Design", pages_menu_path %></li>
+          <li><%= link_to "Gallery", pages_gallery_path %></li>
+          <li><%= link_to "Contact Info", pages_info_path %></li>
           <% if user_signed_in? %>
             <li>
               <%= link_to "Account Settings", edit_user_registration_path %>
