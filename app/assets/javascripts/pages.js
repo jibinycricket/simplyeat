@@ -1,3 +1,5 @@
+
+/*********** Nav Bar *******/
 (function($) { // Begin jQuery
   $(function() { // DOM ready
     // Toggle open and close nav styles on click
@@ -10,3 +12,4 @@
     });
   }); // end DOM ready
 })(jQuery); // end jQuery
+
