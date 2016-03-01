@@ -9,7 +9,12 @@ body{
 
 .form-container{
   @include outer-container(30%);
-  margin: 15px auto auto auto;
+  margin-top: 15px;
+}
+
+.page-container{
+  @include outer-container(80%);
+  margin-top: 15px;
 }
 
 //Error Messages
@@ -29,8 +34,7 @@ $success-color: #e6efc2 !default;
 
   a {
     color: darken($color, 70%);
-    text-decoration: underline;
-
+    margin-left: 10%;
     &:focus,
     &:hover {
       color: darken($color, 90%);

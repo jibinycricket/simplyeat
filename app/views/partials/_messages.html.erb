@@ -1,9 +1,11 @@
 <% flash.each do |key, value| %>
-  <div class="flash-<%= key %>">
+  <div id="flash-messages" class="flash-<%= key %>">
     <ul>
       <li>
         <%= value %>
+        <a href="#!">x</a>
       </li>
     </ul>
   </div>
+
 <% end %>
