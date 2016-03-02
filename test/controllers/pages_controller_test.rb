@@ -6,6 +6,7 @@ end
 class PagesControllerTest < ActionController::TestCase
   def setup
     @base_title = "Menu Factory"
+    @user = users(:one)
   end
 
   test "should get home" do
@@ -32,4 +33,12 @@ class PagesControllerTest < ActionController::TestCase
     assert_select "title", "#{@base_title} | Contact"
   end
 
+  test "should show edit and logout links after login" do
+    get :home
+    assert_template 'pages/home'
+    sign_in @user
+    get :home
+    assert_select "a[href=?]", edit_user_registration_path
+    assert_select "a[href=?]", destroy_user_session_path
+  end
 end

@@ -3,10 +3,10 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
 
-  get 'pages/menu'
+  get 'menu'    => 'pages#menu'
 
-  get 'pages/gallery'
+  get 'gallery' => 'pages#gallery'
 
-  get 'pages/info'
+  get 'info'    => 'pages#info'
 
 end
