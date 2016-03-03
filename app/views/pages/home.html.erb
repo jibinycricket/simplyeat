@@ -3,11 +3,15 @@
     <div class="hero">
       <div class="hero-inner">
         <div class="hero-copy">
-          <h1>Menu Factory</h1>
+          <h1 id="title">Menu Factory</h1>
           <p>Design a dynamic menu without the hassle</p>
           <% if !(user_signed_in?) %>
-            <%= link_to "Sign Up",new_user_registration_path, class:"registration-button" %>
-            <%= link_to "Log in", new_user_session_path, class: "registration-button" %>
+            <div class="registration-partial-container">
+              <%= render 'partials/user_session/sign_up_modal' %>
+            </div>
+            <div class="registration-partial-container">
+              <%= render 'partials/user_session/log_in_modal' %>
+            </div>
           <% end %>
         </div>
       </div>
