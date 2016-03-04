@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"se",
+				"section"
+			],
+			[
+				"assert",
+				"assert_select"
+			],
+			[
 				"margin",
 				"margin-top"
 			],
@@ -98,10 +106,6 @@
 			[
 				"menu",
 				"menu_path	(_header.html.erb)"
-			],
-			[
-				"se",
-				"sections"
 			],
 			[
 				"aria",
@@ -510,95 +514,72 @@
 			[
 				"dmg_",
 				"dmg_to_you"
-			],
-			[
-				"dmg",
-				"dmg_to_you"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/assets/stylesheets/custom.css.scss",
-			"settings":
-			{
-				"buffer_size": 999,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/environments/development.rb",
-			"settings":
-			{
-				"buffer_size": 1603,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/environments/test.rb",
-			"settings":
-			{
-				"buffer_size": 1755,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Gemfile",
-			"settings":
-			{
-				"buffer_size": 642,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "require 'test_helper'\n\nclass PagesControllerTest < ActionController::TestCase\n  def setup\n    @base_title = \"Menu Factory\"\n  end\n\n  test \"should get home\" do\n    get :home\n    assert_response :success\n    assert_select \"title\", \"#{@base_title}\"\n  end\n\n  test \"should get menu\" do\n    get :menu\n    assert_response :success\n    assert_select \"title\", \"#{@base_title} | Design\"\n  end\n\n  test \"should get gallery\" do\n    get :gallery\n    assert_response :success\n    assert_select \"title\", \"#{@base_title} | Gallery\"\n  end\n\n  test \"should get info\" do\n    get :info\n    assert_response :success\n    assert_select \"title\", \"#{@base_title} | Contact\"\n  end\n\n  test \"\"\n\n\nend\n",
-			"file": "test/controllers/pages_controller_test.rb",
-			"file_size": 658,
-			"file_write_time": 131012750235185360,
-			"settings":
-			{
-				"buffer_size": 669,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "test/integration/site_layout_test.rb",
-			"settings":
-			{
-				"buffer_size": 143,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "test/test_helper.rb",
-			"settings":
-			{
-				"buffer_size": 341,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/pages_controller.rb",
-			"settings":
-			{
-				"buffer_size": 124,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 148,
+				"buffer_size": 208,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "test/fixtures/users.yml",
+			"file": "app/controllers/sections_controller.rb",
 			"settings":
 			{
-				"buffer_size": 61,
+				"buffer_size": 1029,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/sections/edit.html.erb",
+			"settings":
+			{
+				"buffer_size": 29,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/pages/menu.html.erb",
+			"settings":
+			{
+				"buffer_size": 180,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/schema.rb",
+			"settings":
+			{
+				"buffer_size": 1878,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/section.rb",
+			"settings":
+			{
+				"buffer_size": 95,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/sections/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 128,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/sections/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 29,
 				"line_ending": "Unix"
 			}
 		}
@@ -626,8 +607,8 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 179.0,
-		"last_filter": "install",
+		"height": 144.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -675,7 +656,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 457.0
+		"width": 538.0
 	},
 	"console":
 	{
@@ -699,57 +680,62 @@
 		"/home/jibin/Documents/Rails/MenuFactory",
 		"/home/jibin/Documents/Rails/MenuFactory/app",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/images",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/base",
 		"/home/jibin/Documents/Rails/MenuFactory/app/controllers",
-		"/home/jibin/Documents/Rails/MenuFactory/app/helpers",
 		"/home/jibin/Documents/Rails/MenuFactory/app/models",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/confirmations",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/passwords",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/registrations",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/sessions",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/shared",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/layouts",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/pages",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials",
-		"/home/jibin/Documents/Rails/MenuFactory/config",
-		"/home/jibin/Documents/Rails/MenuFactory/config/environments",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/sections",
 		"/home/jibin/Documents/Rails/MenuFactory/db",
-		"/home/jibin/Documents/Rails/MenuFactory/db/migrate",
-		"/home/jibin/Documents/Rails/MenuFactory/test",
-		"/home/jibin/Documents/Rails/MenuFactory/test/controllers",
-		"/home/jibin/Documents/Rails/MenuFactory/test/fixtures",
-		"/home/jibin/Documents/Rails/MenuFactory/test/integration",
-		"/home/jibin/Documents/Rails/MenuFactory/test/mailers"
+		"/home/jibin/Documents/Rails/MenuFactory/db/migrate"
 	],
 	"file_history":
 	[
-		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts/messages.js",
-		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts/pages.js",
-		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/custom.css.scss",
+		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/pages_controller.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/db/schema.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/models/user.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/config/routes.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/models/section.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/sections_controller.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/sections/new.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/_messages.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/pages/home.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/layouts/application.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/application.css.scss",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/pages/home.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/pages.css.scss",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/user_session/_sign_up_modal.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/user_session/_log_in_modal.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/shared/_links.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/custom.css.scss",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts/pages.js",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/registrations/new.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/registrations/edit.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/sessions/new.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/helpers/application_helper.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/layouts/application.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/layouts/_header.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/test/fixtures/users.yml",
+		"/home/jibin/Documents/Rails/MenuFactory/test/integration/site_layout_test.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/config/environments/development.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/config/environments/test.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/Gemfile",
+		"/home/jibin/Documents/Rails/MenuFactory/test/controllers/pages_controller_test.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/_header.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/helpers/pages_helper.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/test/test_helper.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts/messages.js",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/registrations/edit.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/passwords/new.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/passwords/edit.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/confirmations/new.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/_header.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/pages.css.scss",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/pages/gallery.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/navbar.css.scss",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/pages/info.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/pages/menu.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/helpers/application_helper.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/config/routes.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/models/user.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/config/environments/production.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/Gemfile",
-		"/home/jibin/Documents/Rails/MenuFactory/config/environments/development.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/config/application.rb",
 		"/home/jibin/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts/application.js",
@@ -837,26 +823,11 @@
 		"/home/jibin/Documents/Rails/pinterest/app/controllers/pages_controller.rb",
 		"/home/jibin/Documents/Rails/pinterest/app/views/devise/mailer/confirmation_instructions.html.erb",
 		"/home/jibin/Documents/Rails/pinterest/app/views/pages/home.html.erb",
-		"/home/jibin/Documents/Ruby/mystuff/DDGame/heroes.rb",
-		"/home/jibin/Documents/Ruby/mystuff/DDGame/heroes.sublime-workspace",
-		"/home/jibin/Desktop/Unison/bin/app.rb",
-		"/home/jibin/Documents/Rails/pinterest/app/assets/stylesheets/custom.css.scss",
-		"/home/jibin/Documents/Rails/pinterest/config/environments/development.rb",
-		"/home/jibin/Documents/Rails/pinterest/config/application.rb",
-		"/home/jibin/Documents/Rails/pinterest/app/views/pages/about.html.erb",
-		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/views/homepage.erb",
-		"/ruby",
-		"/documents",
-		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/game_guide.sublime-project",
-		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/game_guide.sublime-workspace",
-		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/public/css/custom.css",
-		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/views/layout.erb",
-		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/public/css/bootstrap.css",
-		"/home/jibin/Documents/Ruby/mystuff/projects/Game_Guide/views/contact.erb"
+		"/home/jibin/Documents/Ruby/mystuff/DDGame/heroes.rb"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -871,6 +842,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"post_params",
+			"Post",
+			"post",
+			"h1",
+			"$base-font-color",
+			"h2",
+			"  :",
+			"pages_",
+			"authentication_token",
 			"{@base_title}",
 			"signup",
 			"outer-container",
@@ -989,16 +969,7 @@
 			"initialize(Name",
 			"Name",
 			"each_line",
-			"'word",
-			"block",
-			"word",
-			"increment_value",
-			"i",
-			"clear",
-			"chosen_starter",
-			"battle_choices",
-			"end",
-			"bulbasaurn"
+			"'word"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1053,178 +1024,89 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/assets/stylesheets/custom.css.scss",
+					"file": "config/routes.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 999,
+						"buffer_size": 208,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								212,
-								212
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers/sections_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1029,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								770,
+								770
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/sections/edit.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								29
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "config/environments/development.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1603,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "config/environments/test.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1755,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Gemfile",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 642,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								404,
-								404
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "test/controllers/pages_controller_test.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 669,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "test/integration/site_layout_test.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 143,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+							"open_with_edit": true,
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1234,40 +1116,41 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "test/test_helper.rb",
+					"buffer": 3,
+					"file": "app/views/pages/menu.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 341,
+						"buffer_size": 180,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								276,
-								276
+								180,
+								180
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "app/controllers/pages_controller.rb",
+					"buffer": 4,
+					"file": "db/schema.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 124,
+						"buffer_size": 1878,
 						"regions":
 						{
 						},
@@ -1276,6 +1159,36 @@
 							[
 								0,
 								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/models/section.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 95,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								56,
+								56
 							]
 						],
 						"settings":
@@ -1290,59 +1203,62 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "config/routes.rb",
+					"buffer": 6,
+					"file": "app/views/sections/_form.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 148,
+						"buffer_size": 128,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								118,
+								118
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
+							"open_with_edit": true,
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "test/fixtures/users.yml",
+					"buffer": 7,
+					"file": "app/views/sections/new.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 61,
+						"buffer_size": 29,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12,
-								12
+								29,
+								29
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax"
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1405,8 +1321,80 @@
 		"selected_items":
 		[
 			[
+				"schema",
+				"db/schema.rb"
+			],
+			[
+				"section_con",
+				"app/controllers/sections_controller.rb"
+			],
+			[
+				"sections_con",
+				"app/controllers/sections_controller.rb"
+			],
+			[
+				"sections_co",
+				"app/controllers/sections_controller.rb"
+			],
+			[
+				"section.",
+				"app/models/section.rb"
+			],
+			[
+				"user.",
+				"app/models/user.rb"
+			],
+			[
 				"routes",
 				"config/routes.rb"
+			],
+			[
+				"user.r",
+				"app/models/user.rb"
+			],
+			[
+				"pages",
+				"app/assets/stylesheets/pages.css.scss"
+			],
+			[
+				"home",
+				"app/views/pages/home.html.erb"
+			],
+			[
+				"custom",
+				"app/assets/stylesheets/custom.css.scss"
+			],
+			[
+				"_sign",
+				"app/views/partials/user_session/_sign_up_modal.html.erb"
+			],
+			[
+				"_",
+				"app/views/partials/user_session/_log_in_modal.html.erb"
+			],
+			[
+				"links",
+				"app/views/devise/shared/_links.html.erb"
+			],
+			[
+				"_login",
+				"app/views/partials/user_session/_log_in_modal.html.erb"
+			],
+			[
+				"home.",
+				"app/views/pages/home.html.erb"
+			],
+			[
+				"applicationhel",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"schema.r",
+				"db/schema.rb"
+			],
+			[
+				".yml",
+				"test/fixtures/users.yml"
 			],
 			[
 				"gemf",
@@ -1427,10 +1415,6 @@
 			[
 				"messages",
 				"app/views/partials/_messages.html.erb"
-			],
-			[
-				"home",
-				"app/views/pages/home.html.erb"
 			],
 			[
 				"pages.css",
@@ -1461,10 +1445,6 @@
 				"app/assets/javascripts/application.js"
 			],
 			[
-				"section.",
-				"Dagwoods/app/models/section.rb"
-			],
-			[
 				"item",
 				"Dagwoods/app/models/item.rb"
 			],
@@ -1490,10 +1470,6 @@
 			],
 			[
 				"sche",
-				"Dagwoods/db/schema.rb"
-			],
-			[
-				"schema",
 				"Dagwoods/db/schema.rb"
 			],
 			[
