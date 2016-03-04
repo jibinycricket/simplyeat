@@ -10,6 +10,7 @@
 <body>
   <%= render 'layouts/header' %>
   <%= render 'partials/messages' %>
+  <%= devise_error_messages! %>
   <%= yield %>
 </body>
 </html>
