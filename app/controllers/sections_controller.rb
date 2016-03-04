@@ -45,7 +45,7 @@ class SectionsController < ApplicationController
     def correct_user
       set_section
       unless current_user == @section.user
-        flash[:alert] = "You don't have access to edit this"
+        flash[:alert] = "You don't have access"
         redirect_to root_path
       end
     end
