@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get 'info'    => 'pages#info'
   
   resources :sections
+  resources :items
 end
