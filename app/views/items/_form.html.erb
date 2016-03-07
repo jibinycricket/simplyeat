@@ -3,7 +3,7 @@
   <%= f.text_field :name, :placeholder =>"Chicken Sandwich" %>
 
   <%= f.label :section_name, 'Section_name' %>
-  <%= f.text_field :section_name, :placeholder => 'Sandwiches' %>
+  <%= f.collection_select :section_name, Section.order(:name),:name,:name, include_blank: true %>
 
   <%= f.label :price, 'Price' %>
   <%= f.number_field :price, :step => 'any', :placeholder =>'5.00' %>

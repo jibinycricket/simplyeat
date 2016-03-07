@@ -1,6 +1,7 @@
 class SectionsController < ApplicationController
   before_action :authenticate_user!
   before_action :correct_user, only: [:edit, :update, :destroy]
+  before_action :set_section, only: [:destroy, :edit, :update]
 
   def new
     @section = current_user.sections.build
@@ -11,7 +12,7 @@ class SectionsController < ApplicationController
 
     if @section.save
       flash[:success] = "Your section has been created!"
-      redirect_to root_url
+      redirect_to current_user
     else
       flash[:alert] = "Your new section wasnt created"
       render :new
@@ -19,20 +20,17 @@ class SectionsController < ApplicationController
   end
 
   def destroy
-    set_section
     @section.destroy
     flash[:success] = "Section was deleted"
-    redirect_to menu_path 
+    redirect_to current_user 
   end
 
   def edit
-    set_section
   end
 
   def update
-    set_section
     @section.update(section_params)
-    redirect_to menu_path
+    redirect_to current_user
   end
 
 

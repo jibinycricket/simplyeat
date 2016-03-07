@@ -1,3 +1,41 @@
+<div class="page-container" style="border-style: dashed;">
+  <div class="modal">
+    <label for="section-modal">
+      <div class="modal-trigger">Add Section</div>
+    </label>
+    <input class="modal-state" id="section-modal" type="checkbox" />
+    <div class="modal-fade-screen">
+      <div class="modal-inner">
+        <div class="modal-close" for="section-modal"></div>
+        <h1>Create Section</h1>
+        <%= render :partial =>'sections/form', :locals =>{ :@section =>current_user.sections.build, :isNew => true} %>
+      </div>
+    </div>
+  </div>
+  <% unless (@sections.empty?) %>
+    <div class="modal">
+      <label for="item-modal">
+        <div class="modal-trigger">Add Menu Item</div>
+      </label>
+      <input class="modal-state" id="item-modal" type="checkbox" />
+      <div class="modal-fade-screen">
+        <div class="modal-inner">
+          <div class="modal-close" for="item-modal"></div>
+          <h1>Create Item</h1>
+          <%= render :partial =>'items/form', :locals =>{ :@item =>current_user.items.build} %>
+        </div>
+      </div>
+    </div>
+  <% end %>
 
-  <%= current_user.email %>
-  <%= debug @user %>
+  <% @sections.each do |section| %>
+    <%= section.name %>
+    <%= link_to 'Edit', edit_section_path(section) %>
+    <% @items.each do |item| %>
+      <% if (item.section_name == section.name) %>
+        <%= item.name %>
+
+      <% end %>
+    <% end %>
+  <% end %>
+</div>

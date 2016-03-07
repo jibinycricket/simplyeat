@@ -37,6 +37,12 @@
     $('#signup-modal #shared-signup-link').remove();
   });
 
+  $(function(){
+  setTimeout(function(){
+    $('#flash-messages').slideUp();
+  }, 4000);
+ })
+
   }); // end DOM ready
 })(jQuery); // end jQuery
 
