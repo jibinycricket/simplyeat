@@ -15,7 +15,7 @@
 
   /******** Registration/Login Modal ********/
   $(function() {
-    $("#modal-1").on("change", function() {
+    $("#modal-1, #modal2").on("change", function() {
       if ($(this).is(":checked")) {
         $("body").addClass("modal-open");
       } else {
@@ -36,7 +36,7 @@
     $('#login-modal #shared-login-link').remove();
     $('#signup-modal #shared-signup-link').remove();
   });
-
+  /********* Flash Messages****/
   $(function(){
   setTimeout(function(){
     $('#flash-messages').slideUp();
