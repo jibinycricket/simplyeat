@@ -1,13 +1,13 @@
 <div class="modal">
   <label for="new-section-modal">
-    <div class="modal-trigger">Click for Modal</div>
+    <div class="modal-trigger">Create New Section</div>
   </label>
   <input class="modal-state" id="new-section-modal" type="checkbox" />
   <div class="modal-fade-screen">
     <div class="modal-inner">
       <div class="modal-close" for="new-section-modal"></div>
       <h1>New Section</h1>
-      <%= form_for(@section) do |f| %>
+      <%= form_for(@sectionNew) do |f| %>
         <%= f.label :name %>
         <%= f.text_field :name %>
         <%= f.submit "Create Section" %>

@@ -1,10 +1,16 @@
-<div class="page-container" style="border-style: dashed;">
+<div class="page-container">
   
-  <%= render :partial => 'partials/section_modals/new_section_modal', :locals => {:@section => current_user.sections.build} %>
+  <%= render :partial => 'partials/section_modals/new_section_modal', :locals => {:@sectionNew => current_user.sections.build} %>
 
   <% @sections.each do |section| %>
+  <br/>
+  <div style="border-style:dashed;">
     <%= section.name %>
-    <%= link_to "Edit", edit_section_path(section)%>
+    <%= section.id %>
+    <br>
+    <%= render :partial => 'partials/section_modals/edit_section_modal', :locals => {:@sectionEdit => section} %>
+    <%= link_to 'Delete', section, method: :delete %>
+  </div>
   <% end %>
   
 </div>
