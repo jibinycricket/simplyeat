@@ -1,0 +1,5 @@
+$('.modal-close').click();
+$("#section-<%= @section.id %>").fadeOut(500, function(){
+  $(this).remove();
+  $(".sections-list").prepend('<%= j (@section.name) %>');
+});

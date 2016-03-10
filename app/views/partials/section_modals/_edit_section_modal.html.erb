@@ -7,7 +7,7 @@
     <div class="modal-inner">
       <div class="modal-close" for="edit-section-modal_<%=@sectionEdit.id%>"></div>
       <h1>Edit Section</h1>
-      <%= form_for(@sectionEdit, :method => :put) do |f| %>
+      <%= form_for(@sectionEdit, :method => :put, remote:true) do |f| %>
         <%= f.label :name %>
         <%= f.text_field :name %>
         <%= f.submit "Create Section" %>

@@ -37,8 +37,15 @@ class SectionsController < ApplicationController
   end
 
   def update
-    @section.update(section_params)
-    redirect_to current_user
+    respond_to do |format|
+      if @section.update(section_params)
+        format.html{redirect_to current_user}
+        format.js
+      else
+        format.html{render :edit}
+        format.js
+      end
+    end
   end
 
 

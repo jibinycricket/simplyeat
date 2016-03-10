@@ -7,7 +7,7 @@
     <div class="modal-inner">
       <div class="modal-close" for="edit_item_modal_<%=@itemEdit.id%>"></div>
       <h1>Edit Item</h1>
-      <%= form_for(@itemEdit, :method => :put) do |f| %>
+      <%= form_for(@itemEdit, :method => :put, remote:true) do |f| %>
         <%= f.label :name, 'Item Name' %>
         <%= f.text_field :name, :placeholder =>"Chicken Sandwich" %>
 

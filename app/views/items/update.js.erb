@@ -1,0 +1,5 @@
+$('.modal-close').click();
+$("#item-<%= @item.id %>").fadeOut(500, function(){
+  $(this).remove();
+  $(".items-list").prepend('<%= j (@item.name) %>');
+});

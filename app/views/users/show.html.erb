@@ -5,7 +5,7 @@
   <div class="sections-list">
     <% @sections.each do |section| %>
       <br/>
-      <div style="border-style:dashed;">
+      <div id="section-<%=section.id%>" style="border-style:dashed;">
         <%= section.name %>
         <%= section.id %>
         <br>
@@ -17,10 +17,11 @@
   </br>
   <div class="items-list">
     <% @items.each do |item| %>
-      <div style="border-style: dashed;">
+      <div id="item-<%=item.id%>" style="border-style: dashed;">
         <%= item.name %>
         <%= item.id %>
         <%= render :partial => 'partials/item_modals/edit_item_modal', :locals => {:@itemEdit => item} %>
+        <%= link_to 'Delete', item, method: :delete %>
       </div>
         <br>
     <% end %>

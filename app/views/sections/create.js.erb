@@ -1,3 +1,4 @@
 $('.modal-close').click();
 $(".section_name").val('');
-$(".items-list").prepend('<%= j (@section.name) %>');
+$(".sections-list").prepend('<div id="section-<%= @section.id %>"><%= j (@section.name) %></div>');
+$("#section-<%= @section.id %>").hide().fadeIn(1000);
