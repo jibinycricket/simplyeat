@@ -10,12 +10,20 @@ class SectionsController < ApplicationController
   def create
     @section = current_user.sections.build(section_params)
 
-    if @section.save
-      flash[:success] = "Your section has been created!"
-      redirect_to current_user
-    else
-      flash[:alert] = "Your new section wasnt created"
-      render :new
+    respond_to do |format|
+      if @section.save
+        format.html{
+          flash[:success] = "Your section has been created!"
+          redirect_to current_user
+        }
+        format.js
+      else
+        format.html{
+          flash[:alert] = "Your new section wasnt created"
+          render :new
+        }
+        format.js
+      end
     end
   end
 

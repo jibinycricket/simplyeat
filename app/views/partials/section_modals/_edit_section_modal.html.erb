@@ -1,0 +1,17 @@
+<div class="modal">
+  <label for="edit-section-modal_<%=@sectionEdit.id%>">
+    <div class="modal-trigger">Edit Section</div>
+  </label>
+  <input class="modal-state" id="edit-section-modal_<%=@sectionEdit.id%>" type="checkbox" />
+  <div class="modal-fade-screen">
+    <div class="modal-inner">
+      <div class="modal-close" for="edit-section-modal_<%=@sectionEdit.id%>"></div>
+      <h1>Edit Section</h1>
+      <%= form_for(@sectionEdit, :method => :put) do |f| %>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+        <%= f.submit "Create Section" %>
+      <% end %>
+    </div>
+  </div>
+</div>

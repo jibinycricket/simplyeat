@@ -8,12 +8,20 @@ class ItemsController < ApplicationController
 
   def create
     @item = current_user.items.build(item_params)
-    if @item.save
-      flash[:success] = "Your item has been created!"
-      redirect_to current_user
-    else
-      flash[:alert] = "Your new item wasnt created"
-      render :new
+    respond_to do |format|
+      if @item.save
+        format.html{
+          flash[:success] = "Your item has been created!"
+          redirect_to current_user
+        }
+        format.js
+      else
+        format.html{
+          flash[:alert] = "Your new item wasnt created"
+          render :new
+        }
+        format.js
+      end
     end
   end
 

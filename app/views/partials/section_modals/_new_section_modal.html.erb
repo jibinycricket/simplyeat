@@ -7,9 +7,9 @@
     <div class="modal-inner">
       <div class="modal-close" for="new-section-modal"></div>
       <h1>New Section</h1>
-      <%= form_for(@sectionNew) do |f| %>
+      <%= form_for(@sectionNew, remote:true) do |f| %>
         <%= f.label :name %>
-        <%= f.text_field :name %>
+        <%= f.text_field :name, class: "form-control section_name" %>
         <%= f.submit "Create Section" %>
       <% end %>
     </div>

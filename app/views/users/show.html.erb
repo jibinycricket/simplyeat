@@ -1,16 +1,28 @@
 <div class="page-container">
   
   <%= render :partial => 'partials/section_modals/new_section_modal', :locals => {:@sectionNew => current_user.sections.build} %>
-
-  <% @sections.each do |section| %>
-  <br/>
-  <div style="border-style:dashed;">
-    <%= section.name %>
-    <%= section.id %>
-    <br>
-    <%= render :partial => 'partials/section_modals/edit_section_modal', :locals => {:@sectionEdit => section} %>
-    <%= link_to 'Delete', section, method: :delete %>
+  <%= render :partial => 'partials/item_modals/new_item_modal', :locals =>{:@itemNew => current_user.items.build} %>
+  <div class="sections-list">
+    <% @sections.each do |section| %>
+      <br/>
+      <div style="border-style:dashed;">
+        <%= section.name %>
+        <%= section.id %>
+        <br>
+        <%= render :partial => 'partials/section_modals/edit_section_modal', :locals => {:@sectionEdit => section} %>
+        <%= link_to 'Delete', section, method: :delete %>
+      </div>
+    <% end %>
   </div>
-  <% end %>
-  
+  </br>
+  <div class="items-list">
+    <% @items.each do |item| %>
+      <div style="border-style: dashed;">
+        <%= item.name %>
+        <%= item.id %>
+        <%= render :partial => 'partials/item_modals/edit_item_modal', :locals => {:@itemEdit => item} %>
+      </div>
+        <br>
+    <% end %>
+  </div> 
 </div>

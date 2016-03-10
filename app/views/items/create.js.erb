@@ -1,0 +1,7 @@
+$('.modal-close').click();
+$(".item_name").val('');
+$(".item_price").val('');
+$(".item_description").val('');
+$(".item_ingredients").val('');
+$(".items-list").prepend('<div id="item_<%= @item.id %>"><%= j (@item.name) %> </div>');
+$("#item_<%= @item.id %>").hide().fadeIn(1000);
