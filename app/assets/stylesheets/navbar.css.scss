@@ -44,6 +44,7 @@ nav {
     li {
       float: left;
       position: relative;
+
       a,
       a:visited {
         display: block;
@@ -52,6 +53,7 @@ nav {
         background: $nav-background;
         color: $nav-font-color;
         text-decoration: none;
+        text-transform: uppercase;
         &:hover {
           background: $link-hover-color;
           color: $nav-font-color;
