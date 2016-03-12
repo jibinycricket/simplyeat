@@ -9,7 +9,7 @@
   $large-screen: em(860) !default;
   $hero-background-top: #7F99BE; 
   $hero-background-bottom: #20392B;
-  $hero-color: white;
+  $hero-color: $theme-yellow;
   $gradient-angle: 10deg;
   $hero-image: 'http://thumbs.dreamstime.com/z/dinner-menu-1090281.jpg';
 
@@ -70,7 +70,7 @@
   width: 200px;
   padding: 8px;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid $theme-yellow;
   text-align: center;
   outline: none;
   text-decoration: none;
@@ -79,7 +79,7 @@
 
 .registration-button:hover,
 .registration-button:active {
-  background-color: #fff;
+  background-color: $theme-light-blue;
   color: #000;
 }
 
@@ -87,7 +87,7 @@
 .modal {
   $base-border-color: #dcdcdc !default;
   $base-border-radius: 3px !default;
-  $base-background-color: #fff !default;
+  $base-background-color: $theme-dark-blue;
   $base-font-size: 1em !default;
   $base-line-height: 1.5em !default;
   $action-color: #477dca !default;
@@ -102,7 +102,7 @@
   $modal-image-height: 135px;
   $modal-image-width: $modal-image-height;
   $modal-trigger-image-width: 300px;
-
+  
   label {
     cursor: pointer;
     margin-bottom: 0;
@@ -181,8 +181,9 @@
     position: relative;
     width: 95%;
 
+
     @include media($medium-screen) {
-      max-height: 70%;
+      max-height: 75%;
       padding: $modal-padding;
       width: 60%;
     }
@@ -192,7 +193,7 @@
     }
 
     h1 {
-      color: $base-font-color;
+      color: white;
       text-align: left;
       text-transform: capitalize;
     }
@@ -201,6 +202,14 @@
       color: $base-font-color;
       line-height: $base-line-height;
     }
+
+    a{
+      color: $theme-yellow;
+    }
+    a:hover{
+      color: $theme-light-blue;
+    }
+    
 
     .modal-intro {
       margin-bottom: 1em;

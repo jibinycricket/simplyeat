@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  before_action :authenticate_user!, :except => [:home]
+  before_action :authenticate_user!, :except => [:home, :directory]
 
   def home
   end
@@ -8,7 +8,7 @@ class PagesController < ApplicationController
     @sections = Section.all
   end
 
-  def gallery
+  def directory
   end
 
   def info

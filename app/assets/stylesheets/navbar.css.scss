@@ -1,4 +1,4 @@
-$content-width: 1000px;
+$content-width: 1300px;
 $breakpoint: 800px;
 $nav-height: 70px;
 $nav-background: #262626;
@@ -7,6 +7,10 @@ $link-hover-color: #2581DC;
 
 body{
   margin: 0px;
+  color: white;
+  a{
+    color: $theme-light-blue;
+  }
 }
 .navigation {
   height: $nav-height;
@@ -23,8 +27,11 @@ body{
   font-size: 1.4em;
   a,
   a:visited {
-    color: $nav-font-color;
+    color: $theme-yellow;
     text-decoration: none;
+    &:hover{
+      color: $theme-light-blue;
+    }
   }
 }
 
@@ -51,12 +58,12 @@ nav {
         padding: 0 20px;
         line-height: $nav-height;
         background: $nav-background;
-        color: $nav-font-color;
+        color: $theme-yellow;
         text-decoration: none;
         text-transform: uppercase;
         &:hover {
-          background: $link-hover-color;
-          color: $nav-font-color;
+          //background: $theme-light-blue;
+          color: $theme-light-blue;
         }
         &:not(:only-child):after {
           padding-left: 4px;

@@ -9,14 +9,15 @@
           <a href="#!" id="nav-toggle"><span></span></a>
         </div>
         <ul class="nav-list">
+          <% unless user_signed_in? %>
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "How it works", '#' %></li>
-          <li><%= link_to "Features", '#' %></li>
-          <li><%= link_to "Directory", directory_path %></li>
-          <% if user_signed_in? %>
-            <li><%= link_to "Design", menu_path %></li>
-            <li><%= link_to "Contact Info", info_path %></li>
-
+          <li><%= link_to "Directory", users_path %></li>
+          <% else %>
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "Directory", directory_path %></li>
+            <li><%= link_to "Design Menu", current_user %></li>
+            <li><%= link_to "Store Info", info_path %></li>
             <li>
               <%= link_to "Account Settings", edit_user_registration_path %>
             </li>

@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-align"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"hei",
+				"max-height"
+			],
+			[
+				"theme",
+				"theme-light-blue"
+			],
+			[
 				"sect",
 				"section"
 			],
@@ -86,10 +102,6 @@
 			[
 				"list-st",
 				"list-style"
-			],
-			[
-				"text",
-				"text-decoration"
 			],
 			[
 				"list",
@@ -182,10 +194,6 @@
 			[
 				"bord",
 				"border-radius"
-			],
-			[
-				"in",
-				"inline-table"
 			],
 			[
 				"inlin",
@@ -506,14 +514,6 @@
 			[
 				"chose",
 				"chosen_starter"
-			],
-			[
-				"bulb",
-				"bulbasaur_moves	(bulbasaur.rb)"
-			],
-			[
-				"chos",
-				"chosen_starter"
 			]
 		]
 	},
@@ -523,7 +523,23 @@
 			"file": "app/views/users/show.html.erb",
 			"settings":
 			{
-				"buffer_size": 1174,
+				"buffer_size": 1286,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 690,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/users.css.scss",
+			"settings":
+			{
+				"buffer_size": 488,
 				"line_ending": "Unix"
 			}
 		}
@@ -600,7 +616,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 538.0
+		"width": 457.0
 	},
 	"console":
 	{
@@ -625,6 +641,8 @@
 		"/home/jibin/Documents/Rails/MenuFactory/app",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/base",
 		"/home/jibin/Documents/Rails/MenuFactory/app/controllers",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise",
@@ -634,36 +652,57 @@
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/layouts",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/pages",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/user_session",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/item_modals",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/section_modals",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/sections",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/users"
 	],
 	"file_history":
 	[
-		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/sections_controller.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/navbar.css.scss",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/section_modals/_edit_section_modal.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/application.css.scss",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/item_modals/_new_item_modal.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/pages.css.scss",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/section_modals/_new_section_modal.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/users.css.scss",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/item_modals/_edit_item_modal.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/custom.css.scss",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/base/_variables.scss",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/users/index.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/db/migrate/20160306014737_add_user_name_to_users.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/layouts/_header.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/users/show.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/sections/_form.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/items/_form.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/users_controller.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/layouts/application.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/_messages.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts/pages.js",
-		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts/users.js",
-		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/application_controller.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/items_controller.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/pages/home.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/config/routes.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/users_controller.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/db/schema.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/config/initializers/devise.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/Gemfile",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts/application.js",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/layouts/application.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts/pages.js",
+		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/pages_controller.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/config/environments/development.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/items_controller.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/items/create.js.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/sections/create.js.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/sections_controller.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/items/update.js.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/sections/update.js.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/items/_form.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts/users.js.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/user_session/_log_in_modal.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/sections/_form.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts/users.js",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/user_session/_sign_up_modal.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/_messages.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/application_controller.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/models/user.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/registrations/edit.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/pages/directory.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/layouts/_header.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/db/schema.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/db/migrate/20160306014737_add_user_name_to_users.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/registrations/new.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/users/index.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/pages_controller.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/registrations_controller.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/user_session/_log_in_modal.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/user_session/_sign_up_modal.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/models/item.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/pages/menu.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/models/section.rb",
@@ -673,18 +712,12 @@
 		"/home/jibin/Documents/Rails/MenuFactory/app/helpers/devise_helper.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/sections/new.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/sections/edit.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/application.css.scss",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/pages/home.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/pages.css.scss",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/shared/_links.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/custom.css.scss",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/sessions/new.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/helpers/application_helper.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/test/fixtures/users.yml",
 		"/home/jibin/Documents/Rails/MenuFactory/test/integration/site_layout_test.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/config/environments/development.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/config/environments/test.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/Gemfile",
 		"/home/jibin/Documents/Rails/MenuFactory/test/controllers/pages_controller_test.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/_header.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/helpers/pages_helper.rb",
@@ -693,12 +726,10 @@
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/passwords/new.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/devise/passwords/edit.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/pages/gallery.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/navbar.css.scss",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/pages/info.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/config/environments/production.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/config/application.rb",
 		"/home/jibin/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts/application.js",
 		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/controllers/application_controller.rb",
 		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/pages/menu.html.erb",
 		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/models/user.rb",
@@ -755,23 +786,11 @@
 		"/home/jibin/Documents/Rails/pinterest/app/assets/stylesheets/application.css",
 		"/home/jibin/Documents/Rails/pinterest/app/views/layouts/application.html.erb",
 		"/home/jibin/Documents/Rails/pinterest/app/models/user.rb",
-		"/home/jibin/Documents/Rails/pinterest/app/views/layouts/_header.html.erb",
-		"/home/jibin/Documents/Rails/pinterest/app/views/pins/index.html.erb",
-		"/home/jibin/Documents/Rails/pinterest/app/views/pins/show.html.erb",
-		"/home/jibin/Documents/Rails/pinterest/app/models/pin.rb",
-		"/home/jibin/Documents/Rails/pinterest/app/views/devise/registrations/edit.html.erb",
-		"/home/jibin/Documents/Rails/pinterest/app/views/devise/registrations/new.html.erb",
-		"/home/jibin/Documents/Rails/pinterest/app/controllers/application_controller.rb",
-		"/home/jibin/Documents/Rails/pinterest/app/controllers/pins_controller.rb",
-		"/home/jibin/Documents/Rails/pinterest/Gemfile",
-		"/home/jibin/Documents/Rails/pinterest/db/schema.rb",
-		"/home/jibin/Documents/Rails/pinterest/app/views/pages/_home.html.erb",
-		"/home/jibin/Documents/Rails/pinterest/config/routes.rb",
-		"/home/jibin/Documents/Rails/pinterest/app/assets/javascripts/pins.coffee"
+		"/home/jibin/Documents/Rails/pinterest/app/views/layouts/_header.html.erb"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 42.0
 	},
 	"find_in_files":
 	{
@@ -786,6 +805,32 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"div",
+			"trigger",
+			"div",
+			"modal",
+			", method: :get",
+			"</script>",
+			"script",
+			"$modal-background",
+			"background-color",
+			"'",
+			"item",
+			"section",
+			" :",
+			"section",
+			"create item",
+			"Section",
+			"edit-section-modal",
+			"sectionEdit",
+			"new-section-modal",
+			"edit-section-modal",
+			"new",
+			"modal-trigger",
+			"modal-1",
+			"remote",
+			"ticket",
+			"f",
 			"items",
 			"new-section-modal",
 			"modal-1",
@@ -887,33 +932,7 @@
 			"Friend",
 			"NAME",
 			")\n",
-			"Watern",
-			"Ice",
-			"Gaia Quake",
-			"Neptune Wave",
-			"Vulcan Flame",
-			"White Lightning",
-			"Wild Thorns",
-			"Ice Shard",
-			"Fireball",
-			"White Lightning",
-			"Wild Thorns",
-			"Ice Shard",
-			"White Lightning",
-			"Wild Thorns",
-			"Ice Shard",
-			"Wild Thorns",
-			"Ice Shard",
-			"Fireball",
-			"current class",
-			"attack_state",
-			"reinitialize",
-			"prompt",
-			"descriptions",
-			"gedit",
-			"puts \"#{attackName} has dealt #{attackDmg} damage\"",
-			"attr_accessor",
-			":"
+			"Watern"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -977,15 +996,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1174,
+						"buffer_size": 1286,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								264,
-								264
+								839,
+								839
 							]
 						],
 						"settings":
@@ -996,10 +1015,69 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 160.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 690,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								286,
+								286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/assets/stylesheets/users.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 488,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								482,
+								482
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1007,7 +1085,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -1052,7 +1130,7 @@
 	"project": "menufactory.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1062,12 +1140,216 @@
 		"selected_items":
 		[
 			[
+				"edit_sec",
+				"app/views/partials/section_modals/_edit_section_modal.html.erb"
+			],
+			[
+				"application.c",
+				"app/assets/stylesheets/application.css.scss"
+			],
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"nav",
+				"app/assets/stylesheets/navbar.css.scss"
+			],
+			[
+				"navbar",
+				"app/assets/stylesheets/navbar.css.scss"
+			],
+			[
+				"pages",
+				"app/assets/stylesheets/pages.css.scss"
+			],
+			[
+				"new",
+				"app/views/partials/item_modals/_new_item_modal.html.erb"
+			],
+			[
+				"user.css",
+				"app/assets/stylesheets/users.css.scss"
+			],
+			[
+				"new_sec",
+				"app/views/partials/section_modals/_new_section_modal.html.erb"
+			],
+			[
+				"new_ite",
+				"app/views/partials/item_modals/_new_item_modal.html.erb"
+			],
+			[
+				"edit_ite",
+				"app/views/partials/item_modals/_edit_item_modal.html.erb"
+			],
+			[
+				"custom",
+				"app/assets/stylesheets/custom.css.scss"
+			],
+			[
+				"users.css",
+				"app/assets/stylesheets/users.scss"
+			],
+			[
 				"show",
 				"app/views/users/show.html.erb"
 			],
 			[
+				"index",
+				"app/views/users/index.html.erb"
+			],
+			[
+				"migrate",
+				"db/migrate/20160306014737_add_user_name_to_users.rb"
+			],
+			[
+				"devise",
+				"config/initializers/devise.rb"
+			],
+			[
+				"schema",
+				"db/schema.rb"
+			],
+			[
+				"pages.cs",
+				"app/assets/stylesheets/pages.css.scss"
+			],
+			[
+				"customc",
+				"app/assets/stylesheets/custom.css.scss"
+			],
+			[
+				"pages.css",
+				"app/assets/stylesheets/pages.css.scss"
+			],
+			[
+				"home",
+				"app/views/pages/home.html.erb"
+			],
+			[
+				"show.ht",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"users_cont",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"_header",
+				"app/views/layouts/_header.html.erb"
+			],
+			[
+				"pages_con",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"development",
+				"config/environments/development.rb"
+			],
+			[
+				"application.html",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"custom.",
+				"app/assets/stylesheets/custom.css.scss"
+			],
+			[
+				"header",
+				"app/views/layouts/_header.html.erb"
+			],
+			[
+				"show.tm",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"create.js",
+				"app/views/items/create.js.erb"
+			],
+			[
+				"show.htl",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"sectiosn_con",
+				"app/controllers/sections_controller.rb"
+			],
+			[
+				"new_se",
+				"app/views/partials/section_modals/_new_section_modal.html.erb"
+			],
+			[
+				"items_con",
+				"app/controllers/items_controller.rb"
+			],
+			[
 				"sections_con",
 				"app/controllers/sections_controller.rb"
+			],
+			[
+				"edit",
+				"app/views/partials/section_modals/_edit_section_modal.html.erb"
+			],
+			[
+				"sho",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"new_item",
+				"app/views/partials/item_modals/_new_item_modal.html.erb"
+			],
+			[
+				"item_con",
+				"app/controllers/items_controller.rb"
+			],
+			[
+				"section_moda",
+				"app/views/partials/section_modals/_edit_section_modal.html.erb"
+			],
+			[
+				"sections_cont",
+				"app/controllers/sections_controller.rb"
+			],
+			[
+				"section_edi",
+				"app/views/partials/section_modals/_edit_section_modal.html.erb"
+			],
+			[
+				"edit_se",
+				"app/views/partials/section_modals/_edit_section_modal.html.erb"
+			],
+			[
+				"edit_item",
+				"app/views/partials/item_modals/_edit_item_modal.html.erb"
+			],
+			[
+				"item_cont",
+				"app/controllers/items_controller.rb"
+			],
+			[
+				"form",
+				"app/views/items/_form.html.erb"
+			],
+			[
+				"edit_moda",
+				"app/views/partials/item_modals/_edit_item_modal.html.erb"
+			],
+			[
+				"login_mo",
+				"app/views/partials/user_session/_log_in_modal.html.erb"
+			],
+			[
+				"show.html",
+				"app/views/users/show.html.erb"
 			],
 			[
 				"user_con",
@@ -1076,6 +1358,30 @@
 			[
 				"section_con",
 				"app/controllers/sections_controller.rb"
+			],
+			[
+				"show.",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"sign_in_",
+				"app/views/partials/user_session/_log_in_modal.html.erb"
+			],
+			[
+				"signu",
+				"app/views/partials/user_session/_sign_up_modal.html.erb"
+			],
+			[
+				"_newsec",
+				"app/views/partials/section_modals/_new_section_modal.html.erb"
+			],
+			[
+				"users_",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"_edit",
+				"app/views/partials/section_modals/_edit_section_modal.html.erb"
 			],
 			[
 				"mess",
@@ -1088,18 +1394,6 @@
 			[
 				"users_con",
 				"app/controllers/users_controller.rb"
-			],
-			[
-				"form",
-				"app/views/items/_form.html.erb"
-			],
-			[
-				"show.",
-				"app/views/users/show.html.erb"
-			],
-			[
-				"items_con",
-				"app/controllers/items_controller.rb"
 			],
 			[
 				"section_c",
@@ -1142,10 +1436,6 @@
 				"app/views/layouts/_header.html.erb"
 			],
 			[
-				"routes",
-				"config/routes.rb"
-			],
-			[
 				"item",
 				"app/models/item.rb"
 			],
@@ -1156,26 +1446,6 @@
 			[
 				"schema.",
 				"db/schema.rb"
-			],
-			[
-				"pages_con",
-				"app/controllers/pages_controller.rb"
-			],
-			[
-				"application.html",
-				"app/views/layouts/application.html.erb"
-			],
-			[
-				"schema",
-				"db/schema.rb"
-			],
-			[
-				"users_",
-				"app/controllers/users_controller.rb"
-			],
-			[
-				"index",
-				"app/views/users/index.html.erb"
 			],
 			[
 				"users/ind",
@@ -1192,10 +1462,6 @@
 			[
 				"i",
 				"app/models/item.rb"
-			],
-			[
-				"item_con",
-				"app/controllers/items_controller.rb"
 			],
 			[
 				"user.",
@@ -1224,18 +1490,6 @@
 			[
 				"section.",
 				"app/models/section.rb"
-			],
-			[
-				"pages",
-				"app/assets/stylesheets/pages.css.scss"
-			],
-			[
-				"home",
-				"app/views/pages/home.html.erb"
-			],
-			[
-				"custom",
-				"app/assets/stylesheets/custom.css.scss"
 			],
 			[
 				"_sign",
@@ -1270,10 +1524,6 @@
 				"test/fixtures/users.yml"
 			],
 			[
-				"gemf",
-				"Gemfile"
-			],
-			[
 				"test",
 				"config/environments/test.rb"
 			],
@@ -1284,10 +1534,6 @@
 			[
 				"messages",
 				"app/views/partials/_messages.html.erb"
-			],
-			[
-				"pages.css",
-				"app/assets/stylesheets/pages.css.scss"
 			],
 			[
 				"application.rb",
@@ -1342,20 +1588,12 @@
 				"Dagwoods/app/assets/stylesheets/custom.css.scss"
 			],
 			[
-				"header",
-				"Dagwoods/app/views/layouts/_header.html.erb"
-			],
-			[
 				"application.css",
 				"Dagwoods/app/assets/stylesheets/application.css"
 			],
 			[
 				"application.erb",
 				"Dagwoods/app/views/layouts/application.html.erb"
-			],
-			[
-				"devise",
-				"Dagwoods/config/initializers/devise.rb"
 			],
 			[
 				"upl",
@@ -1411,16 +1649,16 @@
 				"~/Documents/Rails/DagwoodShop/Dagwoods/dagwoods.sublime-project"
 			],
 			[
-				"dag",
-				"~/Documents/Rails/DagwoodShop/Dagwoods/dagwoods.sublime-project"
+				"sampl",
+				"~/Documents/Rails/sample_app/sampleapp.sublime-project"
 			],
 			[
 				"sample",
 				"~/Documents/Rails/sample_app/sampleapp.sublime-project"
 			],
 			[
-				"sampl",
-				"~/Documents/Rails/toy_app/app/models/sampleapp.sublime-project"
+				"dag",
+				"~/Documents/Rails/DagwoodShop/Dagwoods/dagwoods.sublime-project"
 			],
 			[
 				"pinter",

@@ -4,7 +4,7 @@ $theme-dark-blue:#34314c;
 $theme-yellow:#ffc952;
 
 body{
-  background: $theme-dark-blue;
+  background: $theme-yellow;
 }
 
 .form-container{
@@ -15,6 +15,7 @@ body{
 .page-container{
   @include outer-container(80%);
   margin-top: 15px;
+  color: $theme-dark-blue;
 }
 
 //Error Messages
@@ -28,7 +29,7 @@ $success-color: #e6efc2 !default;
   background-color: $color;
   color: darken($color, 60%);
   display: block;
-  margin-bottom: $base-spacing / 2;
+ // margin-bottom: $base-spacing / 2;
   padding: $base-spacing / 2;
   text-align: center;
 

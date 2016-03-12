@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
   get 'menu'    => 'pages#menu'
-  get 'directory' => 'pages#directory'
+  get 'directory' => 'users#index'
   get 'info'    => 'pages#info'
   match '/users',   to: 'users#index',   via: 'get'
   get 'users/:id' => 'users#show', as: :user

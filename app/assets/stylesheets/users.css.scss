@@ -1,0 +1,66 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.menu-layout{
+  @include span-columns(4);
+  .menu-create-buttons{
+    .modal-trigger{
+      border-style: solid;
+      width: 200px;
+      float: left;
+      margin: 0 10px 10px 0;
+      text-align: center;
+      &:hover{
+        background: $theme-light-blue;
+      }
+    }
+  }
+
+  .menu{
+    clear: left;
+
+    .section{
+      padding: 10px;
+      border-style: solid;
+      display: block;
+      overflow: auto;
+      background: white;
+      border-radius: 4px;
+      min-width: 200px;
+      max-width: 800px;
+      margin-bottom: 10px;
+      .section-name{
+        margin-right: 0%;
+      }
+      .fa{
+        font-size: 1em;
+      }
+      li{
+        
+        a{
+          color: $theme-dark-blue;
+        }
+        .delete-section{
+          float: right;
+          padding: 5px;
+          vertical-align: center;
+          border-style: solid;
+          &:hover{
+              background: $theme-light-blue;
+          }
+        }
+
+        .edit-section{
+          float: right;
+          margin-right: 10px;
+          padding: 5px;
+          border-style: solid;
+          &:hover{
+            background: $theme-light-blue;
+          }
+        }
+      }
+    }
+  }
+}
