@@ -29,13 +29,18 @@
               <% end %>
             </ul>
           </div>
+          <div class="items-list">
+            <ul>
+              <% @items.each do |item| %>
+                <% if item.section_name == section.name %>
+                  <li><%= item.name %></li>
+                <% end %>
+              <% end %>
+            </ul>
+          </div>          
         <% end %>
       </div>
-      <div class="items-list">
-        <% @items.each do |item| %>
-          <li><%= item.name %></li>
-        <% end %>
-      </div>
+
     </section>
   </div>
 </div>
