@@ -6,41 +6,19 @@
         <%= render :partial => 'partials/item_modals/new_item_modal', :locals =>{:@itemNew => current_user.items.build} %>
       <% end %>
     </div>
-    <br class="wrapper"/>
     <section class="menu">
       <div class="sections-list">
         <% @sections.each do |section| %>
-          <div class="section">
-            <ul id="section-<%=section.id%>">
-              <li class="section-name">
-                <%= section.name %>
-              </li>
-              <% if current_user %>
-                <li>
-                  <%= link_to section, method: :delete do %>
-                    <div class="delete-section">
-                      <i class="fa fa-trash-o"></i>
-                    </div>
-                  <% end %>
-                </li>
-                <li>
-                  <%= render :partial => 'partials/section_modals/edit_section_modal', :locals => {:@sectionEdit => section} %>
-                </li>
-              <% end %>
-            </ul>
-          </div>
-          <div class="items-list">
-            <ul>
+          <%= render :partial => 'users/section', :locals => {:section => section} %>
+          <div id="<%= section.name%>-item-list">
+            <ul class="items">
               <% @items.each do |item| %>
-                <% if item.section_name == section.name %>
-                  <li><%= item.name %></li>
-                <% end %>
+                <%= render :partial => 'users/item', :locals => {:item => item, :section =>section} %>
               <% end %>
             </ul>
           </div>          
         <% end %>
       </div>
-
     </section>
   </div>
 </div>

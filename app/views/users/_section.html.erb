@@ -1,0 +1,19 @@
+<div class="section">
+  <ul id="section-<%=section.name%>">
+    <li class="section-name">
+      <%= section.name %>
+    </li>
+    <% if current_user %>
+      <li>
+        <%= link_to section, method: :delete do %>
+          <div class="delete-section">
+            <i class="fa fa-trash-o"></i>
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= render :partial => 'partials/section_modals/edit_section_modal', :locals => {:@sectionEdit => section} %>
+      </li>
+    <% end %>
+  </ul>
+</div>

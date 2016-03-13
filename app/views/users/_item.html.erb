@@ -1,0 +1,19 @@
+<% if item.section_name == section.name %>
+  <li id="item_<%= item.id %>" class="item-name"><%= item.name %></li>
+  <li class="item-price"><%= item.price %></li>
+  <li class="item-ingredients"><%= item.ingredients %></li>
+  <li class="item-description"><%= item.description %></li>
+  <% if current_user %>
+      <li>
+        <%= link_to item, method: :delete do %>
+          <div class="delete-item">
+            <i class="fa fa-trash-o"></i>
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= render :partial => 'partials/item_modals/edit_item_modal', :locals => {:@itemEdit => item} %>
+      </li>
+      <br class="try"></br>
+    <% end %>
+<% end %>

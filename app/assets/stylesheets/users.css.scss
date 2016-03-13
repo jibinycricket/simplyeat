@@ -19,7 +19,7 @@
 
   .menu{
     clear: left;
-
+    
     .section{
       padding: 10px;
       border-style: solid;
@@ -61,6 +61,50 @@
           }
         }
       }
+    }
+  }
+
+  .items{
+    background: white;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    padding: 5px 10px;
+    a{
+      color: $theme-dark-blue;
+    }
+    .item-name{
+      float: left;
+    }
+    .item-price{
+      float: right;
+    }
+    .item-ingredients{
+      clear: both;
+    }
+    .edit-item{
+      border-style: solid;
+      margin: 0px;
+      padding: 5px;
+      float: right;
+      width: 30px;
+      text-align: center;
+      &:hover{
+        background: $theme-light-blue;
+      }
+    }
+    .delete-item{
+      border-style: solid;
+      width: 30px;
+      padding: 5px;
+      margin-left: 10px;
+      float: right;
+      text-align: center;
+      &:hover{
+        background: $theme-light-blue;
+      }
+    }
+    .try{
+      clear: both;
     }
   }
 }

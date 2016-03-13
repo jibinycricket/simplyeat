@@ -12,7 +12,7 @@
         <%= f.text_field :name, :placeholder =>"Chicken Sandwich", class: "form-control item_name" %>
 
         <%= f.label :section_name, 'Section_name' %>
-        <%= f.collection_select :section_name, Section.order(:name),:name,:name, include_blank: true %>
+        <%= f.collection_select :section_name, Section.order(:name),:name,:name, include_blank: 'Pick a section' %>
 
         <%= f.label :price, 'Price' %>
         <%= f.number_field :price, :step => 'any', :placeholder =>'5.00', class: "form-control item_price" %>
