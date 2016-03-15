@@ -1,6 +1,12 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$large-width: 450px;
+$mobile-width: 230px;
+$container-width-large: 500px;
+$container-width-mobile: 250px;
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
 
 .menu-layout{
   @include span-columns(4);
@@ -19,19 +25,31 @@
 
   .menu{
     clear: left;
-    
+    .section_and_items{
+      background-color: $theme-light-blue;
+      min-width: $container-width-mobile;
+      max-width: $container-width-large;
+      border-style: solid;
+      border-radius: 1px;
+      margin-bottom: 10px;
+      padding: 5px 0px;
+      font-family: 'Quicksand', sans-serif;
+    }
     .section{
       padding: 10px;
       border-style: solid;
+      border-width: 1px;
       display: block;
       overflow: auto;
       background: white;
-      border-radius: 4px;
-      min-width: 200px;
-      max-width: 800px;
-      margin-bottom: 10px;
+      min-width: $mobile-width;
+      max-width: $large-width;
+      margin: 0 auto;
       .section-name{
+        font-size: 30px;
         margin-right: 0%;
+        float: left;
+        font-weight: 700;
       }
       .fa{
         font-size: 1em;
@@ -67,44 +85,59 @@
   .items{
     background: white;
     border-style: solid;
-    border-width: 3px 3px 3px 3px;
+    border-width: 1px;
+    border-top-width: 0px;
     padding: 5px 10px;
-    a{
-      color: $theme-dark-blue;
-    }
-    .item-name{
-      float: left;
-    }
-    .item-price{
-      float: right;
-    }
-    .item-ingredients{
-      clear: both;
-    }
-    .edit-item{
-      border-style: solid;
-      margin: 0px;
-      padding: 5px;
-      float: right;
-      width: 30px;
-      text-align: center;
-      &:hover{
-        background: $theme-light-blue;
+    min-width: $mobile-width;
+    max-width: $large-width;
+    margin: 0 auto;
+    .item{
+      a{
+        color: $theme-dark-blue;
       }
-    }
-    .delete-item{
-      border-style: solid;
-      width: 30px;
-      padding: 5px;
-      margin-left: 10px;
-      float: right;
-      text-align: center;
-      &:hover{
-        background: $theme-light-blue;
+      .item-name{
+        float: left;
+        font-size: 20px;
       }
-    }
-    .try{
-      clear: both;
+      .item-price{
+        float: right;
+        font-size: 20px;
+      }
+      br{
+        clear: right;
+      }
+      .item-line-seperator{
+        height: 1px;
+        border-bottom: 1px solid $theme-light-blue;
+        margin-bottom: 10px;
+      }
+      .item-description{
+        font-size: 15px;
+        clear: right;
+        color: #517B8D;
+      }
+      .edit-item{
+        border-style: solid;
+        margin: 0px;
+        padding: 5px;
+        float: right;
+        width: 30px;
+        text-align: center;
+        &:hover{
+          background: $theme-light-blue;
+        }
+      }
+      .delete-item{
+        border-style: solid;
+        width: 30px;
+        padding: 5px;
+        margin-left: 10px;
+        float: right;
+        text-align: center;
+        &:hover{
+          background: $theme-light-blue;
+        }
+      }
     }
   }
 }
