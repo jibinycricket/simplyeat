@@ -14,6 +14,9 @@
       <li>
         <%= render :partial => 'partials/section_modals/edit_section_modal', :locals => {:@sectionEdit => section} %>
       </li>
+      <li>
+        <%= render :partial => 'partials/item_modals/new_item_modal', :locals =>{:@itemNew => current_user.items.build, :section => section} %>
+      </li>
     <% end %>
   </ul>
 </div>

@@ -9,7 +9,6 @@ class SectionsController < ApplicationController
 
   def create
     @section = current_user.sections.build(section_params)
-
     respond_to do |format|
       if @section.save
         format.html{

@@ -3,7 +3,6 @@
     <div class="create-buttons">
       <% if current_user %>
         <%= render :partial => 'partials/section_modals/new_section_modal', :locals => {:@sectionNew => current_user.sections.build} %>
-        <%= render :partial => 'partials/item_modals/new_item_modal', :locals =>{:@itemNew => current_user.items.build} %>
       <% end %>
     </div>
     <section class="menu">

@@ -1,18 +1,23 @@
-<div class="modal menu-create-buttons">
-  <label for="new-item-modal">
-    <div class="modal-trigger">Create New Item</div>
+<div class="modal">
+  <label for="new-<%=section.name%>-modal">
+    <div class="modal-trigger">
+      <div class="add-item">
+        <i class="fa fa-plus"></i>
+       </div>
+    </div>
   </label>
-  <input class="modal-state" id="new-item-modal" type="checkbox" />
+  <input class="modal-state" id="new-<%=section.name%>-modal" type="checkbox" />
   <div class="modal-fade-screen">
     <div class="modal-inner">
-      <div class="modal-close" for="new-item-modal"></div>
-      <h1>Create New Item</h1>
+      <div class="modal-close" for="new-<%=section.name%>-modal"></div>
+
+      <h1>Add Item to <%= section.name %> section</h1>
       <%= form_for(@itemNew, remote:true) do |f| %>
         <%= f.label :name, 'Item Name' %>
         <%= f.text_field :name, :placeholder =>"Chicken Sandwich", class: "form-control item_name" %>
 
-        <%= f.label :section_name, 'Section_name' %>
-        <%= f.collection_select :section_name, Section.order(:name),:name,:name, include_blank: 'Pick a section' %>
+        <%= f.label :section_name, 'Menu Section' %>
+        <%= f.collection_select :section_name, Section.order(:name),:name,:name, :selected  => section.name %>
 
         <%= f.label :price, 'Price' %>
         <%= f.number_field :price, :step => 'any', :placeholder =>'5.00', class: "form-control item_price" %>

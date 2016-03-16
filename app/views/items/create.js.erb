@@ -3,6 +3,5 @@ $(".item_name").val('');
 $(".item_price").val('');
 $(".item_description").val('');
 $(".item_ingredients").val('');
-//$(".items-list").prepend('<div id="item_<%= @item.id %>"><%= j (@item.name) %> </div>');
-$("#<%= @item.section_name%>-item-list ul").append('<li id="item_<%= @item.id %>" ><%= @item.name %></li>');
+$("#<%= @item.section_name%>-item-list ul").append('<%= j render :partial => 'users/ajax_item', :locals =>{:item => @item} %>');
 $("#item_<%= @item.id %>").hide().fadeIn(1000);
