@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  isOpen: false
+  type: 
+  street_number: 1
+  street_name: MyString
+  state: MyString
+  zip_code: 1
+
+two:
+  name: MyString
+  isOpen: false
+  type: 
+  street_number: 1
+  street_name: MyString
+  state: MyString
+  zip_code: 1

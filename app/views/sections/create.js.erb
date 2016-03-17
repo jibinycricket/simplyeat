@@ -1,5 +1,5 @@
 $('.modal-close').click();
 $(".section_name").val('');
 $(".sections-list").append('<%= j render :partial => 'users/ajax_section', :locals =>{:section => @section} %>');
-$("#section-<%= @section.name %>").hide().fadeIn(1000);
+$("#section-<%= @section.id %>").hide().fadeIn(1000);
 

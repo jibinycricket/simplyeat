@@ -17,7 +17,7 @@
             <li><%= link_to "Home", root_path %></li>
             <li><%= link_to "Directory", directory_path %></li>
             <li><%= link_to "Design Menu", current_user %></li>
-            <li><%= link_to "Store Info", info_path %></li>
+            <li><%= link_to "Store Info", edit_restaurant_path(current_user.restaurant) %></li>
             <li>
               <%= link_to "Account Settings", edit_user_registration_path %>
             </li>
