@@ -2,8 +2,8 @@
   <%= f.label :name, 'Item Name' %>
   <%= f.text_field :name, :placeholder =>"Chicken Sandwich" %>
 
-  <%= f.label :section_name, 'Section_name' %>
-  <%= f.collection_select :section_name, Section.order(:name),:name,:name, include_blank: true %>
+  <%= f.label :section_name, 'Menu Section' %>
+  <%= f.collection_select :section_id, Section.all, :id, :name %>
 
   <%= f.label :price, 'Price' %>
   <%= f.number_field :price, :step => 'any', :placeholder =>'5.00' %>

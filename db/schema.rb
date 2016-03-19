@@ -11,19 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160317010756) do
+ActiveRecord::Schema.define(version: 20160319022908) do
 
   create_table "items", force: :cascade do |t|
     t.string   "name"
     t.float    "price"
     t.text     "ingredients"
     t.text     "description"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.integer  "user_id"
-    t.string   "section_name"
+    t.integer  "section_id"
   end
 
+  add_index "items", ["section_id"], name: "index_items_on_section_id"
   add_index "items", ["user_id"], name: "index_items_on_user_id"
 
   create_table "restaurants", force: :cascade do |t|
