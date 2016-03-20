@@ -67,7 +67,7 @@ $container-width-mobile: 250px;
           vertical-align: center;
           border-style: solid;
           &:hover{
-              background: $theme-light-blue;
+              background: $theme-pink;
           }
         }
 
@@ -115,7 +115,7 @@ $container-width-mobile: 250px;
         float: right;
         font-size: 20px;
       }
-      br{
+      .clearfix{
         clear: right;
       }
       .item-line-seperator{
@@ -147,7 +147,7 @@ $container-width-mobile: 250px;
         float: right;
         text-align: center;
         &:hover{
-          background: $theme-light-blue;
+          background: $theme-pink;
         }
       }
     }

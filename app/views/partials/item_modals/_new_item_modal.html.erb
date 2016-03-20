@@ -10,14 +10,14 @@
   <div class="modal-fade-screen">
     <div class="modal-inner">
       <div class="modal-close" for="new-<%=section.name%>-modal"></div>
-
+      
       <h1>Add Item to <%= section.name %> section</h1>
       <%= form_for(@itemNew, remote:true) do |f| %>
         <%= f.label :name, 'Item Name' %>
         <%= f.text_field :name, :placeholder =>"Chicken Sandwich", class: "form-control item_name" %>
 
         <%= f.label :section_name, 'Menu Section' %>
-        <%= f.collection_select :section_id, Section.all, :id, :name %>
+        <%= f.collection_select :section_id, Section.all, :id, :name, :selected => section.id %>
 
         <%= f.label :price, 'Price' %>
         <%= f.number_field :price, :step => 'any', :placeholder =>'5.00', class: "form-control item_price" %>

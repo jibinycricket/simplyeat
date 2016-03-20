@@ -5,3 +5,21 @@ $(".item_description").val('');
 $(".item_ingredients").val('');
 $("#<%= @item.section_id%>-item-list ul").append('<%= j render :partial => 'users/ajax_item', :locals =>{:item => @item} %>');
 $("#item_<%= @item.id %>").hide().fadeIn(1000);
+
+$(function() {
+  $("#modal-1, #modal2").on("change", function() {
+    if ($(this).is(":checked")) {
+      $("body").addClass("modal-open");
+    } else {
+      $("body").removeClass("modal-open");
+    }
+  });
+
+  $(".modal-fade-screen, .modal-close").on("click", function() {
+    $(".modal-state:checked").prop("checked", false).change();
+  });
+
+  $(".modal-inner").on("click", function(e) {
+    e.stopPropagation();
+  });
+});
