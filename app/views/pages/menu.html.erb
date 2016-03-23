@@ -4,5 +4,5 @@
 <% @sections.each do |section| %>
   <%= section.name %>
   <%= link_to("Edit Section", edit_section_path(section)) %>
-  <%= link_to("Delete Section",section_path(section), method: :delete, data: { confirm: "Are you sure?"}) %>
+  <%= link_to "Delete Section",section_path(section), remote: true, method: :delete, data: { confirm: "Are you sure?"} %>
 <% end %>

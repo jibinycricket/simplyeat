@@ -19,6 +19,7 @@ class RestaurantsController < ApplicationController
   end
 
   def edit
+    @restaurant = current_user.restaurant
   end
 
   def update

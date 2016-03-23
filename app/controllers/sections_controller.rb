@@ -5,9 +5,11 @@ class SectionsController < ApplicationController
 
   def new
     @section = current_user.sections.build
+
   end
 
   def create
+    @user = current_user
     @section = current_user.sections.build(section_params)
     respond_to do |format|
       if @section.save
@@ -21,15 +23,20 @@ class SectionsController < ApplicationController
           flash[:alert] = "Your new section wasnt created"
           render :new
         }
-        format.js
+        format.js{render :new}
       end
     end
   end
 
   def destroy
     @section.destroy
-    flash[:success] = "Section was deleted"
-    redirect_to current_user 
+    respond_to do |format|
+      format.html{
+        flash[:success] = "Section was deleted"
+        redirect_to current_user 
+      }
+      format.js
+    end
   end
 
   def edit
@@ -42,7 +49,7 @@ class SectionsController < ApplicationController
         format.js
       else
         format.html{render :edit}
-        format.js
+        format.js{render :edit}
       end
     end
   end

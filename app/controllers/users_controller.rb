@@ -7,5 +7,6 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @sections = @user.sections
     @items = @user.items
+    @restaurant = @user.restaurant;
   end
 end

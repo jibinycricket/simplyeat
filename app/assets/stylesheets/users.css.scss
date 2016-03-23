@@ -26,6 +26,7 @@ $container-width-mobile: 250px;
   .menu{
     clear: left;
     .section_and_items{
+      box-shadow: 1px 1px 5px #888888;
       background-color: $theme-light-blue;
       min-width: $container-width-mobile;
       max-width: $container-width-large;

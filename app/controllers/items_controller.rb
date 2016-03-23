@@ -28,8 +28,13 @@ class ItemsController < ApplicationController
 
   def destroy
     @item.destroy
-    flash[:success] = "Item was deleted"
-    redirect_to current_user 
+    respond_to do |format|
+      format.html{
+        flash[:success] = "Item was deleted"
+        redirect_to current_user 
+      }
+      format.js
+    end
   end
 
   def edit
