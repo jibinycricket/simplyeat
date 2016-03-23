@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160319022908) do
+ActiveRecord::Schema.define(version: 20160323024805) do
 
   create_table "items", force: :cascade do |t|
     t.string   "name"
@@ -38,6 +38,11 @@ ActiveRecord::Schema.define(version: 20160319022908) do
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.integer  "user_id"
+    t.string   "phone_number"
+    t.string   "email"
+    t.string   "facebook"
+    t.string   "instagram"
+    t.string   "twitter"
   end
 
   add_index "restaurants", ["user_id"], name: "index_restaurants_on_user_id"
