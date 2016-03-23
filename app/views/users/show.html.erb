@@ -1,9 +1,12 @@
 <div class="page-container">
-  <section class="restaurant-info">
-    <div class="restaurant-content">
-      <%= render 'restaurants/restaurant_info' %>
-    </div>
-  </section>
+  <% unless current_user.restaurant.nil? %>
+    <section class="restaurant-info">
+      <div class="restaurant-content">
+        
+          <%= render 'restaurants/restaurant_info' %>
+      </div>
+    </section>
+  <% end %>
   <div class="menu-layout">
     <div class="create-buttons">
       <% if current_user.id == @user.id %>
