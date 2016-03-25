@@ -9,7 +9,7 @@
   $large-screen: em(860) !default;
   $hero-background-top: #7F99BE; 
   $hero-background-bottom: #20392B;
-  $hero-color: $theme-yellow;
+  $hero-color: $theme-white;
   $gradient-angle: 10deg;
   $hero-image: 'http://thumbs.dreamstime.com/z/dinner-menu-1090281.jpg';
 
@@ -70,7 +70,7 @@
   width: 200px;
   padding: 8px;
   color: #fff;
-  border: 1px solid $theme-yellow;
+  border: 1px solid $theme-white;
   text-align: center;
   outline: none;
   text-decoration: none;
@@ -205,7 +205,7 @@
     }
 
     a{
-      color: $theme-yellow;
+      color: $theme-white;
     }
     a:hover{
       color: $theme-light-blue;

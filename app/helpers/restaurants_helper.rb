@@ -54,5 +54,13 @@ module RestaurantsHelper
       ['Wisconsin', 'WI'],
       ['Wyoming', 'WY']
     ]
-end
+  end
+
+  def toggleRestaurantInfo(user)
+    if user.restaurant.blank?
+      
+    else
+      render partial: 'restaurants/restaurant_info'
+    end
+  end
 end

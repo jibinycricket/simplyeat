@@ -5,7 +5,7 @@
     <br class='clearfix'/>
     <div class="item-line-seperator"></div>
     <li class="item-description"><%= item.description %></li>
-    <% if current_user.id == @user.id %>
+    <% if current_user == @user %>
         <li>
           <%= link_to item, remote: true, data: {confirm: "Are you sure?"},  method: :delete do %>
             <div class="delete-item">

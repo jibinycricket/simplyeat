@@ -9,6 +9,14 @@ module ApplicationHelper
     end
   end
 
+  def chooseRestaurantPath(user)
+    if user.restaurant.blank?
+      new_restaurant_path
+    else
+      edit_restaurant_path(user)
+    end
+  end
+
   def resource_name
     :user
   end

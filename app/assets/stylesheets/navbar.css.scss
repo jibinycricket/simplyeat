@@ -27,7 +27,7 @@ body{
   font-size: 1.4em;
   a,
   a:visited {
-    color: $theme-yellow;
+    color: $theme-white;
     text-decoration: none;
     &:hover{
       color: $theme-light-blue;
@@ -58,7 +58,7 @@ nav {
         padding: 0 20px;
         line-height: $nav-height;
         background: $nav-background;
-        color: $theme-yellow;
+        color: $theme-white;
         text-decoration: none;
         text-transform: uppercase;
         &:hover {
