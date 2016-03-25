@@ -11,7 +11,7 @@ class RestaurantsController < ApplicationController
     @restaurant = current_user.create_restaurant(restaurant_params)
     if @restaurant.save
       flash[:success] = "Restaurant information has been saved"
-      redirect_to info_path
+      redirect_to user_path
     else
       render :new
       flash[:alert] = "Restaurant info wasn't saved"
@@ -24,10 +24,10 @@ class RestaurantsController < ApplicationController
 
   def update
     if current_user.restaurant.update(restaurant_params)
-      redirect_to info_path
+      redirect_to menu_path
       flash[:success] = "Restaurant information has been updated"
     else
-      redirect_to info_path
+      redirect_to edit_restaurant_path
       flash[:alert] = "Restaurant information was not updated"
     end
   end
