@@ -1,19 +1,18 @@
 <section class="restaurant-info">
-    <div class="restaurant-content">
-
-<div class="restaurant-name">
-  <%= @user.restaurant.name %>
-</div>
-<div class="restaurant-category">
-  <%= @user.restaurant.category %>
-</div>
-<div class="restaurant-address">
-  <%= @user.restaurant.street_number %> <%= @user.restaurant.street_name %>,
-  <%= @user.restaurant.state %>
-  <%= @user.restaurant.zip_code %>
-</div>
+  <div class="restaurant-content">
+    <div class="restaurant-name">
+      <%= @user.restaurant.name %>
     </div>
-  </section>
-
-
-
+    <div class="restaurant-image">
+      <%= image_tag(@user.restaurant.restaurant_picture.medium_pic) %>
+    </div>
+    <div class="restaurant-category">
+      <%= @user.restaurant.category %>
+    </div>
+    <div class="restaurant-address">
+      <%= @user.restaurant.street_number %> <%= @user.restaurant.street_name %>,
+      <%= @user.restaurant.state %>
+      <%= @user.restaurant.zip_code %>
+    </div>
+  </div>
+</section>

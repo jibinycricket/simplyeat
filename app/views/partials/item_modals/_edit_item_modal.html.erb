@@ -23,6 +23,10 @@
         <%= f.label :ingredients, 'Ingredients' %>
         <%= f.text_field :ingredients, :placeholder =>'Chicken, Whole Wheat Bun, Mayo' %>
 
+        <div class="field">
+          <%= f.file_field :item_picture %>
+        </div>
+
         <%= f.submit %>
       <% end %>
     </div>

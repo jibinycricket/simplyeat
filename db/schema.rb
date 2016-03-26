@@ -11,17 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160323024805) do
+ActiveRecord::Schema.define(version: 20160326012205) do
 
   create_table "items", force: :cascade do |t|
     t.string   "name"
     t.float    "price"
     t.text     "ingredients"
     t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
     t.integer  "user_id"
     t.integer  "section_id"
+    t.string   "item_picture"
   end
 
   add_index "items", ["section_id"], name: "index_items_on_section_id"
@@ -35,14 +36,15 @@ ActiveRecord::Schema.define(version: 20160323024805) do
     t.string   "street_name"
     t.string   "state"
     t.integer  "zip_code"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
     t.integer  "user_id"
     t.string   "phone_number"
     t.string   "email"
     t.string   "facebook"
     t.string   "instagram"
     t.string   "twitter"
+    t.string   "restaurant_picture"
   end
 
   add_index "restaurants", ["user_id"], name: "index_restaurants_on_user_id"
