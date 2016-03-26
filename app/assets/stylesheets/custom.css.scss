@@ -1,10 +1,11 @@
-$theme-light-blue: #47b8e0;
-$theme-pink: #ff7473;
-$theme-dark-blue:#34314c;
-$theme-white:#ecf0f1;
+$theme-color-1: #69D2E7;
+$theme-color-2: #A7DBD8;
+$theme-color-3: #F38630;
+$theme-color-4: #E0E4CC;
+$theme-color-5: #FA6900;
 
 body{
-  background: $theme-white;
+  background: $theme-color-4;
 }
 
 .form-container{
@@ -15,7 +16,7 @@ body{
 .page-container{
   @include outer-container(80%);
   margin-top: 15px;
-  color: $theme-dark-blue;
+  color: $theme-color-3;
 }
 
 //Error Messages

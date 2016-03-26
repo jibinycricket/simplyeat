@@ -18,7 +18,7 @@ $container-width-mobile: 250px;
       margin: 0 10px 10px 0;
       text-align: center;
       &:hover{
-        background: $theme-light-blue;
+        background: $theme-color-1;
       }
     }
   }
@@ -27,7 +27,7 @@ $container-width-mobile: 250px;
     clear: left;
     .section_and_items{
       box-shadow: 1px 1px 5px #888888;
-      background-color: $theme-light-blue;
+      background-color: $theme-color-1;
       min-width: $container-width-mobile;
       max-width: $container-width-large;
       border-style: solid;
@@ -58,7 +58,7 @@ $container-width-mobile: 250px;
       li{
         
         a{
-          color: $theme-dark-blue;
+          color: $theme-color-3;
         }
 
         .delete-section{
@@ -68,7 +68,7 @@ $container-width-mobile: 250px;
           vertical-align: center;
           border-style: solid;
           &:hover{
-              background: $theme-pink;
+              background: $theme-color-2;
           }
         }
 
@@ -78,7 +78,7 @@ $container-width-mobile: 250px;
           padding: 5px;
           border-style: solid;
           &:hover{
-            background: $theme-light-blue;
+            background: $theme-color-1;
           }
         }
 
@@ -88,7 +88,7 @@ $container-width-mobile: 250px;
           margin-right: 10px;
           border-style: solid;
           &:hover{
-            background: $theme-light-blue;
+            background: $theme-color-1;
           }
         }
       }
@@ -106,7 +106,7 @@ $container-width-mobile: 250px;
     margin: 0 auto;
     .item{
       a{
-        color: $theme-dark-blue;
+        color: $theme-color-3;
       }
       .item-name{
         float: left;
@@ -121,7 +121,7 @@ $container-width-mobile: 250px;
       }
       .item-line-seperator{
         height: 1px;
-        border-bottom: 1px solid $theme-light-blue;
+        border-bottom: 1px solid $theme-color-1;
         margin-bottom: 10px;
       }
       .item-description{
@@ -137,7 +137,7 @@ $container-width-mobile: 250px;
         width: 30px;
         text-align: center;
         &:hover{
-          background: $theme-light-blue;
+          background: $theme-color-1;
         }
       }
       .delete-item{
@@ -148,7 +148,7 @@ $container-width-mobile: 250px;
         float: right;
         text-align: center;
         &:hover{
-          background: $theme-pink;
+          background: $theme-color-2;
         }
       }
     }
