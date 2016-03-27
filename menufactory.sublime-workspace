@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"fl",
+				"float"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
 				"res",
 				"restaurant"
 			],
@@ -68,10 +80,6 @@
 				"border-style"
 			],
 			[
-				"marg",
-				"margin-top"
-			],
-			[
 				"bac",
 				"background-color"
 			],
@@ -126,10 +134,6 @@
 			[
 				"assert",
 				"assert_select"
-			],
-			[
-				"margin",
-				"margin-top"
 			],
 			[
 				"par",
@@ -510,36 +514,64 @@
 			[
 				"end",
 				"end_num"
-			],
-			[
-				"mon",
-				"monster_name"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/models/restaurant.rb",
+			"file": "app/views/users/show.html.erb",
 			"settings":
 			{
-				"buffer_size": 196,
+				"buffer_size": 1172,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "config/initializers/carrierwave.rb",
+			"file": "app/views/partials/section_modals/_new_section_modal.html.erb",
 			"settings":
 			{
-				"buffer_size": 801,
+				"buffer_size": 603,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "db/schema.rb",
+			"file": "app/views/items/_gallery.html.erb",
 			"settings":
 			{
-				"buffer_size": 3028,
+				"buffer_size": 394,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/users.css.scss",
+			"settings":
+			{
+				"buffer_size": 3758,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/application.css.scss",
+			"settings":
+			{
+				"buffer_size": 200,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/users.js.erb",
+			"settings":
+			{
+				"buffer_size": 266,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/restaurants/_restaurant_info.html.erb",
+			"settings":
+			{
+				"buffer_size": 569,
 				"line_ending": "Unix"
 			}
 		}
@@ -642,60 +674,70 @@
 	"expanded_folders":
 	[
 		"/home/jibin/Documents/Rails/MenuFactory",
+		"/home/jibin/Documents/Rails/MenuFactory/app",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/images",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts",
-		"/home/jibin/Documents/Rails/MenuFactory/app/controllers",
-		"/home/jibin/Documents/Rails/MenuFactory/app/helpers",
-		"/home/jibin/Documents/Rails/MenuFactory/app/uploaders",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/items",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/layouts",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials",
-		"/home/jibin/Documents/Rails/MenuFactory/config",
-		"/home/jibin/Documents/Rails/MenuFactory/config/initializers",
-		"/home/jibin/Documents/Rails/MenuFactory/db/migrate"
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/restaurants",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/users",
+		"/home/jibin/Documents/Rails/MenuFactory/public",
+		"/home/jibin/Documents/Rails/MenuFactory/public/uploads",
+		"/home/jibin/Documents/Rails/MenuFactory/public/uploads/item",
+		"/home/jibin/Documents/Rails/MenuFactory/public/uploads/item/item_picture",
+		"/home/jibin/Documents/Rails/MenuFactory/public/uploads/item/item_picture/1",
+		"/home/jibin/Documents/Rails/MenuFactory/public/uploads/item/item_picture/4"
 	],
 	"file_history":
 	[
-		"/home/jibin/Documents/Rails/MenuFactory/app/uploaders/restaurant_picture_uploader.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/models/restaurant.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/config/initializers/carrierwave.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/restaurants/_form.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/restaurants_controller.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/db/schema.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/users/show.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/helpers/restaurants_helper.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/restaurants/_restaurant_info.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/application.css.scss",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts/application.js",
 		"/home/jibin/Documents/Rails/MenuFactory/Gemfile",
+		"/home/jibin/Downloads/fancyapps-fancyBox-18d1712/source/jquery.fancybox.css",
+		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/items_controller.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/db/schema.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/users_controller.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/users/_section.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/restaurants.css.scss",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/items/_gallery.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/custom.css.scss",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/users.css.scss",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/users/show.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/restaurants/_restaurant_info.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/items.scss",
+		"/home/jibin/Documents/Rails/MenuFactory/app/helpers/restaurants_helper.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/item_modals/_new_item_modal.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/restaurants/_form.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/item_modals/_edit_item_modal.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/views/users/_ajax_item.html.erb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/models/item.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/uploaders/item_picture_uploader.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/uploaders/restaurant_picture_uploader.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/restaurants_controller.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/config/initializers/carrierwave.rb",
+		"/home/jibin/Documents/Rails/MenuFactory/.gitignore",
+		"/home/jibin/Documents/Rails/MenuFactory/app/models/restaurant.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/navbar.css.scss",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/pages.css.scss",
-		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/restaurants.css.scss",
-		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/users.css.scss",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/base/_variables.scss",
-		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/users_controller.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/users/_item.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/layouts/_header.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/helpers/application_helper.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/helpers/users_helper.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/db/migrate/20160323024805_add_contact_info_to_restaurant.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/layouts/application.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/users/_section.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/users/_ajax_section.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/users/_ajax_item.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/item_modals/_new_item_modal.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/views/partials/item_modals/_edit_item_modal.html.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/items_controller.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/items/destroy.js.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/db/migrate/20160305154042_add_user_id_to_items.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/sections_controller.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/sections/destroy.js.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/pages/menu.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/models/section.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/models/item.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/sections/update.js.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/items/update.js.erb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/application.css.scss",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets/stylesheets/restaurants.scss",
 		"/home/jibin/Documents/Rails/MenuFactory/app/models/user.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/restaurants/new.html.erb",
@@ -724,7 +766,6 @@
 		"/home/jibin/Documents/Rails/MenuFactory/db/migrate/20160306014737_add_user_name_to_users.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/app/views/pages/home.html.erb",
 		"/home/jibin/Documents/Rails/MenuFactory/config/initializers/devise.rb",
-		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts/application.js",
 		"/home/jibin/Documents/Rails/MenuFactory/app/assets/javascripts/pages.js",
 		"/home/jibin/Documents/Rails/MenuFactory/app/controllers/pages_controller.rb",
 		"/home/jibin/Documents/Rails/MenuFactory/config/environments/development.rb",
@@ -779,12 +820,7 @@
 		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/controllers/pages_controller.rb",
 		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/items/show.html.erb",
 		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/layouts/application.html.erb",
-		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/javascripts/owl_carousel.js",
-		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/db/schema.rb",
-		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/pages/home.html.erb",
-		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/views/sections/_form.html.erb",
-		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/controllers/sections_controller.rb",
-		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/config/application.rb"
+		"/home/jibin/Documents/Rails/DagwoodShop/Dagwoods/app/assets/javascripts/owl_carousel.js"
 	],
 	"find":
 	{
@@ -803,6 +839,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"picture_url",
+			"section",
+			"page-container",
+			"menu-layout",
+			"section",
+			"#",
 			"$theme-white",
 			"$theme-dark-blue",
 			"$theme-pink",
@@ -924,13 +966,7 @@
 			"owl",
 			"      \n",
 			"destroy",
-			"item",
-			"Item",
-			"item",
-			"Item",
-			"destroy",
-			"turbolinks",
-			"#myCarousel"
+			"item"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -990,95 +1026,218 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/models/restaurant.rb",
+					"file": "app/views/users/show.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 196,
+						"buffer_size": 1172,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								196,
-								196
+								1106,
+								1106
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": -0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "config/initializers/carrierwave.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 801,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								355,
-								355
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/partials/section_modals/_new_section_modal.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 603,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								139,
+								139
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/items/_gallery.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								90,
+								90
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "db/schema.rb",
+					"buffer": 3,
+					"file": "app/assets/stylesheets/users.css.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3028,
+						"buffer_size": 3758,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1733,
-								1733
+								609,
+								609
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 276.0,
+						"translation.y": 1035.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/assets/stylesheets/application.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 200,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/assets/javascripts/users.js.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 266,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								266,
+								266
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
+							"syntax": "Packages/Rails/JavaScript (Rails).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/restaurants/_restaurant_info.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 569,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								246,
+								246
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1141,12 +1300,172 @@
 		"selected_items":
 		[
 			[
-				"carrier",
-				"config/initializers/carrierwave.rb"
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"application.css",
+				"app/assets/stylesheets/application.css.scss"
+			],
+			[
+				"itemscontrol",
+				"app/controllers/items_controller.rb"
 			],
 			[
 				"schema",
 				"db/schema.rb"
+			],
+			[
+				"userscontr",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"newsection",
+				"app/views/partials/section_modals/_new_section_modal.html.erb"
+			],
+			[
+				"_section",
+				"app/views/users/_section.html.erb"
+			],
+			[
+				"usersection",
+				"app/views/users/_section.html.erb"
+			],
+			[
+				"restaurantscs",
+				"app/assets/stylesheets/restaurants.css.scss"
+			],
+			[
+				"galler",
+				"app/views/items/_gallery.html.erb"
+			],
+			[
+				"gallery",
+				"app/views/items/_gallery.html.erb"
+			],
+			[
+				"userscss",
+				"app/assets/stylesheets/users.css.scss"
+			],
+			[
+				"custom",
+				"app/assets/stylesheets/custom.css.scss"
+			],
+			[
+				"restaurantinfo",
+				"app/views/restaurants/_restaurant_info.html.erb"
+			],
+			[
+				"restauartscss",
+				"app/assets/stylesheets/restaurants.css.scss"
+			],
+			[
+				"sho",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"restaurantscss",
+				"app/assets/stylesheets/restaurants.css.scss"
+			],
+			[
+				"restaurant",
+				"app/views/restaurants/_restaurant_info.html.erb"
+			],
+			[
+				"itemsscss",
+				"app/assets/stylesheets/items.scss"
+			],
+			[
+				"restaurantcss",
+				"app/assets/stylesheets/restaurants.css.scss"
+			],
+			[
+				"restaurant_inf",
+				"app/views/restaurants/_restaurant_info.html.erb"
+			],
+			[
+				"show",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"application.js",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"restaurantform",
+				"app/views/restaurants/_form.html.erb"
+			],
+			[
+				"edit_item",
+				"app/views/partials/item_modals/_edit_item_modal.html.erb"
+			],
+			[
+				"newitemmo",
+				"app/views/partials/item_modals/_new_item_modal.html.erb"
+			],
+			[
+				"itemscontr",
+				"app/controllers/items_controller.rb"
+			],
+			[
+				"itemupl",
+				"app/uploaders/item_picture_uploader.rb"
+			],
+			[
+				"item.rb",
+				"app/models/item.rb"
+			],
+			[
+				"new_item",
+				"app/views/partials/item_modals/_new_item_modal.html.erb"
+			],
+			[
+				"edit_item_",
+				"app/views/partials/item_modals/_edit_item_modal.html.erb"
+			],
+			[
+				"ajaxitem",
+				"app/views/users/_ajax_item.html.erb"
+			],
+			[
+				"restaurant_pic",
+				"app/uploaders/restaurant_picture_uploader.rb"
+			],
+			[
+				"item.",
+				"app/models/item.rb"
+			],
+			[
+				"restaurant_c",
+				"app/controllers/restaurants_controller.rb"
+			],
+			[
+				"itemscontroller",
+				"app/controllers/items_controller.rb"
+			],
+			[
+				"uploader",
+				"app/uploaders/restaurant_picture_uploader.rb"
+			],
+			[
+				"carrier",
+				"config/initializers/carrierwave.rb"
+			],
+			[
+				"gitignore",
+				".gitignore"
+			],
+			[
+				"",
+				"app/uploaders/restaurant_picture_uploader.rb"
+			],
+			[
+				"restaurantscontr",
+				"app/controllers/restaurants_controller.rb"
+			],
+			[
+				"restaurantuplo",
+				"app/uploaders/restaurant_picture_uploader.rb"
 			],
 			[
 				"restaurn",
@@ -1159,10 +1478,6 @@
 			[
 				"uploaders/",
 				"app/uploaders/restaurant_picture_uploader.rb"
-			],
-			[
-				"restaurant",
-				"app/models/restaurant.rb"
 			],
 			[
 				"restuarantform",
@@ -1189,20 +1504,8 @@
 				"app/models/restaurant.rb"
 			],
 			[
-				"gemfile",
-				"Gemfile"
-			],
-			[
-				"custom",
-				"app/assets/stylesheets/custom.css.scss"
-			],
-			[
 				"cusotm",
 				"app/assets/stylesheets/custom.css.scss"
-			],
-			[
-				"show",
-				"app/views/users/show.html.erb"
 			],
 			[
 				"restaurants_contr",
@@ -1213,20 +1516,12 @@
 				"app/views/users/_item.html.erb"
 			],
 			[
-				"userscontr",
-				"app/controllers/users_controller.rb"
-			],
-			[
 				"restauranthelper",
 				"app/helpers/restaurants_helper.rb"
 			],
 			[
 				"pagesscss",
 				"app/assets/stylesheets/pages.css.scss"
-			],
-			[
-				"userscss",
-				"app/assets/stylesheets/users.css.scss"
 			],
 			[
 				"header",
@@ -1255,10 +1550,6 @@
 			[
 				"application.html",
 				"app/views/layouts/application.html.erb"
-			],
-			[
-				"ajaxitem",
-				"app/views/users/_ajax_item.html.erb"
 			],
 			[
 				"ajaxsec",
@@ -1301,20 +1592,12 @@
 				"app/controllers/sections_controller.rb"
 			],
 			[
-				"item.rb",
-				"app/models/item.rb"
-			],
-			[
 				"section.rb",
 				"app/models/section.rb"
 			],
 			[
 				"item.r",
 				"app/models/item.rb"
-			],
-			[
-				"itemscontr",
-				"app/controllers/items_controller.rb"
 			],
 			[
 				"sectionscontrol",
@@ -1337,10 +1620,6 @@
 				"app/views/users/_item.html.erb"
 			],
 			[
-				"usersection",
-				"app/views/users/_section.html.erb"
-			],
-			[
 				"show.ht",
 				"app/views/users/show.html.erb"
 			],
@@ -1357,10 +1636,6 @@
 				"app/views/layouts/application.html.erb"
 			],
 			[
-				"restaurantscs",
-				"app/assets/stylesheets/restaurants.css.scss"
-			],
-			[
 				"applicationcss",
 				"app/assets/stylesheets/application.css.scss"
 			],
@@ -1371,10 +1646,6 @@
 			[
 				"user",
 				"app/models/user.rb"
-			],
-			[
-				"restaurantscss",
-				"app/assets/stylesheets/restaurants.scss"
 			],
 			[
 				"restar",
@@ -1415,10 +1686,6 @@
 			[
 				"restaurant.sc",
 				"app/assets/stylesheets/restaurants.css.scss"
-			],
-			[
-				"restaurantform",
-				"app/views/restaurants/_form.html.erb"
 			],
 			[
 				"edit.html",
@@ -1471,10 +1738,6 @@
 			[
 				"new_sec",
 				"app/views/partials/section_modals/_new_section_modal.html.erb"
-			],
-			[
-				"edit_item",
-				"app/views/partials/item_modals/_edit_item_modal.html.erb"
 			],
 			[
 				"section.hm",
@@ -1545,112 +1808,8 @@
 				"app/models/section.rb"
 			],
 			[
-				"item.",
-				"app/models/item.rb"
-			],
-			[
-				"",
-				"app/views/partials/section_modals/_edit_section_modal.html.erb"
-			],
-			[
 				"edit_sec",
 				"app/views/partials/section_modals/_edit_section_modal.html.erb"
-			],
-			[
-				"users/sec",
-				"app/views/users/_section.html.erb"
-			],
-			[
-				"item_modalsed",
-				"app/views/partials/item_modals/_edit_item_modal.html.erb"
-			],
-			[
-				"sho",
-				"app/views/users/show.html.erb"
-			],
-			[
-				"new_item",
-				"app/views/partials/item_modals/_new_item_modal.html.erb"
-			],
-			[
-				"add_sec",
-				"db/migrate/20160305175235_add_section_name_to_items.rb"
-			],
-			[
-				"addsec",
-				"db/migrate/20160305175235_add_section_name_to_items.rb"
-			],
-			[
-				"items",
-				"app/controllers/items_controller.rb"
-			],
-			[
-				"items_contr",
-				"app/controllers/items_controller.rb"
-			],
-			[
-				"user.rb",
-				"app/models/user.rb"
-			],
-			[
-				"user.",
-				"app/models/user.rb"
-			],
-			[
-				"user/item",
-				"app/views/users/_item.html.erb"
-			],
-			[
-				"section.html.erb",
-				"app/views/users/_section.html.erb"
-			],
-			[
-				"item.html.erb",
-				"app/views/users/_item.html.erb"
-			],
-			[
-				"ajax_item",
-				"app/views/users/_ajax_item.html.erb"
-			],
-			[
-				"users/section",
-				"app/views/users/_section.html.erb"
-			],
-			[
-				"ajax_sec",
-				"app/views/users/_ajax_section.html.erb"
-			],
-			[
-				"section.html",
-				"app/views/users/_section.html.erb"
-			],
-			[
-				"sectionnew",
-				"app/views/partials/section_modals/_new_section_modal.html.erb"
-			],
-			[
-				"update.js.erb",
-				"app/views/sections/update.js.erb"
-			],
-			[
-				"edit_modal",
-				"app/views/partials/section_modals/_edit_section_modal.html.erb"
-			],
-			[
-				"items_con",
-				"app/controllers/items_controller.rb"
-			],
-			[
-				"routes",
-				"config/routes.rb"
-			],
-			[
-				"registrations_",
-				"app/controllers/registrations_controller.rb"
-			],
-			[
-				"users_con",
-				"app/controllers/users_controller.rb"
 			]
 		],
 		"width": 0.0
@@ -1666,8 +1825,16 @@
 				"~/Documents/Rails/DagwoodShop/Dagwoods/dagwoods.sublime-project"
 			],
 			[
+				"men",
+				"~/Documents/Rails/MenuFactory/menufactory.sublime-project"
+			],
+			[
 				"",
 				"~/Documents/Rails/sample_app/sampleapp.sublime-project"
+			],
+			[
+				"dag",
+				"~/Documents/Rails/DagwoodShop/Dagwoods/dagwoods.sublime-project"
 			],
 			[
 				"sampl",
@@ -1676,10 +1843,6 @@
 			[
 				"sample",
 				"~/Documents/Rails/sample_app/sampleapp.sublime-project"
-			],
-			[
-				"dag",
-				"~/Documents/Rails/DagwoodShop/Dagwoods/dagwoods.sublime-project"
 			],
 			[
 				"pinter",

@@ -80,6 +80,8 @@ GEM
     eventmachine (1.0.9.1)
     excon (0.45.4)
     execjs (2.6.0)
+    fancybox2-rails (0.2.8)
+      railties (>= 3.1.0, < 5.0)
     ffi (1.9.10)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
@@ -363,6 +365,7 @@ DEPENDENCIES
   byebug
   carrierwave
   devise (~> 3.5, >= 3.5.6)
+  fancybox2-rails (~> 0.2.8)
   fog
   font-awesome-rails
   guard-livereload (~> 2.5.2)

@@ -1,26 +1,31 @@
 <div class="page-container">
-  <%= toggleRestaurantInfo(@user) %> <!-- Restaurant Partial -->
-  <div class="menu-layout">
-    <div class="create-buttons">
-      <% if current_user == @user && current_user!= nil %>
+  <div class="restaurant-and-menu-row">
+    <%= toggleRestaurantInfo(@user) %>
+    <div class="menu-layout">
+      <div class="menu-create-buttons">
+        <% if current_user == @user && current_user!= nil %>
         <%= render :partial => 'partials/section_modals/new_section_modal', :locals => {:@sectionNew => current_user.sections.build} %>
-      <% end %>
-    </div>
-    <section class="menu">
-      <div class="sections-list">
-        <% @sections.each do |section| %>
+        <% end %>
+      </div>
+      <section class="menu">
+        <div class="sections-list">
+          <% @sections.each do |section| %>
           <div id="<%= section.id%>-section-and-items" class="section_and_items">
             <%= render :partial => 'users/section', :locals => {:section => section} %>
             <div id="<%= section.id%>-item-list">
               <ul class="items">
                 <% @items.each do |item| %>
-                  <%= render :partial => 'users/item', :locals => {:item => item, :section =>section} %>
+                <%= render :partial => 'users/item', :locals => {:item => item, :section =>section} %>
                 <% end %>
               </ul>
             </div>
-          </div>          
-        <% end %>
-      </div>
-    </section>
+          </div>
+          <% end %>
+        </div>
+      </section>
+    </div>
   </div>
+  <section class="items-gallery-row">
+    <%= render :partial => 'items/gallery' %>
+  </section>
 </div>

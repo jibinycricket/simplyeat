@@ -7,150 +7,165 @@ $container-width-large: 500px;
 $container-width-mobile: 250px;
 
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+.restaurant-and-menu-row{
+  @include span-columns(12);
+  .menu-layout{
+    @include span-columns(3 of 12);
+    @include shift(3 of 12);
 
-.menu-layout{
-  @include span-columns(4);
-  .menu-create-buttons{
-    .modal-trigger{
-      border-style: solid;
-      width: 200px;
-      float: left;
-      margin: 0 10px 10px 0;
-      text-align: center;
-      &:hover{
-        background: $theme-color-1;
-      }
-    }
-  }
-
-  .menu{
-    clear: left;
-    .section_and_items{
-      box-shadow: 1px 1px 5px #888888;
-      background-color: $theme-color-1;
-      min-width: $container-width-mobile;
-      max-width: $container-width-large;
-      border-style: solid;
-      border-radius: 1px;
-      margin-bottom: 10px;
-      padding: 5px 0px;
-      font-family: 'Quicksand', sans-serif;
-    }
-    .section{
-      padding: 10px;
-      border-style: solid;
-      border-width: 1px;
-      display: block;
-      overflow: auto;
-      background: white;
-      min-width: $mobile-width;
-      max-width: $large-width;
-      margin: 0 auto;
-      .section-name{
-        font-size: 30px;
-        margin-right: 0%;
-        float: left;
-        font-weight: 700;
-      }
-      .fa{
-        font-size: 1em;
-      }
-      li{
-        
-        a{
-          color: $theme-color-3;
-        }
-
-        .delete-section{
-          clear: left;
-          float: right;
-          padding: 5px;
-          vertical-align: center;
-          border-style: solid;
-          &:hover{
-              background: $theme-color-2;
-          }
-        }
-
-        .edit-section{
-          float: right;
-          margin-right: 10px;
-          padding: 5px;
-          border-style: solid;
-          &:hover{
-            background: $theme-color-1;
-          }
-        }
-
-        .add-item{
-          float: right;
-          padding: 5px;
-          margin-right: 10px;
-          border-style: solid;
-          &:hover{
-            background: $theme-color-1;
-          }
-        }
-      }
-    }
-  }
-
-  .items{
-    background: white;
-    border-style: solid;
-    border-width: 1px;
-    border-top-width: 0px;
-    padding: 5px 10px;
-    min-width: $mobile-width;
-    max-width: $large-width;
-    margin: 0 auto;
-    .item{
-      a{
-        color: $theme-color-3;
-      }
-      .item-name{
-        float: left;
-        font-size: 20px;
-      }
-      .item-price{
-        float: right;
-        font-size: 20px;
-      }
-      .clearfix{
-        clear: right;
-      }
-      .item-line-seperator{
-        height: 1px;
-        border-bottom: 1px solid $theme-color-1;
-        margin-bottom: 10px;
-      }
-      .item-description{
-        font-size: 15px;
-        clear: right;
-        color: #517B8D;
-      }
-      .edit-item{
+    .menu-create-buttons{
+      .modal-trigger{
         border-style: solid;
-        margin: 0px;
-        padding: 5px;
-        float: right;
-        width: 30px;
+        width: 200px;
+        margin: 10px;
         text-align: center;
-        &:hover{
-          background: $theme-color-1;
-        }
-      }
-      .delete-item{
-        border-style: solid;
-        width: 30px;
-        padding: 5px;
-        margin-left: 10px;
         float: right;
-        text-align: center;
         &:hover{
           background: $theme-color-2;
         }
       }
     }
+
+    .menu{
+      clear: right;
+      .section_and_items{
+        box-shadow: 1px 1px 5px #888888;
+        background-color: $theme-color-1;
+        min-width: $container-width-mobile;
+        border-style: solid;
+        border-radius: 1px;
+        margin-bottom: 10px;
+        padding: 5px 0px;
+        font-family: 'Quicksand', sans-serif;
+      }
+      .section{
+        padding: 10px;
+        border-style: solid;
+        border-width: 1px;
+        display: block;
+        overflow: auto;
+        background: white;
+        min-width: $mobile-width;
+        margin: 0 auto;
+        .section-name{
+          font-size: 30px;
+          margin-right: 0%;
+          float: left;
+          font-weight: 700;
+        }
+        .fa{
+          font-size: 1em;
+        }
+        li{
+          
+          a{
+            color: $theme-color-3;
+          }
+
+          .delete-section{
+            clear: left;
+            float: right;
+            padding: 5px;
+            vertical-align: center;
+            border-style: solid;
+            &:hover{
+                background: $theme-color-2;
+            }
+          }
+
+          .edit-section{
+            float: right;
+            margin-right: 10px;
+            padding: 5px;
+            border-style: solid;
+            &:hover{
+              background: $theme-color-1;
+            }
+          }
+
+          .add-item{
+            float: right;
+            padding: 5px;
+            margin-right: 10px;
+            border-style: solid;
+            &:hover{
+              background: $theme-color-1;
+            }
+          }
+        }
+      }
+    }
+
+    .items{
+      background: white;
+      border-style: solid;
+      border-width: 1px;
+      border-top-width: 0px;
+      padding: 5px 10px;
+      min-width: $mobile-width;
+      margin: 0 auto;
+      .item{
+        a{
+          color: $theme-color-3;
+        }
+        .item-name{
+          float: left;
+          font-size: 20px;
+        }
+        .item-price{
+          float: right;
+          font-size: 20px;
+        }
+        .clearfix{
+          clear: right;
+        }
+        .item-line-seperator{
+          height: 1px;
+          border-bottom: 1px solid $theme-color-1;
+          margin-bottom: 10px;
+        }
+        .item-description{
+          font-size: 15px;
+          clear: right;
+          color: #517B8D;
+        }
+        .edit-item{
+          border-style: solid;
+          margin: 0px;
+          padding: 5px;
+          float: right;
+          width: 30px;
+          text-align: center;
+          &:hover{
+            background: $theme-color-1;
+          }
+        }
+        .delete-item{
+          border-style: solid;
+          width: 30px;
+          padding: 5px;
+          margin-left: 10px;
+          float: right;
+          text-align: center;
+          &:hover{
+            background: $theme-color-2;
+          }
+        }
+      }
+    }
   }
 }
+
+.items-gallery-row{
+  @include span-columns(12);
+  border-radius: 10px;
+  text-align: center;
+  height: 500px;
+  border-style: solid;
+  .item-image{
+    display: inline-block;
+    margin: 10px;
+    border-style: solid;
+  }
+}
+

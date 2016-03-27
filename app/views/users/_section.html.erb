@@ -3,7 +3,7 @@
     <li class="section-name">
       <%= section.name %>
     </li>
-    <% if current_user.id == @user.id %>
+    <% if current_user == @user && current_user != nil %>
       <li>
         <%= link_to section, remote: true, method: :delete do %>
           <div class="delete-section">

@@ -1,10 +1,10 @@
+
 .restaurant-info{
-  @include span-columns(5);
+  @include span-columns(4 of 12);
   border-style: solid;
-  height: 100%;
   min-width: 300px;
-  max-width: 500px;
-  margin: 0% 20% 10% 0%;
+  margin: 0% 10% 10% 0%;
+  margin-right: 50px;
   background-color: $theme-color-1;
   padding: 10px;
   box-shadow: 1px 1px 5px #888888;
