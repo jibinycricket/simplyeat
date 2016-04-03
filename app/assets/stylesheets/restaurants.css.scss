@@ -1,25 +1,134 @@
+.store-header{
+  color: #E0E3DA;
+  .upper-half{
+    @include span-columns(12);
+    color: $theme-color-5;
+    background-color: $theme-color-3;
+    min-height: 200px;
+    .store-name{
+      color: $theme-color-5;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 35px;
+      text-align: center;
+      position: relative;
+      margin-top: 40px;
+      @include media(max-width 700px){
+        font-size: 2em;
+      }
+      @include media(max-width 600px){
+        font-size: 1.8em;
+      }
+    }
 
-.restaurant-info{
-  @include span-columns(4 of 12);
-  border-style: solid;
-  min-width: 300px;
-  margin: 0% 10% 10% 0%;
-  margin-right: 50px;
-  background-color: $theme-color-1;
-  padding: 10px;
-  box-shadow: 1px 1px 5px #888888;
-  .restaurant-content{
-    background-color: white;
+  }
+  .halves-break{
+    @include span-columns(12);
+    height: 4px;
+    background-color: $theme-color-2;
+  }
+
+  @include keyframes(break-expand){
+    from{
+      width: 0%;
+      background-color: white;
+    }
+    to{
+      width: 100%;
+      background-color: $theme-color-2;
+    }
+  }
+
+  .halves-break-expand{
+    animation-name: break-expand;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+
+  .lower-half{
+    @include outer-container(90%);
+    background-color: $theme-color-1;
+    font-size: 1.3em;
+    @include font-heading;
+    .store-info-row{
+      margin: 20px 0px;
+      @include span-columns(12);
+      .store-address-column{
+        @include span-columns(6 of 12);
+        margin-top: -70px;
+      }
+      .store-profile-pic-column{
+        @include span-columns(12 of 12);
+        .profile-pic{
+          box-shadow: 2px 2px 3px #1D1D1D;
+          background-position: left;
+          margin: -120px auto 0 auto;
+          height: 200px;
+          width: 200px;
+          border-width: 3px;
+          position: relative;
+          border-radius: 100%;
+          border-style: solid;
+          border-color: $theme-color-2;
+          z-index: 1;
+        }
+      }
+      .store-contact-column{
+        @include span-columns(6 of 12);
+        margin-top: -70px;
+        .store-contact{
+          text-align: right;
+          a{
+            padding: 0 10px;
+            color: $theme-color-3;
+            &:hover{
+              color: $theme-color-2;
+            }
+          }
+        }
+      }
+    }
+    .store-description-row{
+      @include span-columns(12);
+      .description{
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        margin: 10px 0px;
+      }
+    }
+  }
+}
+
+.restaurant-form{
+  .restaurant-info-form-fields{
     border-style: solid;
-    text-align: center;
-    .restaurant-name{
-      font-size: 120%;
+    @include span-columns(12);
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .restaurant-form-second-row{
+    @include span-columns(12);
+    height: 450px;
+    .address-form-fields{
+      @include span-columns(6 of 12);
+      padding: 10px;
+      height: 100%;
+      border-style: solid;
+      background-color: white;
+      border-radius: 10px;
     }
-    .restaurant-category{
-      font-size: 120%;
+    .contact-info-form-fields{
+      padding: 10px;
+      height: 100%;
+      @include span-columns(6 of 12);
+      border-style: solid;
+      background-color: white;
+      border-radius: 10px;
     }
-    .restaurant-address{
-      font-size: 120%;
-    }
+  }
+  .restaurant-form-submit{
+    @include span-columns(12);
   }
 }

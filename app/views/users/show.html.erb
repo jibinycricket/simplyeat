@@ -1,7 +1,36 @@
+<div class="store-header">
+  <div class="upper-half">
+    <h1 class="store-name"><%= @restaurant.name %></h1>
+  </div>
+  <div class="halves-break halves-break-expand"></div>
+  <div class="lower-half">
+    <div class="store-info-row">
+      <div class="store-profile-pic-column">
+        <div class="profile-pic" style="background-image: url(<%= @restaurant.restaurant_picture.medium_pic %>); ">
+        </div>
+      </div>
+      <div class="store-address-column">
+        <h2 class="store-address">
+        <%= @restaurant.street_number.to_s + " " + @restaurant.street_name%><br/>
+        <%= @restaurant.city %><br/>
+        <%= @restaurant.state + " " + @restaurant.zip_code.to_s %>
+        </h2>
+      </div>
+      <div class="store-contact-column">
+        <%= render 'restaurants/social_links' %>
+      </div>
+    </div>
+    
+    <div class="store-description-row">
+      <h3 class="description">
+      <%= @restaurant.description %>
+      </h3>
+    </div>
+  </div>
+</div>
 <div class="page-container">
-  <div class="restaurant-and-menu-row">
-    <%= toggleRestaurantInfo(@user) %>
-    <div class="menu-layout">
+  <div class="menu-and-gallery-row">
+    <div class="menu-column">
       <div class="menu-create-buttons">
         <% if current_user == @user && current_user!= nil %>
         <%= render :partial => 'partials/section_modals/new_section_modal', :locals => {:@sectionNew => current_user.sections.build} %>
@@ -24,8 +53,8 @@
         </div>
       </section>
     </div>
+    <section class="gallery-column">
+      <%= render :partial => 'items/gallery' %>
+    </section>
   </div>
-  <section class="items-gallery-row">
-    <%= render :partial => 'items/gallery' %>
-  </section>
 </div>

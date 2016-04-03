@@ -13,8 +13,10 @@ body{
   }
 }
 .navigation {
+  @include span-columns(12);
   height: $nav-height;
   background: $nav-background;
+  float: none;
 }
 
 // Logo and branding

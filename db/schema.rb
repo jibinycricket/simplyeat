@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160326012205) do
+ActiveRecord::Schema.define(version: 20160330021616) do
 
   create_table "items", force: :cascade do |t|
     t.string   "name"
@@ -45,6 +45,8 @@ ActiveRecord::Schema.define(version: 20160326012205) do
     t.string   "instagram"
     t.string   "twitter"
     t.string   "restaurant_picture"
+    t.string   "city"
+    t.text     "description"
   end
 
   add_index "restaurants", ["user_id"], name: "index_restaurants_on_user_id"

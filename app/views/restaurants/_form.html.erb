@@ -1,27 +1,61 @@
-<%= form_for @restaurant, :html =>{:multipart =>true } do |f| %>
-  <%= f.label :name, "Name of Restaurant" %>
-  <%= f.text_field(:name, class: "form-control") %>
+<div class="restaurant-form">
+  <%= form_for @restaurant, :html =>{:multipart =>true } do |f| %>
+    <div class="restaurant-info-form-fields">
+      <%= f.label :name, "Name of Restaurant" %>
+      <%= f.text_field(:name, class: "form-control") %>
 
-  <%= f.label "Are you open today?" %>
-  <%= f.check_box :isOpen %>
+      <%= f.label "Are you open today?" %>
+      <%= f.check_box :isOpen %>
 
-  <%= f.label "Type of Cuisine" %>
-  <%= f.text_field(:category, class: "form-control") %>
-  
-  <%= f.label :street_number, "Street Number" %>
-  <%= f.number_field(:street_number, class: "form-control") %>
+      <%= f.label "Type of Cuisine" %>
+      <%= f.text_field(:category, class: "form-control") %>
 
-  <%= f.label :street_name, "Street Name" %>
-  <%= f.text_field(:street_name, class: "form-control") %>
+      <%= f.label :description, "Personal Introduction" %>
+      <%= f.text_field :description, class: "form-control" %>
 
-  <%= f.label :state, "State" %>
-  <%= f.select :state, options_for_select(us_states) %>
+      <div class="field">
+        <%= f.file_field :restaurant_picture %>
+      </div>
+    </div>
+    <div class="restaurant-form-second-row">
+      <div class="address-form-fields">
+        <%= f.label :street_number, "House Number" %>
+        <%= f.number_field(:street_number, class: "form-control") %>
 
-  <%= f.label :zip_code, "Zip Code" %>
-  <%= f.number_field :zip_code, class: "form-control" %>
-  <div class="field">
-    <%= f.file_field :restaurant_picture %>
-  </div>
+        <%= f.label :street_name, "Street Name" %>
+        <%= f.text_field(:street_name, class: "form-control") %>
 
-  <%= f.submit %>
-<% end %>
+        <%= f.label :city, "City" %>
+        <%= f.text_field(:city, class: "form-control") %>
+
+        <%= f.label :state, "State" %>
+        <%= f.select :state, options_for_select(us_states) %>
+
+        <%= f.label :zip_code, "Zip Code" %>
+        <%= f.number_field :zip_code, class: "form-control" %>
+      </div>
+      
+      <div class="contact-info-form-fields">
+        <%= f.label :phone_number, "Phone Number" %>
+        <%= f.telephone_field :phone_number, class: "form-control" %>
+
+        <%= f.label :email, "Email" %>
+        <%= f.email_field :email, class: "form-control" %>
+
+        <%= f.label :facebook, "Facebook" %>
+        <%= f.text_field :facebook, class: "form-control", placeholder: "facebook.com/businessname" %>
+
+        <%= f.label :instagram, "Instagram" %>
+        <%= f.text_field :instagram, class: "form-control", placeholder: "instagram.com/businessname" %>
+
+        <%= f.label :twitter, "Twitter" %>
+        <%= f.text_field :twitter, class: "form-control", placeholder: "twitter.com/businessname" %>
+      </div>
+    </div>
+    <div class="restaurant-form-submit">
+      <div class="form-submit">
+        <%= f.submit %>
+      </div>
+    </div>
+  <% end %>
+</div>

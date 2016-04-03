@@ -24,7 +24,7 @@ class RestaurantsController < ApplicationController
 
   def update
     if current_user.restaurant.update(restaurant_params)
-      redirect_to menu_path
+      redirect_to directory_path
       flash[:success] = "Restaurant information has been updated"
     else
       redirect_to edit_restaurant_path
@@ -35,6 +35,6 @@ class RestaurantsController < ApplicationController
 
   private
     def restaurant_params
-      params.require(:restaurant).permit(:name, :isOpen, :category, :street_number, :street_name, :state, :zip_code, :restaurant_picture, :remove_restaurant_picture)
+      params.require(:restaurant).permit(:name, :isOpen, :category, :street_number, :street_name, :city, :state, :zip_code, :restaurant_picture, :remove_restaurant_picture, :phone_number, :description, :email, :facebook, :twitter, :instagram)
     end
 end

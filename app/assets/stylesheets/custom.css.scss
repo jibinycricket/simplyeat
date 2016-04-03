@@ -1,11 +1,14 @@
-$theme-color-1: #69D2E7;
-$theme-color-2: #A7DBD8;
-$theme-color-3: #c0392b;
-$theme-color-4: #E0E4CC;
-$theme-color-5: #FA6900;
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700,400);
+
+$theme-color-1: #2B2B2B;
+$theme-color-2: #DE1B1B;
+$theme-color-3: #F6F6F6;
+$theme-color-4: #E9E581;
+$theme-color-5: rgb(60, 59, 59);
 
 body{
-  background: $theme-color-4;
+  background: $theme-color-1;
+  font-family: 'Lato', sans-serif;
 }
 
 .form-container{
@@ -16,7 +19,7 @@ body{
 .page-container{
   @include outer-container(80%);
   margin-top: 15px;
-  color: $theme-color-3;
+  color: $theme-color-5;
 }
 
 //Error Messages
