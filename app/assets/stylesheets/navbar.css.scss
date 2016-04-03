@@ -8,8 +8,13 @@ $link-hover-color: #2581DC;
 body{
   margin: 0px;
   color: white;
+  background: $theme-color-1;
+  font-family: 'Lato', sans-serif;
   a{
-    color: $theme-color-1;
+    color: $theme-color-4;
+    &:hover{
+      color: $theme-color-2;
+    }
   }
 }
 .navigation {

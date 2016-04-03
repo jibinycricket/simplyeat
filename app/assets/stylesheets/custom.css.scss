@@ -6,10 +6,6 @@ $theme-color-3: #F6F6F6;
 $theme-color-4: #E9E581;
 $theme-color-5: rgb(60, 59, 59);
 
-body{
-  background: $theme-color-1;
-  font-family: 'Lato', sans-serif;
-}
 
 .form-container{
   @include outer-container(30%);

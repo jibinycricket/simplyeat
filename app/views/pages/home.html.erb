@@ -1,5 +1,10 @@
 <section id="banner">
   <div id="banner-overlay">
+  <% if user_signed_in? && @user.restaurant.blank? %>
+    <div class="message">
+      Next step is to fill out the form in <%= link_to "Store Info", new_restaurant_path %>
+    </div>
+  <% end %>
     <div class="hero">
       <div class="hero-inner">
         <div class="hero-copy">

@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   before_action :authenticate_user!, :except => [:home, :directory]
 
   def home
+    @user = current_user
   end
 
   def menu
