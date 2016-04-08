@@ -1,3 +1,38 @@
+/*************Intro Parallax*******/
+$parallax-window-height: 30em;
+$parallax-background-height: $parallax-window-height * 2;
+  $hero-image: 'hero.jpg';
+
+.parallax-window {
+  max-height: $parallax-window-height;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.parallax-static-content {
+  color: #9A9A8A;
+  padding: 8em 0;
+  position: relative;
+  z-index: 9;
+}
+
+.parallax-background {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url($hero-image);
+  background-position: top;
+  background-size: cover;
+  background-color: beige;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 3;
+  width: 100%;
+}
+
+
+
+
 /************ Intro Banner ********/
 
 #banner-overlay{
@@ -11,7 +46,7 @@
   $hero-background-bottom: #20392B;
   $hero-color: $theme-color-4;
   $gradient-angle: 10deg;
-  $hero-image: 'http://thumbs.dreamstime.com/z/dinner-menu-1090281.jpg';
+  height: 500px;
 
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url($hero-image);
   background-color: #324766;

@@ -1,30 +1,25 @@
 <header>
-<section class="navigation">
-    <div class="nav-container">
-      <div class="brand">
-        <%= link_to "Menu Factory", root_path %>
-      </div>
-      <nav>
-        <div class="nav-mobile">
-          <a href="#!" id="nav-toggle"><span></span></a>
-        </div>
-        <ul class="nav-list">
-          <% unless user_signed_in? %>
-          <li><%= link_to "Directory", users_path %></li>
-          <% else %>
-            <li><%= link_to "Home", root_path %></li>
-            <li><%= link_to "Directory", directory_path %></li>
-            <li><%= link_to "Design Menu", current_user %></li>
-            <li><%= link_to "Store Info", chooseRestaurantPath(current_user) %></li>
-            <li>
-              <%= link_to "Account Settings", edit_user_registration_path %>
-            </li>
-            <li>
-              <%= link_to("Log Out", destroy_user_session_path, :method => :delete) %>
-            </li> 
-          <% end %>
-        </ul>
-      </nav>
-    </div>
-  </section>
+  <div class="brand">
+    <a href="#">SimplEat</a>
+  </div>
+
+  <button class="hamburger hamburger-x">
+    <span></span>
+  </button>
+
+  <nav class="nav-menu nav-menu-vertical nav-menu-left">
+    <ul class="upper-nav">
+      <h3>Menu</h3>
+      <li><a href="#">Design</a></li>
+      <li><a href="#">Store Info</a></li>
+      <li><a href="#">Directory</a></li>
+      <li><a href="#">User</a>
+      <ul class="lower-nav">
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Log Out</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<span class="clearfix">
 </header>
