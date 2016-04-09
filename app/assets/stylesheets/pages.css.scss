@@ -15,7 +15,7 @@
 /*************Intro Parallax*******/
 $parallax-window-height: 40em;
 $parallax-background-height: $parallax-window-height * 2;
-$parallax-image: 'hero.jpg';
+$parallax-image: './hero.jpg';
 
 .parallax-window {
   max-height: $parallax-window-height;
