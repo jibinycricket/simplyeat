@@ -1,7 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Cantarell:700);
+
+@mixin font-italic(){
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin font-heading(){
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+
 /*************Intro Parallax*******/
-$parallax-window-height: 30em;
+$parallax-window-height: 40em;
 $parallax-background-height: $parallax-window-height * 2;
-  $hero-image: 'hero.jpg';
+$parallax-image: 'hero.jpg';
 
 .parallax-window {
   max-height: $parallax-window-height;
@@ -9,18 +23,35 @@ $parallax-background-height: $parallax-window-height * 2;
   position: relative;
   text-align: center;
   width: 100%;
+  height: 650px;
 }
 
 .parallax-static-content {
   color: #9A9A8A;
   padding: 8em 0;
   position: relative;
+  top: 20%;
   z-index: 9;
+  h1{
+    font-size: 5em;
+    margin: 0px;
+    color: white;
+    .name-first-half{
+      @include font-italic;
+    }
+    .name-second-half{
+      color: $theme-color-2;
+      font-family: 'Cantarell', sans-serif; 
+    }
+  }
+  p{
+    color: white;
+  }
 }
 
 .parallax-background {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url($hero-image);
-  background-position: top;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url($parallax-image);
+  background-position: 0px -200px;
   background-size: cover;
   background-color: beige;
   height: $parallax-background-height;
@@ -31,79 +62,14 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 
-
-
-/************ Intro Banner ********/
-
-#banner-overlay{
-}
-
-.hero {  
-  $base-border-radius: 3px !default;
-  $action-color: #477DCA !default;
-  $large-screen: em(860) !default;
-  $hero-background-top: #7F99BE; 
-  $hero-background-bottom: #20392B;
-  $hero-color: $theme-color-4;
-  $gradient-angle: 10deg;
-  height: 500px;
-
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url($hero-image);
-  background-color: #324766;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 3em;
-
-  .hero-logo img {
-    height: 4em;
-    margin-bottom: 1em;
-  }
-
-  .hero-inner {
-    @include clearfix;
-    margin: auto;
-    padding: 3.5em;
-    text-align: center;
-
-    .hero-copy {
-      text-align: center;
-      
-      #title {
-        color: $hero-color;
-        font-size: 1.6em;
-        margin-bottom: 0.5em;
-
-        @include media($large-screen) {
-          font-size: 1.8em;
-        }
-      }
-
-      p {
-        color: $hero-color;
-        line-height: 1.4em;
-        margin: 0 auto 3em auto; 
-
-        @include media($large-screen) {
-          font-size: 1.1em;
-          max-width: 40%;
-        }
-      }
-
-      .registration-partial-container{
-        display: inline-block;
-      }
-
-
-    }
-  }
-}
-
 /******* Registration/Login Buttons *****/
+.registration-partial-signup, .registration-partial-login{
+  display: inline-block;
+}
+
 .registration-button{
   display: inline-block;
   width: 200px;
-  padding: 8px;
   color: #fff;
   border: 1px solid $theme-color-4;
   text-align: center;
@@ -122,7 +88,7 @@ $parallax-background-height: $parallax-window-height * 2;
 .modal {
   $base-border-color: #dcdcdc !default;
   $base-border-radius: 3px !default;
-  $base-background-color: $theme-color-3;
+  $base-background-color: $theme-color-1;
   $base-font-size: 1em !default;
   $base-line-height: 1.5em !default;
   $action-color: #477dca !default;
@@ -221,17 +187,18 @@ $parallax-background-height: $parallax-window-height * 2;
     @include media($medium-screen) {
       max-height: 75%;
       padding: $modal-padding;
-      width: 60%;
+      width: 70%;
     }
 
     @include media($large-screen) {
-      width: 50%;
+      width: 70%;
     }
 
     h1 {
       color: white;
       text-align: left;
       text-transform: capitalize;
+      font-size: 1.5em;
     }
 
     p {

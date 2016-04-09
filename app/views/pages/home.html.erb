@@ -1,5 +1,5 @@
 <section id="banner">
-  <div id="banner-overlay">
+  <div>
     <% if user_signed_in? && @user.restaurant.blank? %>
     <div class="message">
       Next step is to fill out the form in <%= link_to "Store Info", new_restaurant_path %>
@@ -7,16 +7,18 @@
     <% end %>
     <div id="js-parallax-window" class="parallax-window">
       <div class="parallax-static-content">
-        <h1 id="title">Menu Factory</h1>
-        <p>Design a dynamic menu without the hassle</p>
+        <h1 id="title">
+        <span class="name-first-half">simply</span><span class="name-second-half">Eat</span>
+        </h1>
+        <p>Show off only the essentials</p>
         <% if !(user_signed_in?) %>
-        <div class="registration-partial-container">
-          <%= render 'partials/user_session/sign_up_modal' %>
-        </div>
-        <div class="registration-partial-container">
-          <%= render 'partials/user_session/log_in_modal' %>
-        </div>
-        <% end %>
+          <div class="registration-partial-signup">
+            <%= render 'partials/user_session/sign_up_modal' %>
+          </div>
+          <div class="registration-partial-login">
+            <%= render 'partials/user_session/log_in_modal' %>
+          </div>
+          <% end %>
       </div>
       <div id="js-parallax-background" class="parallax-background"></div>
     </div>

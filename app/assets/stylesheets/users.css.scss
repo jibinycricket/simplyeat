@@ -86,7 +86,7 @@ $container-width-mobile: 250px;
             padding: 5px;
             border-style: solid;
             &:hover{
-              background: $theme-color-1;
+              background: $theme-color-4;
             }
           }
 
@@ -96,7 +96,7 @@ $container-width-mobile: 250px;
             margin-right: 10px;
             border-style: solid;
             &:hover{
-              background: $theme-color-1;
+              background: $theme-color-4;
             }
           }
         }
@@ -142,7 +142,6 @@ $container-width-mobile: 250px;
         }
         .edit-item{
           border-style: solid;
-          border-color: white;
           color: white;
           margin: 0px;
           padding: 5px;
@@ -150,7 +149,7 @@ $container-width-mobile: 250px;
           width: 30px;
           text-align: center;
           &:hover{
-            background: $theme-color-1;
+            background: $theme-color-4;
           }
         }
         .delete-item{

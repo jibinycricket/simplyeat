@@ -1,25 +1,38 @@
 <header>
   <div class="brand">
-    <a href="#">SimplEat</a>
+    <%= link_to root_path do %>
+      <span class = "brand-half-1">simply</span><span class = "brand-half-2">Eat</span>
+    <% end %>
   </div>
-
   <button class="hamburger hamburger-x">
-    <span></span>
+  <span></span>
   </button>
-
   <nav class="nav-menu nav-menu-vertical nav-menu-left">
     <ul class="upper-nav">
-      <h3>Menu</h3>
-      <li><a href="#">Design</a></li>
-      <li><a href="#">Store Info</a></li>
-      <li><a href="#">Directory</a></li>
-      <li><a href="#">User</a>
-      <ul class="lower-nav">
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">Log Out</a></li>
-      </ul>
-    </li>
+      <h3><span class = "brand-half-1">simply</span><span class = "brand-half-2">Eat</span></h3>
+      <% if user_signed_in? %>
+        <% @restaurant = Restaurant.find_by(user_id: current_user.id) %>
+        <% unless @restaurant.nil? %>
+          <li><%= link_to "Design", current_user %></li>
+        <% end %>
+        <li>
+          <% if @restaurant.nil? %>
+            <%= link_to "Store Info", new_restaurant_path %>
+          <% else %>
+            <%= link_to "Store Info", edit_restaurant_path(current_user) %>
+          <% end %>
+        </li>
+        <li><%= link_to "Directory", users_path %></li>
+        <li><a href="#"><%= current_user.user_name %></a>
+        <ul class="lower-nav">
+          <li><%= link_to "Account", edit_user_registration_path(current_user) %></li>
+          <li>
+            <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+          </li>
+        </ul>
+      </li>
+    <% end %>
   </ul>
 </nav>
-<span class="clearfix">
+<br class="clearfix">
 </header>
