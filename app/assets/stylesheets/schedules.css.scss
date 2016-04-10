@@ -1,0 +1,16 @@
+// Place all the styles related to the schedules controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.schedule-form{
+  text-align: center;
+  //@include span-columns(12);
+  .day-fields{
+    display: inline-table;
+    input{
+      width: 120px;
+    }
+  }
+  .clear-fix{
+    position: relative;
+  }
+}

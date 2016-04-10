@@ -63,4 +63,12 @@ module RestaurantsHelper
       render partial: 'restaurants/restaurant_info'
     end
   end
+
+  def chooseRestaurantPath(restaurant)
+    if restaurant.nil? 
+      new_restaurant_path 
+    else 
+      edit_restaurant_path(current_user) 
+    end 
+  end
 end

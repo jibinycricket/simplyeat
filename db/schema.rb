@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160330021616) do
+ActiveRecord::Schema.define(version: 20160410033414) do
 
   create_table "items", force: :cascade do |t|
     t.string   "name"
@@ -50,6 +50,33 @@ ActiveRecord::Schema.define(version: 20160330021616) do
   end
 
   add_index "restaurants", ["user_id"], name: "index_restaurants_on_user_id"
+
+  create_table "schedules", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.time     "monStart"
+    t.time     "monEnd"
+    t.boolean  "monOpen"
+    t.time     "tueStart"
+    t.time     "tueEnd"
+    t.boolean  "tueOpen"
+    t.time     "wedStart"
+    t.time     "wedEnd"
+    t.boolean  "wedOpen"
+    t.time     "thuStart"
+    t.time     "thuEnd"
+    t.boolean  "thuOpen"
+    t.time     "friStart"
+    t.time     "friEnd"
+    t.boolean  "friOpen"
+    t.integer  "user_id"
+    t.time     "satStart"
+    t.time     "satEnd"
+    t.boolean  "satOpen"
+    t.time     "sunStart"
+    t.time     "sunEnd"
+    t.boolean  "sunOpen"
+  end
 
   create_table "sections", force: :cascade do |t|
     t.string   "name"

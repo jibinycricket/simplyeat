@@ -1,7 +1,7 @@
 <header>
   <div class="brand">
     <%= link_to root_path do %>
-      <span class = "brand-half-1">simply</span><span class = "brand-half-2">Eat</span>
+    <span class = "brand-half-1">simply</span><span class = "brand-half-2">Eat</span>
     <% end %>
   </div>
   <button class="hamburger hamburger-x">
@@ -9,19 +9,16 @@
   </button>
   <nav class="nav-menu nav-menu-vertical nav-menu-left">
     <ul class="upper-nav">
-      <h3><span class = "brand-half-1">simply</span><span class = "brand-half-2">Eat</span></h3>
+      <h3>
+        <span class = "brand-half-1">simply</span><span class = "brand-half-2">Eat</span>
+      </h3>
       <% if user_signed_in? %>
         <% @restaurant = Restaurant.find_by(user_id: current_user.id) %>
+        <li><%= link_to "Schedule", chooseSchedulePath() %></li>
         <% unless @restaurant.nil? %>
           <li><%= link_to "Design", current_user %></li>
         <% end %>
-        <li>
-          <% if @restaurant.nil? %>
-            <%= link_to "Store Info", new_restaurant_path %>
-          <% else %>
-            <%= link_to "Store Info", edit_restaurant_path(current_user) %>
-          <% end %>
-        </li>
+        <li><%= link_to "Store Info", chooseRestaurantPath(@restaurant) %></li>
         <li><%= link_to "Directory", users_path %></li>
         <li><a href="#"><%= current_user.user_name %></a>
         <ul class="lower-nav">

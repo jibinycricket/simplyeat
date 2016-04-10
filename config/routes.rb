@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   resources :items
   resources :users, :only => [:show]
   resources :restaurants
+  resources :schedules
 end

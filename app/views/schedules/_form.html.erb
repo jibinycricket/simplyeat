@@ -1,0 +1,42 @@
+<div class="schedule-form form-container">
+  <%= form_for(@schedule) do |f| %>
+    <div class="day-fields">
+      <%= f.label :sunday %>
+      <%= f.time_field :sunStart %>
+      <%= f.time_field :sunEnd %>
+    </div>
+    <div class="day-fields">
+      <%= f.label :monday %>
+      <%= f.time_field :monStart %>
+      <%= f.time_field :monEnd %>
+    </div>
+    <div class="day-fields">
+      <%= f.label :tuesday %>
+      <%= f.time_field :tueStart %>
+      <%= f.time_field :tueEnd %>
+    </div>
+    <div class="day-fields">
+      <%= f.label :wednesday %>
+      <%= f.time_field :wedStart %>
+      <%= f.time_field :wedEnd %>
+    </div>
+    <div class="day-fields">
+      <%= f.label :thursday %>
+      <%= f.time_field :thuStart %>
+      <%= f.time_field :thuEnd %>
+    </div>
+    <div class="day-fields">
+      <%= f.label :friday %>
+      <%= f.time_field :friStart %>
+      <%= f.time_field :friEnd %>
+    </div>
+    <div class="day-fields">
+      <%= f.label :saturday %>
+      <%= f.time_field :satStart %>
+      <%= f.time_field :satEnd %>
+    </div>
+    <div class="clear-fix">
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>

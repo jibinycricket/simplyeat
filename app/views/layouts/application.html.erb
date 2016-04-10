@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
   <body>
-      <%= render 'partials/messages' %>
-      <%= render 'layouts/header' %>
-      <%= devise_error_messages! %>
-      <%= yield %>
-      <%= debug(params) if Rails.env.development? %>
+    <%= render 'partials/messages' %>
+    <%= render 'layouts/header' %>
+    <%= devise_error_messages! %>
+    <%= yield %>
+    <%= debug(params) if Rails.env.development? %>
   </body>
 </html>
