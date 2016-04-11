@@ -8,5 +8,6 @@ class UsersController < ApplicationController
     @sections = @user.sections
     @items = @user.items
     @restaurant = @user.restaurant;
+    @schedule = @user.schedule;
   end
 end

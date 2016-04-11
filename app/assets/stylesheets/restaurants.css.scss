@@ -46,6 +46,7 @@
   }
 
   .lower-half{
+    min-width: 320px;
     @include outer-container(90%);
     background-color: $theme-color-1;
     font-size: 1.3em;
@@ -56,11 +57,18 @@
       .store-address-column{
         @include span-columns(6 of 12);
         margin-top: -70px;
+        @include media(max-width 650px){
+          @include span-columns(12 of 12);
+          border-style: solid;
+          margin: 10px 0px;
+          text-align: center;
+        }
       }
       .store-profile-pic-column{
         @include span-columns(12 of 12);
         .profile-pic{
           box-shadow: 2px 2px 3px #1D1D1D;
+          background-color: white;
           background-position: left;
           margin: -120px auto 0 auto;
           height: 200px;
