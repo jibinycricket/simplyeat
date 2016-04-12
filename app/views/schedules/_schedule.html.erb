@@ -1,6 +1,6 @@
 <h2>Hours</h2>
 <ul>
-  <li>M: <%= x = mToCTime(@schedule.monStart.to_s(:time)) %> - <%= mToCTime(@schedule.monEnd.to_s(:time)) %></li>
+  <li>M: <%= mToCTime(@schedule.monStart.to_s(:time)) %> - <%= mToCTime(@schedule.monEnd.to_s(:time)) %></li>
   <li>T: <%= mToCTime(@schedule.tueStart.to_s(:time)) %> - <%= mToCTime(@schedule.tueEnd.to_s(:time)) %></li>
   <li>W: <%= mToCTime(@schedule.wedStart.to_s(:time)) %> - <%= mToCTime(@schedule.wedEnd.to_s(:time)) %></li>
   <li>Th: <%= mToCTime(@schedule.thuStart.to_s(:time)) %> - <%= mToCTime(@schedule.thuEnd.to_s(:time)) %></li>
