@@ -51,19 +51,9 @@
     background-color: $theme-color-1;
     font-size: 1.3em;
     @include font-heading;
-    .store-info-row{
+    .store-pic-row{
       margin: 20px 0px;
       @include span-columns(12);
-      .store-address-column{
-        @include span-columns(6 of 12);
-        margin-top: -70px;
-        @include media(max-width 650px){
-          @include span-columns(12 of 12);
-          border-style: solid;
-          margin: 10px 0px;
-          text-align: center;
-        }
-      }
       .store-profile-pic-column{
         @include span-columns(12 of 12);
         .profile-pic{
@@ -81,18 +71,20 @@
           z-index: 1;
         }
       }
-      .store-contact-column{
+    }
+
+    .store-info-row{
+      border: 1px solid white; //delete later
+      @include span-columns(12);
+      .store-address-column{
+        border: 1px solid white; //delete later
         @include span-columns(6 of 12);
         margin-top: -70px;
-        .store-contact{
-          text-align: right;
-          a{
-            padding: 0 10px;
-            color: $theme-color-3;
-            &:hover{
-              color: $theme-color-2;
-            }
-          }
+        @include media(max-width 650px){
+          @include span-columns(12 of 12);
+          border-style: solid;
+          margin: 10px 0px;
+          text-align: center;
         }
       }
     }

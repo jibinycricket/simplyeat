@@ -7,7 +7,7 @@ module SchedulesHelper
       return new_schedule_path 
     end
   end
-
+  
   def mToCTime(mTime)
     #Convert mTime string to useable int
     mTime.sub!(/\D/,"")
@@ -40,4 +40,12 @@ module SchedulesHelper
       return cTime + amPM
     end
   end
+
+    def openOrClosed(startTime, endTime)
+      if (startTime == nil || endTime == nil)
+        return "Closed"
+      else
+        mToCTime(startTime) + " - " + mToCTime(endTime)
+      end
+    end
 end

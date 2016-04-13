@@ -5,11 +5,13 @@
   </div>
   <div class="halves-break halves-break-expand"></div>
   <div class="lower-half">
-    <div class="store-info-row">
+    <div class="store-pic-row">
       <div class="store-profile-pic-column">
         <div class="profile-pic" style="background-image: url(<%= @restaurant.restaurant_picture.medium_pic %>); ">
         </div>
       </div>
+    </div>
+    <div class="store-info-row">
       <div class="store-address-column">
         <h2 class="store-address">
         <%= @restaurant.street_number.to_s + " " + @restaurant.street_name%><br/>
@@ -21,7 +23,6 @@
         <%= render 'schedules/schedule' %>
       </div>
     </div>
-    
     <div class="store-description-row">
       <h3 class="description">
       <%= @restaurant.description %>

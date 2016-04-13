@@ -3,14 +3,33 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .schedule-column{
+  border: 1px solid white; //delete later
   @include span-columns(6 of 12);
-  margin-top: -70px;
-  text-align: right;
+  .schedule{
+    position: relative;
+    width: 250px;
+    border: 1px solid white;
+    th{
+      text-align: center;
+    }
+    .column1{
+      border: 1px solid white;
+      width: 30px;
+    }
+    .column2{
+      border: 1px solid white;
+      width: 120px;
+    }
+    td{
+      padding: 0px;
+      &:nth-child(1){
+        text-align: center;
+      }
+    }
+  }
   @include media(max-width 650px){
-    margin: 0px;
-    border-style: solid;
     @include span-columns(12 of 12);
-    text-align: center;
+    top: 0px;
   }
 }
 

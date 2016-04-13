@@ -1,9 +1,75 @@
-<h2>Hours</h2>
-<ul>
-  <li>M: <%= mToCTime(@schedule.monStart.to_s(:time)) %> - <%= mToCTime(@schedule.monEnd.to_s(:time)) %></li>
-  <li>T: <%= mToCTime(@schedule.tueStart.to_s(:time)) %> - <%= mToCTime(@schedule.tueEnd.to_s(:time)) %></li>
-  <li>W: <%= mToCTime(@schedule.wedStart.to_s(:time)) %> - <%= mToCTime(@schedule.wedEnd.to_s(:time)) %></li>
-  <li>Th: <%= mToCTime(@schedule.thuStart.to_s(:time)) %> - <%= mToCTime(@schedule.thuEnd.to_s(:time)) %></li>
-  <li>F: <%= mToCTime(@schedule.friStart.to_s(:time)) %> - <%= mToCTime(@schedule.friEnd.to_s(:time)) %></li>
-  <li>S: <%= mToCTime(@schedule.satStart.to_s(:time)) %> - <%= mToCTime(@schedule.satEnd.to_s(:time)) %></li>
-</ul>
+<table class="schedule">
+  <col class="column1">
+  <col class="column2">
+  <th colspan="2">Hours</th>
+  <tr>
+    <td>S</td>
+    <td>
+      <% if @schedule.sunStart.nil? || @schedule.sunEnd.nil? %>
+      Closed
+      <% else %>
+      <%= openOrClosed(@schedule.sunStart.to_s(:time),@schedule.sunEnd.to_s(:time)) %>
+      <% end %>
+    </td>
+  </tr>
+  <tr>
+    <td>M</td>
+    <td>
+      <% if @schedule.monStart.nil? || @schedule.monEnd.nil? %>
+      Closed
+      <% else %>
+      <%= openOrClosed(@schedule.monStart.to_s(:time),@schedule.monEnd.to_s(:time)) %>
+      <% end %>
+    </td>
+  </tr> 
+  <tr>
+    <td>T</td>
+    <td>
+      <% if @schedule.tueStart.nil? || @schedule.tueEnd.nil? %>
+      Closed
+      <% else %>
+      <%= openOrClosed(@schedule.tueStart.to_s(:time),@schedule.tueEnd.to_s(:time)) %>
+      <% end %>
+    </td>
+  </tr>
+  <tr>
+    <td>W</td>
+    <td>
+      <% if @schedule.wedStart.nil? || @schedule.wedEnd.nil? %>
+      Closed
+      <% else %>
+      <%= openOrClosed(@schedule.wedStart.to_s(:time),@schedule.wedEnd.to_s(:time)) %>
+      <% end %>
+    </td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>
+      <% if @schedule.thuStart.nil? || @schedule.thuEnd.nil? %>
+      Closed
+      <% else %>
+      <%= openOrClosed(@schedule.thuStart.to_s(:time),@schedule.thuEnd.to_s(:time)) %>
+      <% end %>
+    </td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>
+      <% if @schedule.friStart.nil? || @schedule.friEnd.nil? %>
+      Closed
+      <% else %>
+      <%= openOrClosed(@schedule.friStart.to_s(:time),@schedule.friEnd.to_s(:time)) %>
+      <% end %>
+    </td>
+  </tr>
+  <tr>
+    <td>S</td>
+    <td>
+      <% if @schedule.satStart.nil? || @schedule.satEnd.nil? %>
+      Closed
+      <% else %>
+      <%= openOrClosed(@schedule.satStart.to_s(:time),@schedule.satEnd.to_s(:time)) %>
+      <% end %>
+    </td>
+  </tr>
+</table>
