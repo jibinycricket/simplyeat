@@ -74,27 +74,32 @@
     }
 
     .store-info-row{
-      border: 1px solid white; //delete later
+      position: relative;
       @include span-columns(12);
       .store-address-column{
-        border: 1px solid white; //delete later
-        @include span-columns(6 of 12);
-        margin-top: -70px;
-        @include media(max-width 650px){
+        @include span-columns(4 of 12);
+        position: relative;
+        top: -100px;
+        .store-address{
+          color: $theme-color-4;
+        }
+        @include media(max-width 1000px){
           @include span-columns(12 of 12);
-          border-style: solid;
+          top: 0px;
           margin: 10px 0px;
           text-align: center;
         }
       }
-    }
-    .store-description-row{
-      @include span-columns(12);
-      .description{
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        font-style: italic;
-        margin: 10px 0px;
+      .store-description-column{
+        @include span-columns(4 of 12);
+        .description{
+          font-family: 'Lato', sans-serif;
+          font-weight: 300;
+          font-style: italic;
+          }
+        @include media(max-width 1000px){
+          @include span-columns(12 of 12);
+        }
       }
     }
   }

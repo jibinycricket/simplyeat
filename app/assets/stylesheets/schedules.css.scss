@@ -3,21 +3,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .schedule-column{
-  border: 1px solid white; //delete later
-  @include span-columns(6 of 12);
+  @include span-columns(4 of 12);
   .schedule{
+    margin: 0px;
     position: relative;
     width: 250px;
-    border: 1px solid white;
+    float: right;
+    top: -100px;
+    color: $theme-color-4;
     th{
       text-align: center;
     }
     .column1{
-      border: 1px solid white;
       width: 30px;
     }
     .column2{
-      border: 1px solid white;
       width: 120px;
     }
     td{
@@ -27,9 +27,38 @@
       }
     }
   }
-  @include media(max-width 650px){
+  
+  @include media(max-width 1000px){
     @include span-columns(12 of 12);
-    top: 0px;
+    .schedule{
+      width: 45%;
+      margin: auto;
+      float: none;
+      top: 0px;
+      text-align: center;
+      .column1{
+        width: 10px;
+      }
+      .column2{
+        width: 100px;
+      }
+    }
+  }
+  @include media(max-width 600px){
+    @include span-columns(12 of 12);
+    .schedule{
+      width: 90%;
+      margin: auto;
+      float: none;
+      top: 0px;
+      text-align: center;
+      .column1{
+        width: 10px;
+      }
+      .column2{
+        width: 100px;
+      }
+    }
   }
 }
 

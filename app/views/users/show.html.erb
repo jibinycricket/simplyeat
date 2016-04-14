@@ -16,17 +16,18 @@
         <h2 class="store-address">
         <%= @restaurant.street_number.to_s + " " + @restaurant.street_name%><br/>
         <%= @restaurant.city %><br/>
-        <%= @restaurant.state + " " + @restaurant.zip_code.to_s %>
+        <%= @restaurant.state + " " + @restaurant.zip_code.to_s %><br/>
+        <%= number_to_phone(@restaurant.phone_number) %>
         </h2>
+      </div>
+      <div class="store-description-column">
+        <div class="description">
+          <%= @restaurant.description %>
+        </div>
       </div>
       <div class="schedule-column">
         <%= render 'schedules/schedule' %>
       </div>
-    </div>
-    <div class="store-description-row">
-      <h3 class="description">
-      <%= @restaurant.description %>
-      </h3>
     </div>
   </div>
 </div>
