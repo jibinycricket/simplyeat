@@ -11,7 +11,11 @@ class RestaurantsController < ApplicationController
     @restaurant = current_user.create_restaurant(restaurant_params)
     if @restaurant.save
       flash[:success] = "Restaurant information has been saved"
-      redirect_to current_user
+      if current_user.schedule.nil?
+        redirect_to new_schedule_path
+      else
+        redirect_to current_user
+      end
     else
       render :new
       flash[:alert] = "Restaurant info wasn't saved"

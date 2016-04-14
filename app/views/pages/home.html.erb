@@ -1,10 +1,18 @@
 <section id="banner">
   <div>
-    <% if user_signed_in? && @user.restaurant.blank? %>
-    <div class="message">
-      Next step is to fill out the form in <%= link_to "Store Info", new_restaurant_path %>
-    </div>
+    <% if user_signed_in?%> 
+      <% if @user.restaurant.blank? %>
+        <div class="message">
+          Next step is to fill out the form in <%= link_to "Store Info", new_restaurant_path %>
+        </div>
+      <% end %>
+      <% if @user.schedule.blank? && @user.restaurant.blank? == false %>
+        <div class="message">
+          Next Fill in <%= link_to "Schedule", new_schedule_path %>
+        </div>
+      <% end %>
     <% end %>
+
     <div id="js-parallax-window" class="parallax-window">
       <div class="parallax-static-content">
         <h1 id="title">
