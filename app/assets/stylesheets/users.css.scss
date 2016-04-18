@@ -200,10 +200,18 @@ $container-width-mobile: 250px;
     border-radius: 5px;
     box-shadow: 2px 2px 3px #1D1D1D;
     background-color: $theme-color-5;
-    .item-image{
+    float: right;
+    .item-image-container{
       @include span-columns(2 of 6);
-      margin: 5px;
-      padding: 3px;
+      .image{
+        text-align: center;
+        margin: 0px;
+        padding: 10px 0px 5px 0px;
+        margin: 0px 10px;
+        img{
+        border: 1px solid $theme-color-4;
+        }
+      }
     }
   }
 }
