@@ -1,0 +1,8 @@
+<% unless item.item_picture.blank? %>
+  <div class="item-image-container">
+    <div class="image item-<%=item.id%>-image">
+      <% picId = item.name + ' image' %>
+      <%= link_to( image_tag(item.item_picture.small_pic), image_url(item.item_picture.medium_pic), class: "fancybox", id: picId, rel: "gallery1", title: item.name) %>
+    </div>
+  </div>
+<% end %>

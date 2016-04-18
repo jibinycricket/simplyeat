@@ -1,3 +1,7 @@
 $("#item_<%= @item.id %>").fadeOut(300, function(){
   $(this).remove();
 });
+
+$(".item-<%=@item.id%>-image").fadeOut(300, function(){
+  $(this).remove();
+});

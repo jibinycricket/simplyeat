@@ -6,6 +6,9 @@ $(".item_ingredients").val('');
 $("#<%= @item.section_id%>-item-list ul").append('<%= j render :partial => 'users/ajax_item', :locals =>{:item => @item} %>');
 $("#item_<%= @item.id %>").hide().fadeIn(1000);
 
+$(".gallery").append('<%= j render :partial => 'users/ajax_item_picture', :locals =>{:item => @item} %>');
+$(".item-<%=@item.id%>-image").hide().fadeIn(1000);
+
 $(function() {
   $("#modal-1, #modal2").on("change", function() {
     if ($(this).is(":checked")) {
