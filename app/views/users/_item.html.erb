@@ -1,21 +1,31 @@
+<%= javascript_tag do %>
+  var items = <%= @user.items.to_json.html_safe %>;
+<% end %>
+
 <% if item.section_id == section.id %>
-  <div id="item_<%= item.id %>" class="item">
-    <li id="item_<%= item.name %>" class="item-name"><%= item.name %></li>
-    <li class="item-price"><%= item.price %></li>
+  <div class="item" id="item_<%= item.id %>">
+    <div class="item-name item-<%= item.id%>-name"><%= item.name %></div>
+    <div class="item-price"><%= item.price %></div>
     <br class='clearfix'/>
     <div class="item-line-seperator"></div>
-    <li class="item-description"><%= item.description %></li>
+    <div class="item-picture item-<%= item.id%>-picture"><%= image_tag item.item_picture.small_pic %></div>
+    <div class="item-description item-<%= item.id%>-description"><%= item.description %></div>
+    <% unless item.ingredients.empty? %>
+    <div class="item-ingredients item-<%= item.id%>-ingredients">Ingredients: <%= item.ingredients %></div>
+    <% end %>
+    <br class="clearfix">
+
     <% if current_user == @user %>
-        <li>
+        <div>
           <%= link_to item, remote: true, data: {confirm: "Are you sure?"},  method: :delete do %>
             <div class="delete-item">
               <i class="fa fa-trash-o"></i>
             </div>
           <% end %>
-        </li>
-        <li>
+        </div>
+        <div>
           <%= render :partial => 'partials/item_modals/edit_item_modal', :locals => {:@itemEdit => item} %>
-        </li>
+        </div>
         <br></br>
     <% end %>
   </div>

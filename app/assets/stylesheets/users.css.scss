@@ -44,7 +44,7 @@ $container-width-mobile: 250px;
         border-radius: 5px;
         min-width: $container-width-mobile;
         margin-bottom: 10px;
-        padding: 5px 0px;
+        padding: 5px 5px 25px 5px;
       }
       .section{
         padding: 10px;
@@ -115,30 +115,55 @@ $container-width-mobile: 250px;
         .item-name{
           @include font-heading;
           color: $theme-color-4;
-          float: left;
+          display: inline-block;
           font-size: 20px;
+          width: 85%;
+          &:hover{
+            color: $theme-color-2;
+            cursor: pointer;
+          }
         }
         .item-price{
           color: $theme-color-4;
-          float: right;
+          text-align: right;
+          display: inline-block;
           font-size: 20px;
+          width: 13%;
         }
         .clearfix{
-          clear: right;
+          clear: both;
         }
         .item-line-seperator{
           height: 1px;
           border-bottom: 1px solid $theme-color-2;
           margin-bottom: 10px;
         }
+        .item-picture{
+          float: left;
+          margin: 0px;
+          width: 15%;
+          display: none;
+          img{
+            border: 1px solid $theme-color-3;
+          }
+
+        }
         .item-description{
           @include font-italic;
+          float: right;
           font-size: 15px;
           clear: right;
           color: $theme-color-3;
           margin-top: -5px;
           padding-bottom: 10px;
-
+          width: 100%;
+        }
+        .item-ingredients{
+          display: none;
+          font-size: 15px;
+          @include font-italic();
+          float: right;
+          width: 100%;
         }
         .edit-item{
           border-style: solid;

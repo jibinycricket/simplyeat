@@ -31,7 +31,6 @@ body{
 .page-container{
   @include outer-container(80%);
   margin-top: 15px;
-  color: $theme-color-5;
 }
 
 //Error Messages
