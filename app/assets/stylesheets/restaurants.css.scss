@@ -27,7 +27,7 @@
     height: 4px;
     background-color: $theme-color-2;
   }
-
+  //halves animation 
   @include keyframes(break-expand){
     from{
       width: 0%;
@@ -47,7 +47,7 @@
 
   .lower-half{
     min-width: 320px;
-    @include outer-container(90%);
+    @include outer-container(80%);
     background-color: $theme-color-1;
     font-size: 1.3em;
     @include font-heading;

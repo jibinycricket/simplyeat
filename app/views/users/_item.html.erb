@@ -8,7 +8,9 @@
     <div class="item-price"><%= item.price %></div>
     <br class='clearfix'/>
     <div class="item-line-seperator"></div>
-    <div class="item-picture item-<%= item.id%>-picture"><%= image_tag item.item_picture.small_pic %></div>
+    <div class="item-picture item-<%= item.id%>-picture">
+      <% picId = item.name + ' image' %>
+      <%= link_to( image_tag(item.item_picture.small_pic), image_url(item.item_picture.medium_pic), class: "fancybox", id: picId, rel: "gallery1", title: item.name) %></div>
     <div class="item-description item-<%= item.id%>-description"><%= item.description %></div>
     <% unless item.ingredients.empty? %>
     <div class="item-ingredients item-<%= item.id%>-ingredients">Ingredients: <%= item.ingredients %></div>

@@ -2,7 +2,6 @@
 .schedule-column{
   @include span-columns(4 of 12);
   .schedule{
-    border: 1px solid white;
     margin: 0px;
     position: relative;
     width: 250px;
@@ -29,8 +28,8 @@
   @include media(max-width 1000px){
     @include span-columns(12 of 12);
     .schedule{
-      width: 45%;
-      margin: auto;
+      width: 65%;
+      margin: 30px auto;
       float: none;
       top: 0px;
       text-align: center;
@@ -47,6 +46,7 @@
     .schedule{
       width: 90%;
       margin: auto;
+      margin: 30px auto;
       float: none;
       top: 0px;
       text-align: center;
