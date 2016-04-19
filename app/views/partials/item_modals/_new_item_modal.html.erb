@@ -32,7 +32,7 @@
           <%= f.file_field :item_picture %>
         </div>
         
-        <%= f.submit %>
+        <%= f.submit "Create Item" , data: {disable_with: "Creating Item"} %>
       <% end %>
     </div>
   </div>

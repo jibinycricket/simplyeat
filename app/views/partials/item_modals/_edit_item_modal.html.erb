@@ -27,8 +27,8 @@
           <%= f.file_field :item_picture %>
         </div>
 
-        <%= f.submit %>
-      <% end %>
+        <%= f.submit "Save Changes" , data: {disable_with: "Saving..."} %>      
+        <% end %>
     </div>
   </div>
 </div>

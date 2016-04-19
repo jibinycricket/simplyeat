@@ -10,7 +10,7 @@
       <%= form_for(@sectionEdit, :method => :put, remote:true) do |f| %>
         <%= f.label :name %>
         <%= f.text_field :name %>
-        <%= f.submit "Save Changes" %>
+        <%= f.submit "Save Changes" , data: {disable_with: "Saving..."} %>
       <% end %>
     </div>
   </div>

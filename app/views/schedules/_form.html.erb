@@ -42,6 +42,6 @@
     <td><%= f.time_field :satEnd, :value => time_format(f.object.satStart), :placeholder => "00:00 am" %></td>
   </tr>
 </table>
-<%= f.submit "Update Schedule" %>
+<%= f.submit "Update Schedule" , data: {disable_with: "Updating..."} %>
 <% end %>
 </div>
