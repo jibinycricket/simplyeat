@@ -2,7 +2,6 @@ function itemDescriptionWidth(itemID){
   var currentWidth = $(".item-"+itemID+"-description").css("width");
   var parentWidth = $(".item-"+itemID+"-description").parent().css("width");
   var hasImage = $(".item-"+itemID+"-picture img").attr("src");
-  console.log(hasImage.length);
   if(currentWidth == parentWidth && hasImage.length!=0){
     currentWidth = "80%"
   }else{
@@ -12,7 +11,7 @@ function itemDescriptionWidth(itemID){
   $(".item-"+itemID+"-description, .item-"+itemID+"-ingredients").css("width",currentWidth);
 }
 
-function itemTitleClick(value){
+function itemNameClick(value){
   var itemID = items[value].id;
     $(".item-"+itemID+"-name").click(function(){
       $(".item-"+itemID+"-picture, .item-"+itemID+"-ingredients").toggle();
@@ -23,7 +22,7 @@ function itemTitleClick(value){
 $(document).ready(function(){
   var numOfItems = items.length;
   for(var i=0; i<numOfItems; i++){
-    itemTitleClick(i);
+    itemNameClick(i);
   }
 });
 

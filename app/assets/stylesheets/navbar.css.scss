@@ -11,17 +11,17 @@
   font-weight: 400;
 }
 
-    .brand-half-1{
-      color: $theme-color-3;
-      @include font-italic;
-    }
-    .brand-half-2{
-      color: $theme-color-2;
-      font-family: 'Cantarell', sans-serif;
-    }
+.brand-half-1{
+  color: $theme-color-3;
+  @include font-italic;
+}
+.brand-half-2{
+  color: $theme-color-2;
+  font-family: 'Cantarell', sans-serif;
+}
 
 /************* MOBILE NAV *************/
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 840px) {
   .brand{
     margin: 10px 10px 10px 10px;
     float: left;
@@ -159,12 +159,8 @@
   
 }
 
-
-
-
-
 /********************* LARGE SCREEN NAV *****************/
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 840px) {
   .brand{
     margin-left: 1.2em;
     float: left;

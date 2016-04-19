@@ -39,7 +39,7 @@ $container-width-mobile: 250px;
     .menu{
       clear: right;
       .section_and_items{
-        box-shadow: 2px 2px 3px #1D1D1D;
+        @include box-shadow;
         background-color: $theme-color-5;
         border-radius: 5px;
         min-width: $container-width-mobile;
@@ -198,7 +198,7 @@ $container-width-mobile: 250px;
     }
     display: inline-block;
     border-radius: 5px;
-    box-shadow: 2px 2px 3px #1D1D1D;
+    @include box-shadow;
     background-color: $theme-color-5;
     float: right;
     .item-image-container{

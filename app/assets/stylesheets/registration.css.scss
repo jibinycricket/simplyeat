@@ -1,0 +1,61 @@
+.edit-user-form{
+  background-color: $theme-color-5;
+  @include box-shadow;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  .edit-user-form-fields{
+    border-radius: 10px;
+    border: 2px solid $theme-color-4;
+    padding: 10px;
+    margin-bottom: 10px;
+    label{
+      margin: 0px;
+    }
+    input{
+      width: 100%;
+    }
+  }
+
+  .cancel-user{
+    border: 2px solid $theme-color-2;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+.new-user-form{
+  max-width: 650px;
+  background-color: $theme-color-5;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 20px;
+  @include box-shadow;
+  border-radius: 10px;
+  .new-user-form-fields{
+    border: 2px solid $theme-color-4;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+.shared-links{
+  margin-left: 5%;
+}
+
+.login-container{
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  @include box-shadow;
+  background-color: $theme-color-5;
+  .login-fields-container{
+    border: 2px solid $theme-color-4;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+

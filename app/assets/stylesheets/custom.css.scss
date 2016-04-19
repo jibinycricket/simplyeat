@@ -33,6 +33,12 @@ body{
   margin-top: 15px;
 }
 
+@mixin box-shadow(){
+  box-shadow: 2px 2px 3px #1D1D1D;
+  -moz-box-shadow: 2px 2px 3px #1D1D1D;
+  -webkit-box-shadow: 2px 2px 3px #1D1D1D;
+}
+
 //Error Messages
 $base-spacing: 1.5em !default;
 $alert-color: #fff6bf !default;

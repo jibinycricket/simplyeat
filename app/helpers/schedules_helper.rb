@@ -41,11 +41,16 @@ module SchedulesHelper
     end
   end
 
-    def openOrClosed(startTime, endTime)
-      if (startTime == nil || endTime == nil)
-        return "Closed"
-      else
-        mToCTime(startTime) + " - " + mToCTime(endTime)
-      end
+  def openOrClosed(startTime, endTime)
+    if (startTime == nil || endTime == nil)
+      return "Closed"
+    else
+      mToCTime(startTime) + " - " + mToCTime(endTime)
     end
+  end
+
+  def time_format(datetime)
+    #datetime.strftime('%H:%M') unless datetime.blank?
+    datetime.strftime('%I:%M') unless datetime.blank?
+  end
 end

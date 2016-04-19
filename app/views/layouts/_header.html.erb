@@ -15,10 +15,11 @@
       <% if user_signed_in? %>
         <% @restaurant = Restaurant.find_by(user_id: current_user.id) %>
         <% @schedule = Schedule.find_by(user_id: current_user.id) %>
-        <li><%= link_to "Schedule", chooseSchedulePath() %></li>
         <% unless @schedule.nil? %>
           <li><%= link_to "Design", current_user %></li>
         <% end %>
+        <li><%= link_to "Schedule", chooseSchedulePath() %></li>
+        
         <li><%= link_to "Store Info", chooseRestaurantPath(@restaurant) %></li>
         <li><%= link_to "Directory", users_path %></li>
         <li><a href="#"><%= current_user.user_name %></a>

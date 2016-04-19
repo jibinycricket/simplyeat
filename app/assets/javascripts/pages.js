@@ -23,11 +23,13 @@
     $('#signup-modal #shared-signup-link').remove();
   });
   /********* Flash Messages****/
-  $(function(){
-  setTimeout(function(){
-    $('#flash-messages').slideUp();
-  }, 4000);
- })
+  $(document).ready(function(){
+    $(function(){
+      setTimeout(function(){
+        $('#flash-messages, .alert').slideUp();
+      }, 4000);
+    })
+  });
 /************* Parallax ******/
 $(document).ready(function() {
   if ($("#js-parallax-window").length) {
@@ -59,6 +61,7 @@ function parallax(){
     plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
   }
 }
+
 
 
 

@@ -56,6 +56,15 @@ module RestaurantsHelper
     ]
   end
 
+  def us_states_key(abbr)
+    states = us_states
+    states.each do |stateArray|
+      if stateArray[1] == abbr
+        return stateArray[1]
+      end
+    end
+  end
+
   def toggleRestaurantInfo(user)
     if user.restaurant.blank?
       
