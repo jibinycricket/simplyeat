@@ -22,7 +22,13 @@
       </div>
       <div class="store-description-column">
         <div class="description">
+        <% unless @restaurant.description.empty? %>
           <%= @restaurant.description %>
+        <% else %>
+          <div class="placeholder">
+            <%= link_to "Fill in your personal introduction here",edit_restaurant_path(current_user) %>
+          </div>
+        <% end %>
         </div>
       </div>
       <div class="schedule-column">

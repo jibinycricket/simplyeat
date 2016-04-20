@@ -17,8 +17,8 @@ class RestaurantsController < ApplicationController
         redirect_to current_user
       end
     else
-      render :new
       flash[:alert] = "Restaurant info wasn't saved"
+      render :new
     end
   end
 

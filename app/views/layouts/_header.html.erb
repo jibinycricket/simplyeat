@@ -18,7 +18,9 @@
         <% unless @schedule.nil? %>
           <li><%= link_to "Design", current_user %></li>
         <% end %>
+        <% unless @restaurant.nil? %>
         <li><%= link_to "Schedule", chooseSchedulePath() %></li>
+        <% end %>
         
         <li><%= link_to "Store Info", chooseRestaurantPath(@restaurant) %></li>
         <li><%= link_to "Directory", users_path %></li>

@@ -131,7 +131,6 @@
       color: $theme-color-2;
     }
     &:active{
-      background: $theme-color-3;
       color: $theme-color-2;
     }
   }
@@ -219,10 +218,6 @@
           }
           &:hover:after{
             width: 100%;
-          }
-          &:active{
-            background-color: white;
-            color: black;
           }
         }
         .lower-nav{

@@ -12,8 +12,8 @@ class SchedulesController < ApplicationController
       flash[:success] = "Schedule information has been saved"
       redirect_to current_user
     else
-      render :new
       flash[:alert] = "Schedule information was not saved"
+      render :new
     end
   end
 
