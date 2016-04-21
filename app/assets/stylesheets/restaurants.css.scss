@@ -112,6 +112,10 @@
   h1{
     margin: 10px 5%;
   }
+  .required-message{
+    margin: 10px 5%;
+    color: red;
+  }
   .field-container{
     border-radius: 10px;
     width: 90%;
@@ -126,6 +130,9 @@
     border-radius: 10px;
     background-color: $theme-color-5;
     @include box-shadow;
+    .required-restaurant-name{
+      border-color: red;
+    }
   }
   .address-form-fields{
     @include span-columns(12 of 12);

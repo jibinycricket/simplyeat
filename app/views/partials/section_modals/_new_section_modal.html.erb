@@ -10,7 +10,7 @@
       <%= form_for(@sectionNew, remote:true) do |f| %>
         <%= f.label :name %>
         <%= f.text_field :name, class: "form-control section_name" %>
-        <%= f.submit "Create Section" , data: {disable_with: "Creating Section"} %>
+        <%= f.submit "Create Section" , data: {disable_with: "Creating Section"}, :class=>"new-section-button" %>
       <% end %>
     </div>
   </div>

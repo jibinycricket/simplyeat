@@ -2,9 +2,10 @@
   <%= form_for @restaurant, :html =>{:multipart =>true } do |f| %>
   <div class="restaurant-info-form-fields">
     <h1>General Information</h1>
+    <div class="required-message">*required</div>
     <div class="field-container">
       <%= f.label :name, "Name of Restaurant" %>
-      <%= f.text_field(:name) %>
+      <%= f.text_field(:name, :class=> "required-restaurant-name") %>
       
       <%= f.label "Type of Cuisine" %>
       <%= f.text_field(:category) %>
@@ -31,7 +32,7 @@
       <%= f.label :city, "City" %>
       <%= f.text_field(:city) %>
       <%= f.label :state, "State" %>
-      <%= f.select :state, options_for_select(us_states, :selected=> us_states_key(current_user.restaurant.state)) %>
+      <%= f.select :state, options_for_select(us_states, :selected=> us_states_key(current_user.restaurant.state)),{:include_blank => '(Choose State)'} %>
       <%= f.label :zip_code, "Zip Code" %>
       <%= f.number_field :zip_code %>
     </div>
@@ -54,7 +55,7 @@
   </div>
   <div class="restaurant-form-submit">
     <div class="form-submit">
-      <%= f.submit "Update Restaurant" , data: {disable_with: "Updating..."} %>
+      <%= f.submit "Update Restaurant" , data: {disable_with: "Updating..."}, :class=>"restaurant-submit-button" %>
     </div>
   </div>
   <% end %>

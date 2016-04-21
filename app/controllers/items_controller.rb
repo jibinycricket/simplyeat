@@ -21,7 +21,7 @@ class ItemsController < ApplicationController
           flash[:alert] = "Your new item wasnt created"
           render :new
         }
-        format.js
+        format.js{render :new}
       end
     end
   end
