@@ -68,6 +68,20 @@
   max-width: 600px;
   margin: 0 auto;
   margin-top: 5%;
+  .help{
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 50px;
+    display: inline-block;
+    float: right;
+    &:hover{
+      background-color: white;
+      color: black;
+      cursor: pointer;
+    }
+  }
   table{
     td{
       padding: 0px 5px;
