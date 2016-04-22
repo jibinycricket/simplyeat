@@ -1,9 +1,10 @@
 <div class="restaurant-form">
   <%= form_for @restaurant, :html =>{:multipart =>true } do |f| %>
   <div class="restaurant-info-form-fields">
-    <h1>General Information</h1>
     <div class="required-message">*required</div>
-    <div class="field-container">
+    <fieldset class="field-container">
+    <legend>General Information</legend>
+
       <%= f.label :name, "Name of Restaurant" %>
       <%= f.text_field(:name, :class=> "required-field") %>
       
@@ -15,11 +16,11 @@
         <%= f.label :restaurant_picture, "Restaurant Picture" %>
         <%= f.file_field :restaurant_picture %>
       </div>
-    </div>
+    </fieldset>
   </div>
   <div class="address-form-fields">
-  <h1>Address</h1>
-    <div class="field-container">
+    <fieldset class="field-container">
+      <legend>Address</legend>
       <div class="street-number-field">
         <%= f.label :street_number, "House Number" %>
         <%= f.number_field(:street_number) %>
@@ -35,12 +36,12 @@
       <%= f.select :state, options_for_select(us_states, :selected=> us_states_key(current_user.restaurant.state)),{:include_blank => '(Choose State)'} %>
       <%= f.label :zip_code, "Zip Code" %>
       <%= f.number_field :zip_code %>
-    </div>
+    </fieldset>
   </div>
   
   <div class="contact-info-form-fields">
-    <h1>Contact</h1>
-    <div class="field-container">
+    <fieldset class="field-container">
+      <legend>Contact</legend>
       <%= f.label :phone_number, "Phone Number" %>
       <%= f.telephone_field :phone_number %>
       <%= f.label :email, "Email" %>
@@ -51,7 +52,7 @@
       <%= f.text_field :instagram, placeholder: "instagram.com/businessname" %>
       <%= f.label :twitter, "Twitter" %>
       <%= f.text_field :twitter, placeholder: "twitter.com/businessname" %>
-    </div>
+    </fieldset>
   </div>
   <div class="restaurant-form-submit">
     <div class="form-submit">

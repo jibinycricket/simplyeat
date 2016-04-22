@@ -109,8 +109,8 @@
 .restaurant-form{
   max-width: 700px;
   margin: 0 auto;
-  h1{
-    margin: 10px 5%;
+  legend{
+    font-size: 20px;
   }
   .required-message{
     margin: 10px 5%;
@@ -167,5 +167,6 @@
       margin: 10px 0px;
       width: 100%;
     }
+
   }
 }
