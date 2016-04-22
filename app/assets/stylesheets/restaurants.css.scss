@@ -130,9 +130,6 @@
     border-radius: 10px;
     background-color: $theme-color-5;
     @include box-shadow;
-    .required-restaurant-name{
-      border-color: red;
-    }
   }
   .address-form-fields{
     @include span-columns(12 of 12);

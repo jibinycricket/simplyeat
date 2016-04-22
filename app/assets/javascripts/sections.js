@@ -1,43 +1,85 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 function newSectionButtonCheck(){
-  $('.new-section-button').attr('disabled','disabled');
+  var newSectionButton = '.new-section-button';
+
+  $(newSectionButton).attr('disabled','disabled');
   var text = $(".section_name").val();
   //initial check for field
   if(text!=""){
-    $('.new-section-button').removeAttr('disabled');
+    $(newSectionButton).removeAttr('disabled');
   }
   //check after field is edited
   $('.section_name').keyup(function(){
     text = $(".section_name").val();
     if(text!=""){
-      $('.new-section-button').removeAttr('disabled');
+      $(newSectionButton).removeAttr('disabled');
     }else{
-      $('.new-section-button').attr('disabled','disabled');
+      $(newSectionButton).attr('disabled','disabled');
     }
   });
 }
 
-function editSectionButtonCheck(){
-  $('.edit-section-button').attr('disabled','disabled');
-  var text = $(".edit_section_name").val();
+function editSectionButtonCheck(sectionID){
+  var editSectionButton = '.edit-section-'+sectionID+'-button';
+  var editSectionName = ".edit_section_"+sectionID+"_name";
+
+  $(editSectionButton).attr('disabled','disabled');
+  var text = $(editSectionName).val();
   //initial check for field
   if(text!=""){
-    $('.edit-section-button').removeAttr('disabled');
+    $(editSectionButton).removeAttr('disabled');
   }
   //check after field is edited
-  $('.edit_section_name').keyup(function(){
-    text = $(".edit_section_name").val();
+  $(editSectionName).keyup(function(){
+    text = $(editSectionName).val();
     if(text!=""){
-      $('.edit-section-button').removeAttr('disabled');
+      $(editSectionButton).removeAttr('disabled');
     }else{
-      $('.edit-section-button').attr('disabled','disabled');
+      $(editSectionButton).attr('disabled','disabled');
     }
   }); 
 }
 
+function newItemButtonCheck(itemID){
+  var newItemName = ".section_"+itemID+"_new_item_name";
+  var newItemPrice = ".section_"+itemID+"_new_item_price";
+  var newItemDescription = ".section_"+itemID+"_new_item_description";
+  var newItemButton = '.new-section-'+itemID+'-item-button';
+  console.log(newItemName, newItemPrice, newItemDescription);
+  $(newItemButton).attr('disabled','disabled');
+  
+  //Initial Field Check
+  var nameCheck = $(newItemName).val();
+  var priceCheck = $(newItemPrice).val();
+  var descriptionCheck = $(newItemDescription).val();
+  
+  if(nameCheck!="" && priceCheck!="" && descriptionCheck!=""){
+    $(newItemButton).removeAttr('disabled');
+  }
+  //check after field is edited
+  $(newItemName).add(newItemPrice).add(newItemDescription).keyup(function(){
+    console.log('here');
+    nameCheck = $(newItemName).val();
+    priceCheck = $(newItemPrice).val();
+    descriptionCheck = $(newItemDescription).val();
+    if(nameCheck!="" && priceCheck!="" && descriptionCheck!=""){
+      $(newItemButton).removeAttr('disabled');
+    }else{
+      $(newItemButton).attr('disabled','disabled');
+    }
+  });
+}
+
 $(document).ready(function(){
+  var numOfSections = sections.length;
+
+  //Create a unique check for text fields for each section and newItem
+  for(var j=0; j<numOfSections; j++){
+    editSectionButtonCheck(sections[j].id);
+    newItemButtonCheck(sections[j].id);
+  }
+  //Create a text field check for new section button
   newSectionButtonCheck();
-  editSectionButtonCheck();
 });
 

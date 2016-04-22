@@ -9,8 +9,8 @@
       <h1>Edit Section</h1>
       <%= form_for(@sectionEdit, :method => :put, remote:true) do |f| %>
         <%= f.label :name %>
-        <%= f.text_field :name, :class => "edit_section_name" %>
-        <%= f.submit "Save Changes" , data: {disable_with: "Saving..."}, :class =>"edit-section-button" %>
+        <%= f.text_field :name, :class => "edit_section_#{@sectionEdit.id}_name required-field" %>
+        <%= f.submit "Save Changes" , data: {disable_with: "Saving..."}, :class =>"edit-section-#{@sectionEdit.id}-button" %>
       <% end %>
     </div>
   </div>

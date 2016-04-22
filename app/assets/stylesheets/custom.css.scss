@@ -24,6 +24,12 @@ body{
   }
 }
 
+.required-field{
+  border-color: $theme-color-2 !important;
+  border-width: 2px !important;
+  border-radius: 5px !important;
+}
+
 .form-container{
   @include outer-container(80%);
   margin-top: 15px;

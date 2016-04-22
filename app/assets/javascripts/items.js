@@ -11,54 +11,40 @@ function itemDescriptionWidth(itemID){
   $(".item-"+itemID+"-description, .item-"+itemID+"-ingredients").css("width",currentWidth);
 }
 
-function itemNameClick(value){
-  var itemID = items[value].id;
+function itemNameClick(itemID){
     $(".item-"+itemID+"-name").click(function(){
       $(".item-"+itemID+"-picture, .item-"+itemID+"-ingredients").toggle();
       itemDescriptionWidth(itemID);
     });
 }
 
-function newItemButtonCheck(){
-  $('.new-item-button').attr('disabled','disabled');
-  var name = $(".item_name").val();
-  var price = $(".item_price").val();
-  var description = $(".item_description").val();
-  //initial check for field
-  if(name!=""){
-    $('.new-item-button').removeAttr('disabled');
-  }
-  //check after field is edited
-  $('.item_name, .item_price, .item_description').keyup(function(){
-    name = $(".item_name").val();
-    price = $(".item_price").val();
-    description = $(".item_description").val();
-    if(name!="" && price!="" && description!=""){
-      $('.new-item-button').removeAttr('disabled');
-    }else{
-      $('.new-item-button').attr('disabled','disabled');
-    }
-  });
-}
 
-function editItemButtonCheck(){
-  $('.edit-item-button').attr('disabled','disabled');
-  var name = $(".item_name").val();
-  var price = $(".item_price").val();
-  var description = $(".item_description").val();
+function editItemButtonCheck(itemID){
+  var editItemButton = '.edit-item-'+itemID+'-button';
+  var name = ".item_"+itemID+"_name";
+  var price = ".item_"+itemID+"_price";
+  var description = ".item_"+itemID+"_description";
+
+  $(editItemButton).attr('disabled','disabled');
+  
   //initial check for field
-  if(name!="" && price!="" && description!=""){
-    $('.edit-item-button').removeAttr('disabled');
+  var nameCheck = $(name).val();
+  var priceCheck = $(price).val();
+  var descriptionCheck = $(description).val();
+
+  if(nameCheck!="" && priceCheck!="" && descriptionCheck!=""){
+    $(editItemButton).removeAttr('disabled');
   }
   //check after field is edited
-  $('.item_name, .item_price, .item_description').keyup(function(){
-    name = $(".item_name").val();
-    price = $(".item_price").val();
-    description = $(".item_description").val();
-    if(name!="" && price!="" && description!=""){
-      $('.edit-item-button').removeAttr('disabled');
+  $(name).add(price).add(description).keyup(function(){
+    nameCheck = $(name).val();
+    priceCheck = $(price).val();
+    descriptionCheck = $(description).val();
+    
+    if(nameCheck!="" && priceCheck!="" && descriptionCheck!=""){
+      $(editItemButton).removeAttr('disabled');
     }else{
-      $('.edit-item-button').attr('disabled','disabled');
+      $(editItemButton).attr('disabled','disabled');
     }
   });
 }
@@ -66,11 +52,9 @@ function editItemButtonCheck(){
 $(document).ready(function(){
   var numOfItems = items.length;
   for(var i=0; i<numOfItems; i++){
-    itemNameClick(i);
+    itemNameClick(items[i].id);
+    editItemButtonCheck(items[i].id);
   }
-
-  newItemButtonCheck();
-  editItemButtonCheck();
 });
 
 
