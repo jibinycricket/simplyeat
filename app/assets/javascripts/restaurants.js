@@ -2,19 +2,23 @@
 // All this logic will automatically be available in application.js.
 $(document).ready(function(){
   function restaurantButtonCheck(){
-    $('.restaurant-submit-button').attr('disabled','disabled');
-    var text = $(".required-restaurant-name").val();
+    restaurantButton = '.restaurant-submit-button';
+    restaurantName = ".required-field";
+    
+    $(restaurantButton).attr('disabled','disabled');
+    var text = $(restaurantName).val();
+    console.log(text);
     //initial check for field
     if(text!=""){
-      $('.restaurant-submit-button').removeAttr('disabled');
+      $(restaurantButton).removeAttr('disabled');
     }
     //check after field is edited
-    $('.required-restaurant-name').keyup(function(){
-      text = $(".required-restaurant-name").val();
+    $(restaurantName).keyup(function(){
+      text = $(restaurantName).val();
       if(text!=""){
-        $('.restaurant-submit-button').removeAttr('disabled');
+        $(restaurantButton).removeAttr('disabled');
       }else{
-        $('.restaurant-submit-button').attr('disabled','disabled');
+        $(restaurantButton).attr('disabled','disabled');
       }
     });
   }
