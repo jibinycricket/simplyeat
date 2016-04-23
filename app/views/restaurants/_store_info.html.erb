@@ -1,0 +1,30 @@
+<!-- 
+Cases: 
+1. EmptyField+Right User = Show Link
+2. EmptyField+Wrong User = Show Empty Div
+3. FullField + Right User = Show field+link
+4. FullField + Wrong User = Show field
+-->
+<% if (@restaurant.street_name.empty? && (current_user== @restaurant.user)) %>
+    <%= link_to edit_restaurant_path(current_user) + "#AddressFields" do %>
+      <div class="placeholder">(Enter your Restaurants Address)</div>
+    <% end %>
+<% elsif (@restaurant.street_name.empty? && (current_user!= @restaurant.user)) %>
+  <div class="nonuser-placeholder"></div>
+<% elsif (@restaurant.street_name.empty? == false && (current_user== @restaurant.user)) %>
+  <%= link_to edit_restaurant_path(current_user) + "#AddressFields" do %>
+    <h2 class="store-address-text">
+      <%= @restaurant.street_number.to_s + " " + @restaurant.street_name%><br/>
+      <%= @restaurant.city %><br/>
+      <%= @restaurant.state + " " + @restaurant.zip_code.to_s %><br/>
+      <%= number_to_phone(@restaurant.phone_number) %>
+    </h2>
+  <% end %>
+<% else %>
+  <h2 class="nonuser-store-address-text">
+    <%= @restaurant.street_number.to_s + " " + @restaurant.street_name%><br/>
+    <%= @restaurant.city %><br/>
+    <%= @restaurant.state + " " + @restaurant.zip_code.to_s %><br/>
+    <%= number_to_phone(@restaurant.phone_number) %>
+  </h2>
+<% end %>

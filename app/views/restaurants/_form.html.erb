@@ -1,63 +1,65 @@
 <div class="restaurant-form">
   <%= form_for @restaurant, :html =>{:multipart =>true } do |f| %>
-  <div class="restaurant-info-form-fields">
-    <div class="required-message">*required</div>
-    <fieldset class="field-container">
-    <legend>General Information</legend>
-
-      <%= f.label :name, "Name of Restaurant" %>
-      <%= f.text_field(:name, :class=> "required-field") %>
-      
-      <%= f.label "Type of Cuisine" %>
-      <%= f.text_field(:category) %>
-      <%= f.label :description, "Personal Introduction" %>
-      <%= f.text_area :description, :rows=>5, :class => "restaurant-introduction-field" %>
-      <div class="field">
-        <%= f.label :restaurant_picture, "Restaurant Picture" %>
-        <%= f.file_field :restaurant_picture %>
-      </div>
-    </fieldset>
-  </div>
-  <div class="address-form-fields">
-    <fieldset class="field-container">
-      <legend>Address</legend>
-      <div class="street-number-field">
-        <%= f.label :street_number, "House Number" %>
-        <%= f.number_field(:street_number) %>
-      </div>
-      <div class="street-name-field">
+    <div class="restaurant-info-form-fields">
+      <div class="required-message">*required</div>
+      <fieldset class="field-container">
+      <a name="GeneralInfo"></a>
+        <legend>General Information</legend>
+        <%= f.label :name, "Name of Restaurant" %>
+        <%= f.text_field(:name, :class=> "required-field") %>
+        
+        <%= f.label "Type of Cuisine" %>
+        <%= f.text_field(:category) %>
+        <%= f.label :description, "Personal Introduction" %>
+        <%= f.text_area :description, :rows=>5, :class => "restaurant-introduction-field" %>
+        <div class="field">
+          <%= f.label :restaurant_picture, "Restaurant Picture" %>
+          <%= f.file_field :restaurant_picture %>
+        </div>
+      </fieldset>
+    </div>
+    <a name="AddressFields"></a>
+    <div class="address-form-fields">
+      <fieldset class="field-container">
+        <legend>Address</legend>
+        <div class="street-number-field">
+          <%= f.label :street_number, "House Number" %>
+          <%= f.number_field(:street_number) %>
+        </div>
+        <div class="street-name-field">
           <%= f.label :street_name, "Street Name" %>
           <%= f.text_field(:street_name) %>
         </div>
         <br class="clearfix">
-      <%= f.label :city, "City" %>
-      <%= f.text_field(:city, :class => "city-field") %>
-      <%= f.label :state, "State" %>
-      <%= f.select :state, options_for_select(us_states, :selected=> us_states_key(current_user.restaurant.state)),{:include_blank => '(Choose State)'} %>
-      <%= f.label :zip_code, "Zip Code" %>
-      <%= f.number_field :zip_code, :class => "zip-field" %>
-    </fieldset>
-  </div>
-  
-  <div class="contact-info-form-fields">
-    <fieldset class="field-container">
-      <legend>Contact</legend>
-      <%= f.label :phone_number, "Phone Number" %>
-      <%= f.telephone_field :phone_number %>
-      <%= f.label :email, "Email" %>
-      <%= f.email_field :email %>
-      <%= f.label :facebook, "Facebook" %>
-      <%= f.text_field :facebook, placeholder: "facebook.com/businessname" %>
-      <%= f.label :instagram, "Instagram" %>
-      <%= f.text_field :instagram, placeholder: "instagram.com/businessname" %>
-      <%= f.label :twitter, "Twitter" %>
-      <%= f.text_field :twitter, placeholder: "twitter.com/businessname" %>
-    </fieldset>
-  </div>
-  <div class="restaurant-form-submit">
-    <div class="form-submit">
-      <%= f.submit "Update Restaurant" , data: {disable_with: "Updating..."}, :class=>"restaurant-submit-button" %>
+        <%= f.label :city, "City" %>
+        <%= f.text_field(:city, :class => "city-field") %>
+        <%= f.label :state, "State" %>
+        <%= f.select :state, options_for_select(us_states, :selected=> us_states_key(current_user.restaurant.state)),{:include_blank => '(Choose State)'} %>
+        <%= f.label :zip_code, "Zip Code" %>
+        <%= f.number_field :zip_code, :class => "zip-field" %>
+      </fieldset>
     </div>
-  </div>
+    <a name="ContactFields"></a>
+    <div class="contact-info-form-fields">
+      <fieldset class="field-container">
+        <legend>Contact</legend>
+        <%= f.label :phone_number, "Phone Number" %>
+        <%= f.telephone_field :phone_number %>
+        <%= f.label :email, "Email" %>
+        <%= f.email_field :email %>
+        <%= f.label :facebook, "Facebook" %>
+        <%= f.text_field :facebook, placeholder: "facebook.com/(username)" %>
+        <%= f.label :instagram, "Instagram" %>
+        <%= f.text_field :instagram, placeholder: "instagram.com/(username)" %>
+        <%= f.label :twitter, "Twitter" %>
+        <%= f.text_field :twitter, placeholder: "twitter.com/(username)" %>
+      </fieldset>
+    </div>
+
+    <div class="restaurant-form-submit">
+      <div class="form-submit">
+        <%= f.submit "Update Restaurant" , data: {disable_with: "Updating..."}, :class=>"restaurant-submit-button" %>
+      </div>
+    </div>
   <% end %>
 </div>

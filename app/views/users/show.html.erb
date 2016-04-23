@@ -13,22 +13,13 @@
     </div>
     <div class="store-info-row">
       <div class="store-address-column">
-        <h2 class="store-address">
-        <%= @restaurant.street_number.to_s + " " + @restaurant.street_name%><br/>
-        <%= @restaurant.city %><br/>
-        <%= @restaurant.state + " " + @restaurant.zip_code.to_s %><br/>
-        <%= number_to_phone(@restaurant.phone_number) %>
-        </h2>
+        <div class="store-address">
+          <%= render 'restaurants/store_info' %>
+        </div>
       </div>
       <div class="store-description-column">
         <div class="description">
-        <% unless @restaurant.description.empty? %>
-          <%= @restaurant.description %>
-        <% else %>
-          <div class="placeholder">
-            <%= link_to "Fill in your personal introduction here",edit_restaurant_path(current_user) %>
-          </div>
-        <% end %>
+          <%= render 'restaurants/store_description' %>
         </div>
       </div>
       <div class="schedule-column">
@@ -53,7 +44,7 @@
             <div id="<%= section.id%>-item-list">
               <ul class="items">
                 <% @items.each do |item| %>
-                <%= render :partial => 'users/item', :locals => {:item => item, :section =>section} %>
+                  <%= render :partial => 'users/item', :locals => {:item => item, :section =>section} %>
                 <% end %>
               </ul>
             </div>
@@ -66,4 +57,7 @@
       <%= render :partial => 'items/gallery' %>
     </section>
   </div>
+  <section class="store-contact-row">
+    <%= render 'restaurants/contact_links' %>
+  </section>
 </div>

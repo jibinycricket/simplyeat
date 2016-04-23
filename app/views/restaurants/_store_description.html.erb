@@ -1,0 +1,20 @@
+<!-- 
+Cases: 
+1. EmptyField+Right User = Show Link
+2. EmptyField+Wrong User = Show Empty Div
+3. FullField + Right User = Show field+link
+4. FullField + Wrong User = Show field
+-->
+<% if @restaurant.description.empty? && (current_user == @restaurant.user) %>
+  <%= link_to edit_restaurant_path(current_user) +"#GeneralInfo" do %>
+    <div class="placeholder">(Enter a friendly introduction)</div>
+  <% end %>
+<% elsif @restaurant.description.empty? && (current_user != @restaurant.user) %>
+  <div class="nonuser-placeholder"></div>
+<% elsif @restaurant.description.empty? == false && (current_user == @restaurant.user) %>
+  <%= link_to edit_restaurant_path(current_user) +"#GeneralInfo" do %>
+    <%= @restaurant.description %>
+  <% end %>
+<% else %>
+  <%= @restaurant.description %>
+<% end %>
