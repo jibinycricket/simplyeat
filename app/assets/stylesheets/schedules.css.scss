@@ -61,14 +61,15 @@
 }
 /************** Schedule Form ***********/
 .schedule-form{//large screens
+  clear: both;
   background-color: $theme-color-5;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 20px;
   width: 80%;
   max-width: 600px;
   margin: 0 auto;
   margin-top: 5%;
-  .help{
+  .schedule-info-button{
     text-align: center;
     width: 25px;
     height: 25px;
@@ -76,11 +77,19 @@
     border-radius: 50px;
     display: inline-block;
     float: right;
+    transition: width .1s;
+    position: relative;
     &:hover{
-      background-color: white;
+      background-color: $theme-color-4;
       color: black;
       cursor: pointer;
     }
+  }
+  .schedule-info-button-expand{
+    background-color: $theme-color-4;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
   }
   table{
     td{

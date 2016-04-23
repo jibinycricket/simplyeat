@@ -1,7 +1,7 @@
 <% provide(:title, "Log In") %>
 <div class="login-container">
-  <h2>Log in</h2>
-  <div class="login-fields-container">
+  <fieldset class="login-fields-container">
+  <legend>Log in</legend>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
       <%= f.label :email %><br />
@@ -21,6 +21,6 @@
       <%= f.submit "Log in" %>
     </div>
     <% end %>
-  </div>
+  </fieldset>
 </div>
 <%= render "devise/shared/links" %>

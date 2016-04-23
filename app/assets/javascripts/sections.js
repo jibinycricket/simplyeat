@@ -46,7 +46,6 @@ function newItemButtonCheck(itemID){
   var newItemPrice = ".section_"+itemID+"_new_item_price";
   var newItemDescription = ".section_"+itemID+"_new_item_description";
   var newItemButton = '.new-section-'+itemID+'-item-button';
-  console.log(newItemName, newItemPrice, newItemDescription);
   $(newItemButton).attr('disabled','disabled');
   
   //Initial Field Check
