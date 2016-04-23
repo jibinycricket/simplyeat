@@ -10,7 +10,8 @@
   <div class="modal-fade-screen">
     <div class="modal-inner">
       <div class="modal-close" for="modal-2"></div>
-      <h1>Log in</h1>
+      <fieldset class="form-fields-container">
+      <legend>Log in</legend>
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field">
         <%= f.label :email %><br />
@@ -30,6 +31,7 @@
         <%= f.submit "Log in" %>
       </div>
       <% end %>
+      </fieldset>
       <%= render "devise/shared/links" %>
     </div>
   </div>

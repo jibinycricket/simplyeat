@@ -42,18 +42,6 @@
   padding: 20px;
   @include box-shadow;
   border-radius: 10px;
-  .new-user-form-fields{
-    border: 2px solid $theme-color-4;
-    padding: 10px;
-    border-radius: 10px;
-    legend{
-      font-size: 20px;
-      margin: 0px;
-    }
-    label{
-      margin: 0px;
-    }
-  }
 }
 
 .shared-links{
@@ -75,6 +63,17 @@
     legend{
       font-size: 20px;
     }
+  }
+}
+
+.form-fields-container{
+  border: 2px solid $theme-color-4;
+  border-radius: 10px;
+  padding: 20px;
+  legend{
+    margin: 0px;
+    padding: 0px 10px;
+    font-size: 25px;
   }
 }
 

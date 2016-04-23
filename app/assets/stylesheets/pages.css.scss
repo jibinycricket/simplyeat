@@ -118,7 +118,7 @@ $parallax-image: './hero.jpg';
   $modal-image-height: 135px;
   $modal-image-width: $modal-image-height;
   $modal-trigger-image-width: 300px;
-  
+
   label {
     cursor: pointer;
     margin-bottom: 0;
@@ -201,7 +201,6 @@ $parallax-image: './hero.jpg';
 
 
     @include media($medium-screen) {
-      max-height: 75%;
       padding: $modal-padding;
       width: 70%;
     }
@@ -226,7 +225,7 @@ $parallax-image: './hero.jpg';
       color: $theme-color-4;
     }
     a:hover{
-      color: $theme-color-1;
+      color: $theme-color-2;
     }
     
 

@@ -6,7 +6,8 @@
   <div class="modal-fade-screen">
     <div class="modal-inner">
       <div class="modal-close" for="edit_item_modal_<%=@itemEdit.id%>"></div>
-      <h1>Edit Item</h1>
+      <fieldset class="form-fields-container">
+      <legend>Edit Item</legend>
       <%= form_for(@itemEdit, :method => :put, remote:true) do |f| %>
         <%= f.label :name, 'Item Name' %>
         <%= f.text_field :name, class: "item_#{@itemEdit.id}_name required-field"  %>
@@ -30,6 +31,7 @@
 
         <%= f.submit "Save Changes" , data: {disable_with: "Saving..."}, :class => "edit-item-#{@itemEdit.id}-button" %>      
         <% end %>
+        </fieldset>
     </div>
   </div>
 </div>

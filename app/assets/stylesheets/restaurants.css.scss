@@ -110,7 +110,9 @@
   max-width: 700px;
   margin: 0 auto;
   legend{
-    font-size: 20px;
+    margin: 0px;
+    padding: 0px 10px;
+    font-size: 25px;
   }
   .required-message{
     margin: 10px 5%;
@@ -163,14 +165,13 @@
     background-color: $theme-color-5;
     @include box-shadow;
     input, label{
-      margin: 0 auto;
+      margin: 10px auto;
       width: 70%;
     }
 
   }
   .restaurant-form-submit{
     input{
-      margin: 10px 0px;
       width: 100%;
     }
 

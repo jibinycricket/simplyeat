@@ -10,8 +10,8 @@
   <div class="modal-fade-screen">
     <div class="modal-inner">
       <div class="modal-close" for="new-<%=section.name%>-modal"></div>
-      
-      <h1>Add Item to <%= section.name %> section</h1>
+      <fieldset class="form-fields-container">
+      <legend>Add Item to <%= section.name.capitalize %> section</legend>
       <%= form_for(@itemNew, remote:true) do |f| %>
         <%= f.label :name, 'Item Name' %>
         <%= f.text_field :name, :placeholder =>"Chicken Sandwich", class: "section_#{section.id}_new_item_name required-field" %>
