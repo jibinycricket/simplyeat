@@ -1,10 +1,8 @@
-/*********** Schedule User View *******/
 .schedule-column{
   @include span-columns(3 of 12);
   .schedule{
     margin: 0px;
     position: relative;
-    width: 250px;
     float: right;
     top: -100px;
     color: $theme-color-4;

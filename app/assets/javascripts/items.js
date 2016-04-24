@@ -1,8 +1,9 @@
 function itemDescriptionWidth(itemID){
   var currentWidth = $(".item-"+itemID+"-description").css("width");
   var parentWidth = $(".item-"+itemID+"-description").parent().css("width");
-  var hasImage = $(".item-"+itemID+"-picture img").attr("src");
-  if(currentWidth == parentWidth && hasImage.length!=0){
+  var hasImage = $(".item-"+itemID+"-picture").val();
+ 
+  if(currentWidth == parentWidth && hasImage!= undefined){
     currentWidth = "80%"
   }else{
     currentWidth = "100%";
