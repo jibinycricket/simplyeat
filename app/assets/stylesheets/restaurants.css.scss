@@ -146,14 +146,16 @@
   @include span-columns(12 of 12);
   .store-contact-container{
     .contact-links{
+      width: 100%;
+      display: flex;
       margin-top: 20px;
-      li{
-        @include box-shadow;
-        border-radius: 3px;
-        display: inline-block;
-        width: 24%;
+      a{
         text-align: center;
-        font-size: 35px;
+        flex: 1;
+        @include box-shadow;
+        font-size: 30px;
+        border-radius: 3px;
+        margin: 0px 3px;
         background-color: $theme-color-5;
       }
     }
@@ -245,5 +247,17 @@
       width: 100%;
     }
 
+  }
+}
+
+
+.linkscontainer{
+  display: inline-flex;
+  width: 100%;
+  .linkstoflex{
+    height: 50px;
+    flex: 1;
+    background-color: blue;
+    margin: 0px 10px;
   }
 }

@@ -1,5 +1,5 @@
 <div class="page-container">
-<% @users.each do |user| %>
-  <%= link_to user.user_name, user %><br/>
-<% end %>
+  <% @users.each do |user| %>
+    <%= link_to user.restaurant.name, user_path(user.user_name) %><br/>
+  <% end %>
 </div>

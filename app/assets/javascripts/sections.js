@@ -1,84 +1,90 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
-function newSectionButtonCheck(){
-  var newSectionButton = '.new-section-button';
+function intializeNewSectionButton(){
+  var newSectionButton = document.getElementsByClassName('new-section-button')[0];
+  var newSectionTextField = document.getElementById('section_name');
 
-  $(newSectionButton).attr('disabled','disabled');
-  var text = $(".section_name").val();
-  //initial check for field
-  if(text!=""){
-    $(newSectionButton).removeAttr('disabled');
-  }
-  //check after field is edited
-  $('.section_name').keyup(function(){
-    text = $(".section_name").val();
-    if(text!=""){
-      $(newSectionButton).removeAttr('disabled');
-    }else{
-      $(newSectionButton).attr('disabled','disabled');
-    }
-  });
+  newSectionTextField.value = '';
+  newSectionButton.setAttribute("disabled","disabled");
 }
 
-function editSectionButtonCheck(sectionID){
-  var editSectionButton = '.edit-section-'+sectionID+'-button';
-  var editSectionName = ".edit_section_"+sectionID+"_name";
+function newSectionTextCheck(sections){
+  var newSectionButton = document.getElementsByClassName('new-section-button')[0];
+  var newSectionTextField = document.getElementById('section_name').value;
 
-  $(editSectionButton).attr('disabled','disabled');
-  var text = $(editSectionName).val();
-  //initial check for field
-  if(text!=""){
-    $(editSectionButton).removeAttr('disabled');
-  }
-  //check after field is edited
-  $(editSectionName).keyup(function(){
-    text = $(editSectionName).val();
-    if(text!=""){
-      $(editSectionButton).removeAttr('disabled');
-    }else{
-      $(editSectionButton).attr('disabled','disabled');
+  if(newSectionTextField!=''){
+    for(var i = 0; i<sections.length; i++){
+      if (newSectionTextField.toLowerCase() == sections[i].name.toLowerCase()){
+        newSectionButton.setAttribute("disabled","disabled");
+        break;
+      }else{
+        newSectionButton.removeAttribute('disabled');
+      }
     }
-  }); 
+  }else{
+    newSectionButton.setAttribute("disabled","disabled");
+  }
 }
 
-function newItemButtonCheck(itemID){
-  var newItemName = ".section_"+itemID+"_new_item_name";
-  var newItemPrice = ".section_"+itemID+"_new_item_price";
-  var newItemDescription = ".section_"+itemID+"_new_item_description";
-  var newItemButton = '.new-section-'+itemID+'-item-button';
-  $(newItemButton).attr('disabled','disabled');
+function intializeEditSectionButton(section){
+  var sectionID = section.id;
+  var editSectionTextField = document.getElementsByClassName("edit_section_"+sectionID+"_name")[0];
+  var editSectionButton = document.getElementsByClassName("edit-section-"+sectionID+"-button")[0];
+  editSectionButton.setAttribute('disabled','disabled');
+
+  if(editSectionTextField.value != section.name){
+    editSectionTextField.value = section.name;
+  }
+}
+
+function editSectionTextCheck(section, sections){
+  var sectionID = section.id;
+  var editSectionTextField = document.getElementsByClassName("edit_section_"+sectionID+"_name")[0];
+  var editSectionButton = document.getElementsByClassName("edit-section-"+sectionID+"-button")[0];
   
-  //Initial Field Check
-  var nameCheck = $(newItemName).val();
-  var priceCheck = $(newItemPrice).val();
-  var descriptionCheck = $(newItemDescription).val();
-  
-  if(nameCheck!="" && priceCheck!="" && descriptionCheck!=""){
-    $(newItemButton).removeAttr('disabled');
-  }
-  //check after field is edited
-  $(newItemName).add(newItemPrice).add(newItemDescription).keyup(function(){
-    console.log('here');
-    nameCheck = $(newItemName).val();
-    priceCheck = $(newItemPrice).val();
-    descriptionCheck = $(newItemDescription).val();
-    if(nameCheck!="" && priceCheck!="" && descriptionCheck!=""){
-      $(newItemButton).removeAttr('disabled');
-    }else{
-      $(newItemButton).attr('disabled','disabled');
+  if(editSectionTextField.value!=''){
+    for(var i = 0; i<sections.length; i++){
+      if (editSectionTextField.value.toLowerCase() == sections[i].name.toLowerCase()){
+        editSectionButton.setAttribute("disabled","disabled");
+        break;
+      }else{
+        editSectionButton.removeAttribute('disabled');
+      }
     }
-  });
+  }else{
+    editSectionButton.setAttribute("disabled","disabled");
+  }
 }
 
-$(document).ready(function(){
-  var numOfSections = sections.length;
+function initializeNewItemButton(section){
+  var sectionID = section.id;
+  console.log(sectionID);
+  var newItemName = document.getElementsByClassName("section_"+sectionID+"_new_item_name")[0];
+  var newItemPrice = document.getElementsByClassName("section_"+sectionID+"_new_item_price")[0];
+  var newItemDescription = document.getElementsByClassName("section_"+sectionID+"_new_item_description")[0];
+  var newItemButton = document.getElementsByClassName('new-section-'+sectionID+'-item-button')[0];
 
-  //Create a unique check for text fields for each section and newItem
-  for(var j=0; j<numOfSections; j++){
-    editSectionButtonCheck(sections[j].id);
-    newItemButtonCheck(sections[j].id);
+  newItemName.value = "";
+  newItemPrice.value = "";
+  newItemDescription.value="";
+
+  newItemButton.setAttribute('disabled','disabled');
+}
+
+function newItemTextCheck(sectionID){
+  var newItemName = document.getElementsByClassName("section_"+sectionID+"_new_item_name")[0];
+  var newItemPrice = document.getElementsByClassName("section_"+sectionID+"_new_item_price")[0];
+  var newItemDescription = document.getElementsByClassName("section_"+sectionID+"_new_item_description")[0];
+  var newItemButton = document.getElementsByClassName('new-section-'+sectionID+'-item-button')[0];
+
+  if (newItemName.value!='' && newItemPrice.value!='' && newItemDescription.value!=''){
+    newItemButton.removeAttribute('disabled');
+  }else{
+    newItemButton.setAttribute('disabled','disabled');
   }
-  //Create a text field check for new section button
-  newSectionButtonCheck();
-});
+}
 
+
+/* Create an initalize function when newItem button is clicked
+create another function that checks when typing, if fields are filled
+enable button*/

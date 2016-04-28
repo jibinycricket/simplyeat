@@ -24,10 +24,11 @@ $container-width-mobile: 250px;
     }
     .menu-create-buttons{
       .modal-trigger{
-        border-style: solid;
+        border: 1px solid;
         color: white;
         width: 200px;
         margin: 10px;
+        padding: 10px 15px;
         text-align: center;
         float: right;
         &:hover{
@@ -45,6 +46,13 @@ $container-width-mobile: 250px;
         min-width: $container-width-mobile;
         margin-bottom: 10px;
         padding: 5px 5px 25px 5px;
+      }
+
+      .action-button{
+        background-color: $theme-color-2;
+        border-radius: 3px;
+        padding: 9px;
+        font-size: 20px;
       }
       .section{
         padding: 10px;
@@ -72,32 +80,30 @@ $container-width-mobile: 250px;
           .delete-section{
             clear: left;
             float: right;
-            padding: 5px;
             vertical-align: center;
-            border-style: solid;
+            font-size: 20px;
             &:hover{
-              background: $theme-color-2;
+              background: $theme-color-3;
+              color: black;
             }
           }
 
           .edit-section{
             float: right;
             margin-right: 10px;
-            padding: 5px;
-            border-style: solid;
+            font-size: 20px;
             &:hover{
-              background: $theme-color-4;
+              background: $theme-color-3;
               color: black;
             }
           }
 
           .add-item{
             float: right;
-            padding: 5px;
             margin-right: 10px;
-            border-style: solid;
+            font-size: 20px;
             &:hover{
-              background: $theme-color-4;
+              background-color: $theme-color-3;
               color: black;
             }
           }
@@ -168,27 +174,23 @@ $container-width-mobile: 250px;
           width: 100%;
         }
         .edit-item{
-          border-style: solid;
-          color: white;
+          font-size: 20px;
           margin: 0px;
-          padding: 5px;
           float: right;
-          width: 30px;
           text-align: center;
           &:hover{
-            background: $theme-color-4;
+            background: $theme-color-3;
             color: black;
           }
         }
         .delete-item{
-          border-style: solid;
-          width: 30px;
-          padding: 5px;
+          font-size: 20px;
           margin-left: 10px;
           float: right;
           text-align: center;
           &:hover{
-            background: $theme-color-2;
+            background: $theme-color-3;
+            color: black;
           }
         }
       }

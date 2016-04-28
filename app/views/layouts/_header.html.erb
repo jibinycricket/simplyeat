@@ -16,24 +16,29 @@
         <% @restaurant = Restaurant.find_by(user_id: current_user.id) %>
         <% @schedule = Schedule.find_by(user_id: current_user.id) %>
         <% unless @schedule.nil? %>
-          <li><%= link_to "Design", current_user %></li>
+          <li>
+            <%= link_to "Design", user_path(current_user.user_name) %>
+          </li>
         <% end %>
         <% unless @restaurant.nil? %>
-        <li><%= link_to "Schedule", chooseSchedulePath() %></li>
-        <% end %>
-        
-        <li><%= link_to "Store Info", chooseRestaurantPath(@restaurant) %></li>
-        <li><%= link_to "Directory", users_path %></li>
-        <li><a href="#"><%= current_user.user_name %></a>
-        <ul class="lower-nav">
-          <li><%= link_to "Account", edit_user_registration_path(current_user) %></li>
           <li>
-            <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+            <%= link_to "Schedule", chooseSchedulePath() %>
           </li>
-        </ul>
-      </li>
-    <% end %>
-  </ul>
-</nav>
-<br class="clearfix">
+        <% end %>
+        <li><%= link_to "Store Info", chooseRestaurantPath(@restaurant) %></li>
+        <li><%= link_to "Directory", shops_path %></li>
+        <li><a href="#"><%= current_user.user_name %></a>
+          <ul class="lower-nav">
+            <li>
+              <%= link_to "Account", edit_user_registration_path(current_user) %>
+            </li>
+            <li>
+              <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+            </li>
+          </ul>
+        </li>
+      <% end %>
+    </ul>
+  </nav>
+  <br class="clearfix">
 </header>

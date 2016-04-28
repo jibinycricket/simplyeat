@@ -1,40 +1,40 @@
 <div class="store-contact-container">
   <% unless @restaurant.email.empty? && @restaurant.instagram.empty? && @restaurant.facebook.empty? && @restaurant.twitter.empty? %>
-  <ul class="contact-links">
-  <% unless @restaurant.email.empty? %>
-    <li class="email">
+  <div class="contact-links">
+    <% unless @restaurant.email.empty? %>
       <%= mail_to "http://www." + @restaurant.email do %>
-      <i class="fa fa-envelope-o"></i>
+        <div class="contact-link">
+          <i class="fa fa-envelope-o"></i>
+        </div>
       <% end %>
-    </li>
     <% end %>
     <% unless @restaurant.facebook.empty? %>
-    <li class="facebook">
-      <%= link_to "www." + @restaurant.facebook do %>
-      <i class="fa fa-facebook"></i>
+      <%= link_to "http://www." + @restaurant.facebook do %>
+        <div class="contact-link">
+          <i class="fa fa-facebook"></i>
+        </div>
       <% end %>
-    </li>
     <% end %>
     <% unless @restaurant.instagram.empty? %>
-    <li class="instagram">
-      <%= link_to "www."+ @restaurant.instagram do %>
-      <i class="fa fa-instagram"></i>
+      <%= link_to "http://www."+ @restaurant.instagram do %>
+        <div class="contact-link">
+          <i class="fa fa-instagram"></i>
+        </div>
       <% end %>
-    </li>
     <% end %>
     <% unless @restaurant.twitter.empty? %>
-    <li class="twitter">
-      <%= link_to "www." + @restaurant.twitter do %>
-      <i class="fa fa-twitter"></i>
+      <%= link_to "http://www."+ @restaurant.twitter do %>
+        <div class="contact-link">
+          <i class="fa fa-twitter"></i>
+        </div>
       <% end %>
-    </li>
     <% end %>
-  </ul>
+  </div>
   <% else %>
-    <% if current_user == @restaurant.user %>
-      <%= link_to edit_restaurant_path(current_user)+"#ContactFields" do  %>
-        <div class="placeholder">(Enter your Social Media Info)</div>
-      <% end %>
-    <% end %>
+  <% if current_user == @restaurant.user %>
+  <%= link_to edit_restaurant_path(current_user)+"#ContactFields" do  %>
+  <div class="placeholder">(Enter your Social Media Info)</div>
+  <% end %>
+  <% end %>
   <% end %>
 </div>

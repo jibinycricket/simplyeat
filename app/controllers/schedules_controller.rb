@@ -10,7 +10,7 @@ class SchedulesController < ApplicationController
     @schedule = current_user.create_schedule(schedule_params)
     if @schedule.save
       flash[:success] = "Schedule information has been saved"
-      redirect_to current_user
+      redirect_to user_path(current_user.user_name)
     else
       flash[:alert] = "Schedule information was not saved"
       render :new
@@ -24,7 +24,7 @@ class SchedulesController < ApplicationController
   def update
     if current_user.schedule.update(schedule_params)
       flash[:success] = "Schedule information has been updated"
-      redirect_to current_user
+      redirect_to user_path(current_user.user_name)
     else
       redirect_to edit_schedule_path
       flash[:alert] = "Schedule information has been updated"

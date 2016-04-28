@@ -1,18 +1,18 @@
 <div class="modal menu-create-buttons">
   <label for="new-section-modal">
-    <div class="modal-trigger">Create Menu Section</div>
+    <div class="modal-trigger" id ="new-section-modal-button" onclick="intializeNewSectionButton()">Create Menu Section</div>
   </label>
   <input class="modal-state" id="new-section-modal" type="checkbox" />
   <div class="modal-fade-screen">
     <div class="modal-inner">
       <div class="modal-close" for="new-section-modal"></div>
       <fieldset class="form-fields-container">
-      <legend>New Section</legend>
-      <%= form_for(@sectionNew, remote:true) do |f| %>
-        <%= f.label :name %>
-        <%= f.text_field :name, class: "form-control section_name required-field" %>
-        <%= f.submit "Create Section" , data: {disable_with: "Creating Section"}, :class=>"new-section-button" %>
-      <% end %>
+        <legend>New Section</legend>
+        <%= form_for(@sectionNew, remote:true) do |f| %>
+          <%= f.label :name %>
+          <%= f.text_field :name, class: "form-control section_name required-field", :onkeyup => 'newSectionTextCheck(sections)' %>
+          <%= f.submit "Create Section" , data: {disable_with: "Creating Section"}, :class=>"new-section-button" %>
+        <% end %>
       </fieldset>
     </div>
   </div>

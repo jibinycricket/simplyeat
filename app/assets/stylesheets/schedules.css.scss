@@ -8,6 +8,7 @@
     color: $theme-color-4;
     th{
       text-align: center;
+      border-bottom: 1px solid #565454;
     }
     .column1{
       width: 30px;
@@ -16,6 +17,7 @@
       width: 120px;
     }
     td{
+      border-bottom: 1px solid #565454;
       padding: 0px;
       &:nth-child(1){
         text-align: center;

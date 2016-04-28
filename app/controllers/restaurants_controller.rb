@@ -14,7 +14,7 @@ class RestaurantsController < ApplicationController
       if current_user.schedule.nil?
         redirect_to new_schedule_path
       else
-        redirect_to current_user
+        redirect_to user_path(current_user.user_name)
       end
     else
       flash[:alert] = "Restaurant info wasn't saved"
@@ -28,7 +28,7 @@ class RestaurantsController < ApplicationController
 
   def update
     if current_user.restaurant.update(restaurant_params)
-      redirect_to current_user
+      redirect_to user_path(current_user.user_name)
       flash[:success] = "Restaurant information has been updated"
     else
       redirect_to edit_restaurant_path

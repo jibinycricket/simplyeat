@@ -33,7 +33,7 @@
     <div class="menu-column">
       <div class="menu-create-buttons">
         <% if current_user == @user && current_user!= nil %>
-        <%= render :partial => 'partials/section_modals/new_section_modal', :locals => {:@sectionNew => current_user.sections.build} %>
+        <%= render :partial => 'partials/section_modals/new_section_modal', :locals => {:@sectionNew => current_user.sections.build, :sections => @sections} %>
         <% end %>
       </div>
       <section class="menu">

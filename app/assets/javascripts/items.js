@@ -20,43 +20,37 @@ function itemNameClick(itemID){
 }
 
 
-function editItemButtonCheck(itemID){
-  var editItemButton = '.edit-item-'+itemID+'-button';
-  var name = ".item_"+itemID+"_name";
-  var price = ".item_"+itemID+"_price";
-  var description = ".item_"+itemID+"_description";
+function initializeEditItemButton(item){
+  var itemId = item.id;
+  var editItemName = document.getElementsByClassName("item_"+itemId+"_name")[0];
+  var editItemPrice = document.getElementsByClassName("item_"+itemId+"_price")[0];
+  var editItemDescription = document.getElementsByClassName("item_"+itemId+"_description")[0];
+  var editItemButton = document.getElementsByClassName("edit-item-"+itemId+"-button")[0];
 
-  $(editItemButton).attr('disabled','disabled');
-  
-  //initial check for field
-  var nameCheck = $(name).val();
-  var priceCheck = $(price).val();
-  var descriptionCheck = $(description).val();
+  editItemName.value = item.name;
+  editItemPrice.value = item.price;
+  editItemDescription.value = item.description;
 
-  if(nameCheck!="" && priceCheck!="" && descriptionCheck!=""){
-    $(editItemButton).removeAttr('disabled');
-  }
-  //check after field is edited
-  $(name).add(price).add(description).keyup(function(){
-    nameCheck = $(name).val();
-    priceCheck = $(price).val();
-    descriptionCheck = $(description).val();
-    
-    if(nameCheck!="" && priceCheck!="" && descriptionCheck!=""){
-      $(editItemButton).removeAttr('disabled');
-    }else{
-      $(editItemButton).attr('disabled','disabled');
-    }
-  });
+  editItemButton.setAttribute('disabled','disabled');
 }
 
-$(document).ready(function(){
-  var numOfItems = items.length;
-  for(var i=0; i<numOfItems; i++){
-    itemNameClick(items[i].id);
-    editItemButtonCheck(items[i].id);
+function editItemTextCheck(item){
+  var itemId = item.id;
+  var editItemName = document.getElementsByClassName("item_"+itemId+"_name")[0];
+  var editItemPrice = document.getElementsByClassName("item_"+itemId+"_price")[0];
+  var editItemDescription = document.getElementsByClassName("item_"+itemId+"_description")[0];
+  var editItemButton = document.getElementsByClassName("edit-item-"+itemId+"-button")[0];
+
+  if(editItemName.value!='' && editItemPrice.value!='' && editItemDescription.value!=''){
+    if(editItemName.value!= item.name){
+      editItemButton.removeAttribute('disabled');
+    }else{
+      editItemButton.setAttribute('disabled','disabled');
+    }
+  }else{
+    editItemButton.setAttribute('disabled','disabled');
   }
-});
+}
 
 
 
