@@ -10,12 +10,12 @@
     <div class="modal-inner">
       <div class="modal-close" for="new-<%=section.name%>-modal"></div>
       <fieldset class="form-fields-container">
-        <legend>Add Item to <%= section.name.capitalize %> section</legend>
+        <legend class="new-item-legend-section-<%= section.id%>">Add Item to <%= section.name.capitalize %> section</legend>
         <%= form_for(@itemNew, remote:true) do |f| %>
         <%= f.label :name, 'Item Name' %>
         <%= f.text_field :name, :placeholder =>"Chicken Sandwich", class: "section_#{section.id}_new_item_name required-field", :onkeyup => "newItemTextCheck(#{section.id})" %>
         <%= f.label :section_name, 'Menu Section' %>
-        <%= f.collection_select :section_id, current_user.sections.all, :id, :name, :selected => section.id %>
+        <%= f.collection_select :section_id, current_user.sections.all, :id, :name,{}, {:selected => section.id, :class => "new-item-section-dropdown new-item-section-#{section.id}-dropdown"} %>
         <%= f.label :price, 'Price' %>
         <%= f.number_field :price, :step => 'any', :placeholder =>'5.00', class: "section_#{section.id}_new_item_price required-field", :onkeyup => "newItemTextCheck(#{section.id})" %>
         <%= f.label :description, 'Description' %>

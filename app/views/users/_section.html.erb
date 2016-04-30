@@ -1,7 +1,7 @@
 <div class="section">
   <ul id="section-<%=section.id%>">
     <li class="section-name">
-      <%= section.name %>
+      <div class="section-name-<%=section.id%>"><%= section.name %></div>
     </li>
     <% if current_user == @user && current_user != nil %>
       <li>
@@ -20,7 +20,3 @@
     <% end %>
   </ul>
 </div>
-
-<%= javascript_tag do %>
-  var sections = <%= @user.sections.to_json.html_safe %>;
-<% end %>

@@ -1,3 +1,5 @@
+
+//Animation for open close button for nav
 $(document).ready(function(){
   $(".hamburger").click(function(){
     if ($(".hamburger").hasClass("hamburger-is-active")){

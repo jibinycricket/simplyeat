@@ -5,12 +5,13 @@ class SectionsController < ApplicationController
 
   def new
     @section = current_user.sections.build
-
   end
 
   def create
     @user = current_user
     @section = current_user.sections.build(section_params)
+    @sections = current_user.sections
+    @items = current_user.items
     respond_to do |format|
       if @section.save
         format.html{
@@ -29,6 +30,7 @@ class SectionsController < ApplicationController
   end
 
   def destroy
+    @items = current_user.items
     @section.destroy
     respond_to do |format|
       format.html{
@@ -43,6 +45,7 @@ class SectionsController < ApplicationController
   end
 
   def update
+    @items = current_user.items
     respond_to do |format|
       if @section.update(section_params)
         format.html{redirect_to current_user}

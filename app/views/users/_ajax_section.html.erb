@@ -1,5 +1,5 @@
 <div id="<%= section.id%>-section-and-items" class="section_and_items">
-  <%= render :partial => 'users/section', :locals => {:section => section} %>
+  <%= render :partial => 'users/section', :locals => {:section => section, :@sections => sections} %>
   <div id="<%= section.id%>-item-list">
     <ul class="items">
       <!-- Put Items here -->

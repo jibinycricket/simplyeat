@@ -1,6 +1,21 @@
-//window.location.reload();
 $('.modal-close').click();
-$('#section-<%= @section.id %> .section-name').html("<%= @section.name %>").hide().fadeIn(1000);
+//update title
+$('#section-<%= @section.id %> .section-name-<%= @section.id%>').html("<%= @section.name %>").hide().fadeIn(1000);
+
+//new item update sections list
+$(".new-item-legend-section-<%= @section.id%>").html("Add Item to <%= @section.name.capitalize %> section")
+$('.new-item-section-dropdown option[value = "<%= @section.id%>"]').remove();
+$(".new-item-section-dropdown").append('<%= j render :partial => 'users/ajax_dropdown', :locals =>{:section => @section} %>')
+
+//update item's section dropdown
+<% @items.each do |item| %>
+  $('.item_<%= item.id %>_dropdown option[value = "<%= @section.id%>"').remove();
+  $(".item_<%= item.id %>_dropdown").append('<%= j render :partial => 'users/ajax_dropdown', :locals =>{:section => @section} %>')
+  <% if item.id == @section.id%>
+    $(".item_<%= item.id %>_dropdown").val("<%= @section.id %>")
+  <% end %>
+<% end %>
+
 
 
 

@@ -1,6 +1,6 @@
 <div class="modal menu-create-buttons">
   <label for="new-section-modal">
-    <div class="modal-trigger" id ="new-section-modal-button" onclick="intializeNewSectionButton()">Create Menu Section</div>
+    <div class="modal-trigger" id ="new-section-modal-button" onclick="initializeNewSectionButton()">Create Menu Section</div>
   </label>
   <input class="modal-state" id="new-section-modal" type="checkbox" />
   <div class="modal-fade-screen">
@@ -10,7 +10,7 @@
         <legend>New Section</legend>
         <%= form_for(@sectionNew, remote:true) do |f| %>
           <%= f.label :name %>
-          <%= f.text_field :name, class: "form-control section_name required-field", :onkeyup => 'newSectionTextCheck(sections)' %>
+          <%= f.text_field :name, class: "form-control section_name required-field", :onkeyup => "newSectionTextCheck(#{sections.to_json})" %>
           <%= f.submit "Create Section" , data: {disable_with: "Creating Section"}, :class=>"new-section-button" %>
         <% end %>
       </fieldset>

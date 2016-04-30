@@ -1,6 +1,6 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
-function intializeNewSectionButton(){
+function initializeNewSectionButton(){
   var newSectionButton = document.getElementsByClassName('new-section-button')[0];
   var newSectionTextField = document.getElementById('section_name');
 
@@ -21,6 +21,9 @@ function newSectionTextCheck(sections){
         newSectionButton.removeAttribute('disabled');
       }
     }
+    if(sections.length==0){
+      newSectionButton.removeAttribute('disabled');
+    }
   }else{
     newSectionButton.setAttribute("disabled","disabled");
   }
@@ -30,10 +33,11 @@ function intializeEditSectionButton(section){
   var sectionID = section.id;
   var editSectionTextField = document.getElementsByClassName("edit_section_"+sectionID+"_name")[0];
   var editSectionButton = document.getElementsByClassName("edit-section-"+sectionID+"-button")[0];
-  editSectionButton.setAttribute('disabled','disabled');
+  var currentSectionName = document.getElementsByClassName("section-name-"+sectionID)[0].innerHTML;
 
-  if(editSectionTextField.value != section.name){
-    editSectionTextField.value = section.name;
+  editSectionButton.setAttribute('disabled','disabled');
+  if(editSectionTextField.value != currentSectionName){
+    editSectionTextField.value = currentSectionName;
   }
 }
 
@@ -41,10 +45,13 @@ function editSectionTextCheck(section, sections){
   var sectionID = section.id;
   var editSectionTextField = document.getElementsByClassName("edit_section_"+sectionID+"_name")[0];
   var editSectionButton = document.getElementsByClassName("edit-section-"+sectionID+"-button")[0];
-  
+
+  console.log($(".sections-list .section_and_items").length);
   if(editSectionTextField.value!=''){
     for(var i = 0; i<sections.length; i++){
-      if (editSectionTextField.value.toLowerCase() == sections[i].name.toLowerCase()){
+      var currentSectionName = document.getElementsByClassName("section-name-"+sections[i].id)[0].innerHTML;
+      console.log(currentSectionName);
+      if (editSectionTextField.value.toLowerCase() == currentSectionName.toLowerCase()){
         editSectionButton.setAttribute("disabled","disabled");
         break;
       }else{
@@ -58,15 +65,15 @@ function editSectionTextCheck(section, sections){
 
 function initializeNewItemButton(section){
   var sectionID = section.id;
-  console.log(sectionID);
   var newItemName = document.getElementsByClassName("section_"+sectionID+"_new_item_name")[0];
   var newItemPrice = document.getElementsByClassName("section_"+sectionID+"_new_item_price")[0];
   var newItemDescription = document.getElementsByClassName("section_"+sectionID+"_new_item_description")[0];
   var newItemButton = document.getElementsByClassName('new-section-'+sectionID+'-item-button')[0];
-
+  var newItemDropdown = document.getElementsByClassName('new-item-section-'+sectionID+'-dropdown')[0];
   newItemName.value = "";
   newItemPrice.value = "";
   newItemDescription.value="";
+  newItemDropdown.value = section.id;
 
   newItemButton.setAttribute('disabled','disabled');
 }
@@ -84,7 +91,3 @@ function newItemTextCheck(sectionID){
   }
 }
 
-
-/* Create an initalize function when newItem button is clicked
-create another function that checks when typing, if fields are filled
-enable button*/

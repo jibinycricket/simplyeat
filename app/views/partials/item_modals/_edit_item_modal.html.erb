@@ -13,7 +13,7 @@
         <%= f.text_field :name, class: "item_#{@itemEdit.id}_name required-field", :onkeyup => "editItemTextCheck(#{@itemEdit.to_json})"  %>
 
         <%= f.label :section_id, 'Menu Section' %>
-        <%= f.collection_select :section_id, current_user.sections.all, :id, :name %>
+        <%= f.collection_select :section_id, current_user.sections.all, :id, :name,{},{:class =>"item_#{@itemEdit.id}_dropdown", :onchange => "editItemTextCheck(#{@itemEdit.to_json})"} %>
 
         <%= f.label :price, 'Price' %>
         <%= f.number_field :price, :step => 'any', :placeholder =>'5.00', class: "item_#{@itemEdit.id}_price required-field", :onkeyup => "editItemTextCheck(#{@itemEdit.to_json})" %>
@@ -22,11 +22,11 @@
         <%= f.text_field :description, class: "item_#{@itemEdit.id}_description required-field", :onkeyup => "editItemTextCheck(#{@itemEdit.to_json})" %>
 
         <%= f.label :ingredients, 'Ingredients' %>
-        <%= f.text_field :ingredients, :placeholder =>'Chicken, Whole Wheat Bun, Mayo' %>
+        <%= f.text_field :ingredients, class: "item_#{@itemEdit.id}_ingredients", :placeholder =>'Chicken, Whole Wheat Bun, Mayo', :onkeyup => "editItemTextCheck(#{@itemEdit.to_json})"  %>
 
         <div class="field">
           <%= f.label :item_picture, "Item Picture" %>
-          <%= f.file_field :item_picture %>
+          <%= f.file_field :item_picture,  class: "item_#{@itemEdit.id}_picture", :onchange => "editItemTextCheck(#{@itemEdit.to_json})"  %>
         </div>
 
         <%= f.submit "Save Changes" , data: {disable_with: "Saving..."}, :class => "edit-item-#{@itemEdit.id}-button" %>      
