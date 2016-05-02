@@ -6,7 +6,7 @@
     <% if current_user == @user && current_user != nil %>
       <li>
         <%= link_to section, remote: true, data: {confirm: "Are you sure?"}, method: :delete do %>
-          <div class="delete-section action-button">
+          <div class="delete-section section-action-button">
             <i class="fa fa-trash-o"></i>
           </div>
         <% end %>

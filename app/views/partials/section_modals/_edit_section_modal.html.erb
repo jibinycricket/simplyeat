@@ -1,6 +1,6 @@
 <div class="modal menu-buttons">
   <label for="edit-section-modal_<%=sectionEdit.id%>">
-    <div class="modal-trigger edit-section action-button" onclick = "intializeEditSectionButton(<%=sectionEdit.to_json%>)"><i class="fa fa-pencil"></i></div>
+    <div class="modal-trigger edit-section section-action-button" onclick = "intializeEditSectionButton(<%=sectionEdit.to_json%>)"><i class="fa fa-pencil"></i></div>
   </label>
   <input class="modal-state" id="edit-section-modal_<%=sectionEdit.id%>" type="checkbox" />
   <div class="modal-fade-screen">
@@ -11,7 +11,7 @@
       <%= form_for(sectionEdit, :method => :put, remote:true) do |f| %>
         <%= f.label :name %>
         <%= f.text_field :name, :class => "edit_section_#{sectionEdit.id}_name required-field", :onkeyup => "editSectionTextCheck(#{sectionEdit.to_json}, #{sections.to_json})"  %>
-        <%= f.submit "Save Changes" , data: {disable_with: "Saving..."}, :class =>"edit-section-#{sectionEdit.id}-button" %>
+        <%= f.submit "Save Changes", data: {disable_with: "Saving..."}, :class =>"edit-section-#{sectionEdit.id}-button" %>
       <% end %>
       </fieldset>
     </div>

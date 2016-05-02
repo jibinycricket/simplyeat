@@ -5,6 +5,7 @@ function initializeNewSectionButton(){
   var newSectionTextField = document.getElementById('section_name');
 
   newSectionTextField.value = '';
+  newSectionButton.value = "Create Section";
   newSectionButton.setAttribute("disabled","disabled");
 }
 
@@ -34,7 +35,8 @@ function intializeEditSectionButton(section){
   var editSectionTextField = document.getElementsByClassName("edit_section_"+sectionID+"_name")[0];
   var editSectionButton = document.getElementsByClassName("edit-section-"+sectionID+"-button")[0];
   var currentSectionName = document.getElementsByClassName("section-name-"+sectionID)[0].innerHTML;
-
+  console.log(editSectionButton);
+  editSectionButton.value = "Save Changes";
   editSectionButton.setAttribute('disabled','disabled');
   if(editSectionTextField.value != currentSectionName){
     editSectionTextField.value = currentSectionName;
@@ -45,21 +47,16 @@ function editSectionTextCheck(section, sections){
   var sectionID = section.id;
   var editSectionTextField = document.getElementsByClassName("edit_section_"+sectionID+"_name")[0];
   var editSectionButton = document.getElementsByClassName("edit-section-"+sectionID+"-button")[0];
-
-  console.log($(".sections-list .section_and_items").length);
+  editSectionButton.removeAttribute('disabled');
   if(editSectionTextField.value!=''){
-    for(var i = 0; i<sections.length; i++){
-      var currentSectionName = document.getElementsByClassName("section-name-"+sections[i].id)[0].innerHTML;
-      console.log(currentSectionName);
-      if (editSectionTextField.value.toLowerCase() == currentSectionName.toLowerCase()){
-        editSectionButton.setAttribute("disabled","disabled");
+    for(var i = 0; i <sections.length; i++){
+      if(editSectionTextField.value.toLowerCase() == sections[i].name.toLowerCase()){
+        editSectionButton.setAttribute('disabled','disabled');
         break;
       }else{
         editSectionButton.removeAttribute('disabled');
       }
     }
-  }else{
-    editSectionButton.setAttribute("disabled","disabled");
   }
 }
 
@@ -75,6 +72,7 @@ function initializeNewItemButton(section){
   newItemDescription.value="";
   newItemDropdown.value = section.id;
 
+  newItemButton.value = "Create New Item";
   newItemButton.setAttribute('disabled','disabled');
 }
 

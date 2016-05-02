@@ -1,6 +1,6 @@
 <div class="modal menu-buttons">
   <label for="edit_item_modal_<%=@itemEdit.id%>">
-    <div class="modal-trigger edit-item action-button" onclick = 'initializeEditItemButton(<%= @itemEdit.to_json %>)'><i class="fa fa-pencil"></i></div>
+    <div class="modal-trigger edit-item item-action-button" onclick = 'initializeEditItemButton(<%= @itemEdit.to_json %>)'><i class="fa fa-pencil"></i></div>
   </label>
   <input class="modal-state" id="edit_item_modal_<%=@itemEdit.id%>" type="checkbox" />
   <div class="modal-fade-screen">

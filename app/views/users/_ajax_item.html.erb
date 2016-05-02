@@ -1,29 +1,28 @@
-<div class="item" id="item_<%= item.id %>">
-  <div class="item-name item-<%= item.id%>-name" onclick="extraItemInfo(<%= item.id%>)"><%= item.name %></div>
-  <div class="item-price"><%= item.price %></div>
-  <br class='clearfix'/>
-  <div class="item-line-seperator"></div>
-  <% unless item.item_picture.blank? %>
-    <div class="item-picture item-<%= item.id%>-picture">
-      <% picId = item.name + ' image' %>
-      <%= link_to( image_tag(item.item_picture.small_pic), image_url(item.item_picture.medium_pic), class: "fancybox", id: picId, rel: "gallery1", title: item.name) %>
-    </div>
-  <% end %>
-  <div class="item-description item-<%= item.id%>-description"><%= item.description %></div>
-  <% unless item.ingredients.empty? %>
-  <div class="item-ingredients item-<%= item.id%>-ingredients">Ingredients: <%= item.ingredients %></div>
-  <% end %>
-  <br class="clearfix">
-
-    <div>
-      <%= link_to item, remote: true, data: {confirm: "Are you sure?"},  method: :delete do %>
-        <div class="delete-item action-button">
-          <i class="fa fa-trash-o"></i>
-        </div>
-      <% end %>
-    </div>
-    <div>
-      <%= render :partial => 'partials/item_modals/edit_item_modal', :locals => {:@itemEdit => item} %>
-    </div>
-    <br></br>
-</div>
+  <div class="item design-item" id="item_<%= item.id %>">
+    <div class="item-name item-<%= item.id%>-name" onclick="extraItemInfo(<%= item.id%>)"><%= item.name %></div>
+    <div class="item-price"><%= item.price %></div>
+    <br class='clearfix'/>
+    <div class="item-line-seperator"></div>
+    <% unless item.item_picture.blank? %>
+      <div class="item-picture item-<%= item.id%>-picture">
+        <% picId = item.name + ' image' %>
+        <%= link_to( image_tag(item.item_picture.small_pic), image_url(item.item_picture.medium_pic), class: "fancybox", id: picId, rel: "gallery1", title: item.name) %>
+      </div>
+    <% end %>
+    <div class="item-description item-<%= item.id%>-description"><%= item.description %></div>
+    <% unless item.ingredients.empty? %>
+    <div class="item-ingredients item-<%= item.id%>-ingredients">Ingredients: <%= item.ingredients %></div>
+    <% end %>
+    <br class="clearfix">
+      <div>
+        <%= link_to item, remote: true, data: {confirm: "Are you sure?"},  method: :delete do %>
+          <div class="delete-item item-action-button">
+            <i class="fa fa-trash-o"></i>
+          </div>
+        <% end %>
+      </div>
+      <div>
+        <%= render :partial => 'partials/item_modals/edit_item_modal', :locals => {:@itemEdit => item} %>
+      </div>
+      <br></br>
+  </div>

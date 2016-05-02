@@ -48,12 +48,20 @@ $container-width-mobile: 250px;
         padding: 5px 5px 25px 5px;
       }
 
-      .action-button{
+      .item-action-button{
         background-color: $theme-color-2;
         border-radius: 3px;
         padding: 9px;
         font-size: 20px;
       }
+
+      .section-action-button{
+        background-color: $theme-color-2;
+        border-radius: 3px;
+        padding: 9px;
+        font-size: 20px;        
+      }
+
       .section{
         padding: 10px;
         display: block;
@@ -112,10 +120,15 @@ $container-width-mobile: 250px;
     }
 
     .items{
-      padding: 5px 10px;
+      padding: 10px 10px;
       min-width: $mobile-width;
       margin: 0 auto;
-      
+      .design-item{
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
       .item{
         a{
           color: $theme-color-3;

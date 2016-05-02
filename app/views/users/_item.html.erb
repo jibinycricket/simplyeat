@@ -1,5 +1,5 @@
 <% if item.section_id == section.id %>
-  <div class="item" id="item_<%= item.id %>">
+  <div class="item <% if current_user == @user %>design-item<% end %>" id="item_<%= item.id %>">
     <div class="item-name item-<%= item.id%>-name" onclick="extraItemInfo(<%= item.id%>)"><%= item.name %></div>
     <div class="item-price"><%= item.price %></div>
     <br class='clearfix'/>
@@ -19,7 +19,7 @@
     <% if current_user == @user %>
       <div>
         <%= link_to item, remote: true, data: {confirm: "Are you sure?"},  method: :delete do %>
-          <div class="delete-item action-button">
+          <div class="delete-item item-action-button">
             <i class="fa fa-trash-o"></i>
           </div>
         <% end %>
