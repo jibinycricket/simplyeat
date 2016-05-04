@@ -19,7 +19,8 @@ class User < ActiveRecord::Base
                                restaurants.name LIKE ? OR
                                restaurants.category LIKE ? OR
                                restaurants.zip_code LIKE ? OR
-                               restaurants.state LIKE ?",q, q, q, q, q)
+                               restaurants.state LIKE ? OR
+                               restaurants.city LIKE ?",q, q, q, q, q, q)
     end
   end
 end
