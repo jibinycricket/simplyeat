@@ -46,6 +46,15 @@ body{
   -webkit-box-shadow: 2px 2px 3px #1D1D1D;
 }
 
+@mixin flex-box(){
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 //Error Messages
 $base-spacing: 1.5em !default;
 $alert-color: #fff6bf !default;

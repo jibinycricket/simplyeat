@@ -1,18 +1,18 @@
 <%= form_for @item do |f| %>
   <%= f.label :name, 'Item Name' %>
-  <%= f.text_field :name, :placeholder =>"Chicken Sandwich" %>
+  <%= f.text_field :name %>
 
   <%= f.label :section_name, 'Menu Section' %>
   <%= f.collection_select :section_id, Section.all, :id, :name %>
 
   <%= f.label :price, 'Price' %>
-  <%= f.number_field :price, :step => 'any', :placeholder =>'5.00' %>
+  <%= f.number_field :price, :step => 'any'%>
 
   <%= f.label :description, 'Description' %>
-  <%= f.text_field :description, :placeholder =>"A warm chicken patty in a toasted bun" %>
+  <%= f.text_field :description%>
 
   <%= f.label :ingredients, 'Ingredients' %>
-  <%= f.text_field :ingredients, :placeholder =>'Chicken, Whole Wheat Bun, Mayo' %>
+  <%= f.text_field :ingredients%>
 
   <%= f.submit %>
 <% end %>

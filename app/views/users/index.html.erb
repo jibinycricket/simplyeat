@@ -1,5 +1,36 @@
+<% provide :title, "Store Directory" %>
+<div class="directory-title">
+  <h1>Store Directory</h1>
+</div>
+<div class="store-search">
+  <%= render 'users/search' %>
+</div>
 <div class="page-container">
-  <% @users.each do |user| %>
-    <%= link_to user.restaurant.name, user_path(user.user_name) %><br/>
-  <% end %>
+  <div class="restaurant-cards">
+    <% @users.each do |user| %>
+      <div class="restaurant-card-container">
+        <%= link_to user_path(user.user_name) do %>
+          <div class="restaurant-card">
+            <div class="restaurant-card-name">
+              <h1><%= user.restaurant.name %></h1>
+            </div>
+            <div class="restaurant-card-image">
+            <%= image_tag(user.restaurant.restaurant_picture.large_pic)%>
+            </div>
+            <div class="restaurant-card-address">
+            <h2>
+              <%= user.restaurant.street_number.to_s + " " + user.restaurant.street_name%><br/>
+              <%= user.restaurant.city %><br/>
+              <%= user.restaurant.state + " " + user.restaurant.zip_code.to_s %><br/>
+              </h2>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  
+  <div class="pagination">
+  <%= will_paginate @users %>
+  </div>
 </div>

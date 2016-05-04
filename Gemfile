@@ -11,10 +11,13 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'font-awesome-rails'
+gem 'will_paginate'
+#image uploading
 gem 'fog'
 gem 'mini_magick'
 gem 'carrierwave'
 gem 'remotipart', '~> 1.2'
+
 #bourbon
 gem 'bourbon'
 gem 'neat'

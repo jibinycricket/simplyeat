@@ -13,15 +13,15 @@
         <legend class="new-item-legend-section-<%= section.id%>">Add Item to <%= section.name.capitalize %> section</legend>
         <%= form_for(@itemNew, remote:true) do |f| %>
         <%= f.label :name, 'Item Name' %>
-        <%= f.text_field :name, :placeholder =>"Chicken Sandwich", class: "section_#{section.id}_new_item_name required-field", :onkeyup => "newItemTextCheck(#{section.id})" %>
+        <%= f.text_field :name, class: "section_#{section.id}_new_item_name required-field", :onkeyup => "newItemTextCheck(#{section.id})" %>
         <%= f.label :section_name, 'Menu Section' %>
         <%= f.collection_select :section_id, current_user.sections.all, :id, :name,{}, {:selected => section.id, :class => "new-item-section-dropdown new-item-section-#{section.id}-dropdown"} %>
         <%= f.label :price, 'Price' %>
-        <%= f.number_field :price, :step => 'any', :placeholder =>'5.00', class: "section_#{section.id}_new_item_price required-field", :onkeyup => "newItemTextCheck(#{section.id})" %>
+        <%= f.number_field :price, :step => 'any', class: "section_#{section.id}_new_item_price required-field", :onkeyup => "newItemTextCheck(#{section.id})" %>
         <%= f.label :description, 'Description' %>
-        <%= f.text_field :description, :placeholder =>"A warm chicken patty in a toasted bun", class: "section_#{section.id}_new_item_description required-field", :onkeyup => "newItemTextCheck(#{section.id})" %>
+        <%= f.text_field :description, class: "section_#{section.id}_new_item_description required-field", :onkeyup => "newItemTextCheck(#{section.id})" %>
         <%= f.label :ingredients, 'Ingredients' %>
-        <%= f.text_field :ingredients, :placeholder =>'Chicken, Whole Wheat Bun, Mayo', class: "item_ingredients" %>
+        <%= f.text_field :ingredients, class: "item_ingredients" %>
         
         <%= f.label :item_picture, 'Item Picture' %>
         <div class="field">

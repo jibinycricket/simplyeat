@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'menu'       => 'pages#menu'
   get 'directory'  => 'users#index'
   get 'info'       => 'pages#info'
-  get 'shops' => 'users#index'
+  get 'shops'      => 'users#index'
   #match '/users',   to: 'users#index',   via: 'get'
   #get 'users/:id' => 'users#show', as: :user
   get 'users/:user_name' => 'users#show', as: :user

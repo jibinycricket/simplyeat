@@ -10,4 +10,16 @@ class User < ActiveRecord::Base
 
   validates :user_name, presence: true, length: {minimum: 4, maximum: 16}
   validates_uniqueness_of :user_name
+
+  def self.search(search)
+    if search
+      q = "%#{search}%"
+
+      joins(:restaurant).where("users.user_name LIKE ? OR 
+                               restaurants.name LIKE ? OR
+                               restaurants.category LIKE ? OR
+                               restaurants.zip_code LIKE ? OR
+                               restaurants.state LIKE ?",q, q, q, q, q)
+    end
+  end
 end

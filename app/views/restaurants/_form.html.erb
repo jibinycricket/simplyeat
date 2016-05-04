@@ -6,7 +6,7 @@
       <a name="GeneralInfo"></a>
         <legend>General Information</legend>
         <%= f.label :name, "Name of Restaurant" %>
-        <%= f.text_field(:name, :class=> "required-field") %>
+        <%= f.text_field(:name, :class=> "required-field", :required=>true) %>
         
         <%= f.label "Type of Cuisine" %>
         <%= f.text_field(:category) %>

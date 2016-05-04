@@ -60,6 +60,13 @@
   }
 }
 /************** Schedule Form ***********/
+.schedule-title{
+  margin-top: 20px;
+  font-size: 3em;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
 .schedule-form{//large screens
   clear: both;
   background-color: $theme-color-5;
@@ -68,7 +75,7 @@
   width: 80%;
   max-width: 600px;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 2%;
   .schedule-info-button{
     text-align: center;
     width: 25px;

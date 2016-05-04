@@ -148,8 +148,8 @@
   .store-contact-container{
     .contact-links{
       width: 100%;
-      display: flex;
       margin-top: 20px;
+      @include flex-box();
       a{
         text-align: center;
         flex: 1;
@@ -177,7 +177,6 @@
   }
 }
 /***************** Restaurant Form ********/
-
 .restaurant-form{
   max-width: 700px;
   margin: 0 auto;
