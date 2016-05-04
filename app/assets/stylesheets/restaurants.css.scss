@@ -63,9 +63,11 @@
       .store-profile-pic-column{
         @include span-columns(12 of 12);
         .profile-pic{
+          background-size: contain;
+          background-repeat: no-repeat;
           box-shadow: 2px 2px 3px #1D1D1D;
           background-color: white;
-          background-position: left;
+          background-position: center;
           margin: -120px auto 0 auto;
           height: 200px;
           width: 200px;
