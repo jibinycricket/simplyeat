@@ -33,7 +33,7 @@ class User < ActiveRecord::Base
         joins(:restaurant).where("users.user_name ILIKE ? OR 
                                  restaurants.name ILIKE ? OR
                                  restaurants.category ILIKE ? OR
-                                 restaurants.zip_code.to_s ILIKE ? OR
+                                 restaurants.zip_code ILIKE ? OR
                                  restaurants.state ILIKE ? OR
                                  restaurants.city ILIKE ?",q, q, q, q, q, q)
       end
