@@ -4,14 +4,14 @@
   text-align: center;
 }
 .store-search-form{
-  margin-right: 100px;
-  float: right;
   width: 300px;
   position: relative;
+  float: right;
   #search{
     width: 90%;
     height: 50px;
     padding-left: 80px;
+    margin-left: 10px;
   }
   .search-button{
     position: absolute;
