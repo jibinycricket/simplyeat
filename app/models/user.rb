@@ -30,12 +30,11 @@ class User < ActiveRecord::Base
       if search
         q = "%#{search}%"
 
-        joins(:restaurant).where("users.user_name LIKE ? OR 
-                                 restaurants.name LIKE ? OR
-                                 restaurants.category LIKE ? OR
-                                 restaurants.zip_code LIKE ? OR
-                                 restaurants.state LIKE ? OR
-                                 restaurants.city LIKE ?",q, q, q, q, q, q)
+        joins(:restaurant).where("users.user_name ILIKE ? OR 
+                                 restaurants.name ILIKE ? OR
+                                 restaurants.category ILIKE ? OR
+                                 restaurants.state ILIKE ? OR
+                                 restaurants.city ILIKE ?", q, q, q, q, q)
       end
     end
   end
