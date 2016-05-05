@@ -10,14 +10,18 @@
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
-
-.brand-half-1{
-  color: $theme-color-3;
-  @include font-italic;
+header{
+  background-color: $theme-color-5;
 }
-.brand-half-2{
-  color: $theme-color-2;
-  font-family: 'Cantarell', sans-serif;
+.brand{
+  .brand-half-1{
+    color: $theme-color-3;
+    @include font-italic;
+  }
+  .brand-half-2{
+    color: $theme-color-2;
+    font-family: 'Cantarell', sans-serif;
+  }
 }
 
 .header-direction{
@@ -119,12 +123,19 @@
   background-color: $theme-color-5;
   position: fixed;
   h3{
-    color: #afdefa;
     font-size: 1.9em;
     padding: 20px;
     margin: 0px;
     background-color: $theme-color-1;
     border-bottom: 1px solid $theme-color-2;
+    .brand-half-1{
+      color: $theme-color-3;
+      @include font-italic;
+    }
+    .brand-half-2{
+      color: $theme-color-2;
+      font-family: 'Cantarell', sans-serif;
+    }
   }
   a{
     outline: 0;
@@ -199,13 +210,18 @@
       display: none;
     }
     ul{
-      background-color: $theme-color-1;
+      background-color: $theme-color-5;
       li{
         font-size: 1.4em;
         line-height: 50px;
         width: 130px;
         display: inline-block;
         text-align: center;
+        .username{
+          &:focus{
+            color: white;
+          }
+        }
         a{
           padding-left: 0;
           color: $theme-color-3;

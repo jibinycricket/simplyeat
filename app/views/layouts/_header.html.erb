@@ -27,7 +27,7 @@
         <% end %>
         <li><%= link_to "Store Info", chooseRestaurantPath(@restaurant) %></li>
         <li><%= link_to "Directory", shops_path %></li>
-        <li><a href="#"><%= current_user.user_name %></a>
+        <li><a href="#" class="username"><%= current_user.user_name %></a>
           <ul class="lower-nav">
             <li>
               <%= link_to "Account", edit_user_registration_path(current_user) %>

@@ -38,7 +38,7 @@ body{
 
 .page-container{
   @include outer-container(80%);
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 @mixin box-shadow(){

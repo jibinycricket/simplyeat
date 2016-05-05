@@ -124,7 +124,8 @@
           word-wrap: break-word;
           .placeholder{
             margin: 0 auto;
-            width: 350px;
+            min-width: 300px;
+            max-width: 350px;
             padding: 15px;
             text-align: center;
             font-size: 30px;
@@ -167,6 +168,8 @@
       font-weight: 300;
       font-style: italic;
       padding: 15px;
+      max-width: 500px;
+      margin: 0 auto;
       text-align: center;
       font-size: 30px;
       border-radius: 10px;
@@ -179,9 +182,16 @@
   }
 }
 /***************** Restaurant Form ********/
+.store-info-title{
+  margin-top: 30px;
+  font-size: 2.5em;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
 .restaurant-form{
   max-width: 700px;
   margin: 0 auto;
+  margin-top: 40px;
   legend{
     margin: 0px;
     padding: 0px 10px;
