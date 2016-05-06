@@ -26,7 +26,9 @@
           </li>
         <% end %>
         <li><%= link_to "Store Info", chooseRestaurantPath(@restaurant) %></li>
+        <% end %>
         <li><%= link_to "Directory", shops_path %></li>
+        <% if user_signed_in? %>
         <li><a href="#" class="username"><%= current_user.user_name %></a>
           <ul class="lower-nav">
             <li>

@@ -1,18 +1,17 @@
 <section id="banner">
   <div>
-    <% if user_signed_in?%> 
-      <% if @user.restaurant.blank? %>
-        <div class="message">
-          Next step is to fill out the form in <%= link_to "Store Info", new_restaurant_path %>
-        </div>
-      <% end %>
-      <% if @user.schedule.blank? && @user.restaurant.blank? == false %>
-        <div class="message">
-          Next Fill in <%= link_to "Schedule", new_schedule_path %>
-        </div>
-      <% end %>
+    <% if user_signed_in?%>
+    <% if @user.restaurant.blank? %>
+    <div class="message">
+      Next step is to fill out the form in <%= link_to "Store Info", new_restaurant_path %>
+    </div>
     <% end %>
-
+    <% if @user.schedule.blank? && @user.restaurant.blank? == false %>
+    <div class="message">
+      Next Fill in <%= link_to "Schedule", new_schedule_path %>
+    </div>
+    <% end %>
+    <% end %>
     <div id="js-parallax-window" class="parallax-window">
       <div class="parallax-static-content">
         <h1 id="title">
@@ -20,15 +19,58 @@
         </h1>
         <p>Show off only the essentials</p>
         <% if !(user_signed_in?) %>
-          <div class="registration-partial-signup">
-            <%= render 'partials/user_session/sign_up_modal' %>
-          </div>
-          <div class="registration-partial-login">
-            <%= render 'partials/user_session/log_in_modal' %>
-          </div>
-          <% end %>
+        <div class="registration-partial-signup">
+          <%= render 'partials/user_session/sign_up_modal' %>
+        </div>
+        <div class="registration-partial-login">
+          <%= render 'partials/user_session/log_in_modal' %>
+        </div>
+        <% end %>
       </div>
       <div id="js-parallax-background" class="parallax-background"></div>
+    </div>
+  </div>
+</section>
+<div class="problem">
+  <h3>
+    Only the essentials...
+  </h3>
+  <p>Potential customers only want the info to get your food in their stomachs. The <span>where</span>, the <span>when</span>, the <span>what</span>.</p>
+</div>
+<section class="explanation">
+  <div class="solutions page-container">
+    <div class = "solution">
+      <div class="solution-pic">
+        <%= image_tag "location.svg" %>
+      </div>
+      <div class="solution-text">
+      <h3>Your Place</h3>
+        <p>
+          Let potential customers easily find where you are
+        </p>
+      </div>
+    </div>
+    <div class = "solution">
+      <div class="solution-pic">
+        <%= image_tag "time.svg" %>
+      </div>
+      <div class="solution-text">
+      <h3>Your Time</h3>
+        <p>
+          Use an easily changeable schedule to update at any time
+        </p>
+      </div>
+    </div>
+    <div class = "solution">
+      <div class="solution-pic">
+        <%= image_tag "drink.svg" %>
+      </div>
+      <div class="solution-text">
+      <h3>Your Food</h3>
+        <p>
+          Show off your cuisine with a dynamic menu and a compact photo gallery
+        </p>
+      </div>
     </div>
   </div>
 </section>
