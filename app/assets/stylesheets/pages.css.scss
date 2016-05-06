@@ -272,10 +272,11 @@ $parallax-image: './hero.jpg';
 
 /*****************Problem & Solution ***************/
 .problem{
-  margin-top: 50px;
+  margin-top: 75px;
+  margin-bottom: 10px;
   font-family: 'Lato';
-  h3{
     text-align: center;
+  h3{
     font-size: 30px;
   }
   p{
@@ -306,7 +307,7 @@ $parallax-image: './hero.jpg';
     position: relative;
     display: flex;
     @include media(min-width 1000px){
-      top: -120px;
+      top: -110px;
     }
     .solution{
       margin: 10px 20px;
