@@ -272,7 +272,7 @@ $parallax-image: './hero.jpg';
 
 /*****************Problem & Solution ***************/
 .problem{
-  margin-top: 75px;
+  margin-top: 100px;
   margin-bottom: 10px;
   font-family: 'Lato';
     text-align: center;
@@ -303,6 +303,7 @@ $parallax-image: './hero.jpg';
     }
   }
   .solutions{
+    padding: 20px 0px;
     width: 60%;
     position: relative;
     display: flex;
@@ -334,6 +335,45 @@ $parallax-image: './hero.jpg';
           text-align: center;
           margin-bottom: 15px;
         }     
+      }
+    }
+  }
+}
+
+/*************** Phone Interaction ***********/
+.menu-interaction{
+  margin-top: 5%;
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  .menu-interaction-graphic{
+    flex: 1;
+    img{
+      width: 300px;
+      &:first-child{
+        border: 1px solid white;
+      }
+    }
+  }
+  .steps-container{
+    padding-left: 20px;
+    flex: 1;
+    .steps{
+      .step{
+        font-size: calc(16px + .3vw);
+        margin-top: 25px;
+        span{
+          display: inline-block;
+          text-align: center;
+          line-height: 40px;
+          width: 40px;
+          height: 40px;
+          border: 1px solid white;
+          background-color: $theme-color-2;
+          border-radius: 100%;
+          margin-right: 20px;
+          font-size: 20px;
+        }
       }
     }
   }

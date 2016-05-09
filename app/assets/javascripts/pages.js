@@ -61,6 +61,11 @@ function parallax(){
     plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
   }
 }
+/******** Homepage **********/
+function showPic(source){
+  var imageToSwap = document.getElementsByClassName("menu-interaction-graphic")[0].getElementsByTagName('IMG')[0];
+  imageToSwap.src = source;
+}
 
 
 
