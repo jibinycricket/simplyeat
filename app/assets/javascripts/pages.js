@@ -63,10 +63,35 @@ function parallax(){
 }
 /******** Homepage **********/
 function showPic(source){
-  var imageToSwap = document.getElementsByClassName("menu-interaction-graphic")[0].getElementsByTagName('IMG')[0];
+  var imageToSwap = document.getElementsByClassName("menu-interaction-graphic-container")[0].getElementsByTagName('IMG')[0];
   imageToSwap.src = source;
+  imageToSwap.style.maxHeight = "500px";
+  console.log(imageToSwap);
 }
 
+function stepSelect(stepNumber, clickedObject){
+  var step = clickedObject.getElementsByClassName("step")[0];
+  var steps = document.getElementsByClassName("step");
+  var stepClear;
+
+  //Reset all button backgrounds
+  for(let i = 0; i<steps.length; i++){
+    var stepClear = steps[i];
+    stepClear.style.backgroundColor = "transparent";
+  }
+
+  //Set Active to Red
+  step.style.backgroundColor = "#DE1B1B";
+
+  //Change Picture
+  if (stepNumber == 1){
+    showPic('/assets/form.png');
+  }else if(stepNumber == 2){
+    showPic('/assets/camerafood.jpg');
+  }else{
+    showPic('/assets/submittedform.png')
+  }
+}
 
 
 
