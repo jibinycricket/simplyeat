@@ -347,7 +347,6 @@ $parallax-image: './hero.jpg';
   flex-wrap: wrap;
   .menu-interaction-graphic-container{
     flex: 1;
-    border: 1px solid purple;
     @include media(max-width 653px){
       order: 2;
     }
@@ -367,7 +366,6 @@ $parallax-image: './hero.jpg';
     flex: 1;
     position: relative;
     font-size: 20px; 
-    border: 1px solid purple;
     @include media(max-width 653px){
       order: 1;
     }
