@@ -75,7 +75,7 @@ function stepSelect(stepNumber, clickedObject){
   var stepClear;
 
   //Reset all button backgrounds
-  for(let i = 0; i<steps.length; i++){
+  for(var i = 0; i<steps.length; i++){
     var stepClear = steps[i];
     stepClear.style.backgroundColor = "transparent";
   }
