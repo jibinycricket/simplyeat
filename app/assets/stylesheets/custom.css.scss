@@ -41,6 +41,21 @@ body{
   margin-top: 50px;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Cantarell:700);
+
+@mixin font-italic(){
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin font-heading(){
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+
+
 @mixin box-shadow(){
   box-shadow: 2px 2px 3px #1D1D1D;
   -moz-box-shadow: 2px 2px 3px #1D1D1D;
