@@ -24,15 +24,17 @@ $container-width-mobile: 250px;
     }
     .menu-create-buttons{
       .modal-trigger{
-        border: 1px solid;
+        border-radius: 5px;
         color: white;
+        background-color: $theme-color-2;
         width: 200px;
         margin: 10px;
         padding: 10px 15px;
         text-align: center;
         float: right;
         &:hover{
-          background: $theme-color-2;
+          color: black;
+          background: $theme-color-3;
         }
       }
     }
@@ -71,7 +73,7 @@ $container-width-mobile: 250px;
         margin: 0 auto;
         .section-name{
           @include font-heading;
-          font-size: 30px;
+          font-size: 24px;
           margin-right: 0%;
           float: left;
           color: $theme-color-4;
@@ -137,7 +139,7 @@ $container-width-mobile: 250px;
           @include font-heading;
           color: $theme-color-4;
           display: inline-block;
-          font-size: 20px;
+          font-size: 18px;
           width: 85%;
           &:hover{
             color: $theme-color-2;
@@ -148,7 +150,7 @@ $container-width-mobile: 250px;
           color: $theme-color-4;
           text-align: right;
           display: inline-block;
-          font-size: 20px;
+          font-size: 18px;
           width: 13%;
         }
         .clearfix{
@@ -172,7 +174,7 @@ $container-width-mobile: 250px;
         .item-description{
           @include font-italic;
           float: right;
-          font-size: 15px;
+          font-size: 16px;
           clear: right;
           color: $theme-color-3;
           margin-top: -5px;

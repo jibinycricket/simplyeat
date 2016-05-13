@@ -202,7 +202,7 @@ header{
   }
 
   nav{
-    @include font-italic();
+    @include font-heading();
     float: right;
     z-index: 1000;
     position: relative;
@@ -212,7 +212,7 @@ header{
     ul{
       background-color: $theme-color-5;
       li{
-        font-size: 1.4em;
+        font-size: 18px;
         line-height: 50px;
         width: 130px;
         display: inline-block;

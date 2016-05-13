@@ -3,13 +3,17 @@
 .message{
   display: inline-block;
   margin: 20px 0px 20px 20px; 
+  padding: 10px;
   border: 1px solid $theme-color-3;
   border-radius: 10px;
-  padding: 10px;
   font-size: 18px;
 }
 
 /*************Intro Parallax*******/
+#banner{
+  @include span-columns(12);
+}
+
 $parallax-window-height: 40em;
 $parallax-background-height: $parallax-window-height * 2;
 $parallax-image: './hero.jpg';
@@ -27,7 +31,7 @@ $parallax-image: './hero.jpg';
   color: #9A9A8A;
   padding: 8em 0;
   position: relative;
-  top: 20%;
+  top: 5%;
   z-index: 9;
   h1{
     font-size: 5em;
@@ -42,7 +46,11 @@ $parallax-image: './hero.jpg';
     }
   }
   p{
+    margin-top: 10px;
+    margin-bottom: 3%;
+    font-size: 20px;
     color: white;
+    opacity: .8;
   }
 }
 
@@ -76,20 +84,21 @@ $parallax-image: './hero.jpg';
   margin: 10px 15px;
   padding: 0px;
   label{
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 10px;
     margin: 0px;
     height: 50px;
   }
 }
 .login-button{
+  background: rgba(236, 240, 241,.1);
   &:hover{
-    border-color: $theme-color-4;
-    background-color: $theme-color-4;
-    color: black;
+    border-color: $theme-color-2;
+    background-color: $theme-color-2;
   }
 }
 .signup-button{
+  background: rgba(236, 240, 241,.1);
   &:hover{
     background-color: $theme-color-2;
     border-color: $theme-color-2;
@@ -262,6 +271,7 @@ $parallax-image: './hero.jpg';
 
 /*****************Problem & Solution ***************/
 .problem-and-solution{
+  @include span-columns(12);
   padding: 60px 0px;
   position: relative;
   background-color: $theme-color-4;
@@ -290,7 +300,7 @@ $parallax-image: './hero.jpg';
   }
   .solutions{
     padding: 20px 0px;
-    width: 60%;
+    max-width: 1000px;
     display: flex;
     @include media(min-width 1000px){
       top: -110px;
@@ -327,58 +337,63 @@ $parallax-image: './hero.jpg';
 }
 
 /*************** Phone Interaction ***********/
-.menu-interaction{
-  margin: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  .menu-interaction-graphic-container{
-    flex: 1;
-    @include media(max-width 653px){
-      order: 2;
-    }
-    .image-container{
-      margin: 0 auto;
-      text-align: center;
-      img{
-        min-width: 250px;
-        &:first-child{
-          border: 1px solid darken(white, 60%);
+.menu-demo{
+  @include span-columns(12);
+  .menu-demo-title{
+    margin-top: 5%;
+    font-size: 32px;
+    @include font-heading();
+    text-align: center;
+  }
+  .menu-interaction{
+    margin: 30px auto;
+    .steps-container{
+      min-width: 250px;
+      font-size: 20px;
+      .steps{
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        .step-flex{
+          flex: 1;
+          margin: 15px 10px;
+          .first-step{
+            background-color: $theme-color-2;
+          }
+          .step{
+            margin: 0 auto;
+            padding: 10px;
+            width: 180px;
+            border: 1px solid darken(white,60%);
+            border-radius: 5px;
+            font-size: calc(16px);
+            text-align: center;
+            transition: width .2s;
+            &:hover{
+              background-color: lighten($theme-color-2, 2%)!important;
+              cursor: pointer;
+            }
+          }
+          i{
+            text-align: left;
+            margin-right: 20px;
+            font-size: 20px;
+          }
         }
       }
     }
-  }
-  .steps-container{
-    min-width: 250px;
-    flex: 1;
-    position: relative;
-    font-size: 20px; 
-    @include media(max-width 653px){
-      order: 1;
-    }
-    .steps{
-      padding: 15px 0px;
-      font-size: 16px;
-      .step-flex{
-        margin: 15px 0px;
-        .first-step{
-          background-color: $theme-color-2;
-        }
-        .step{
-          margin: 0 auto;
-          padding: 10px 0px 10px 10px;
-          border: 1px solid darken(white,60%);
-          border-radius: 5px;
-          min-width: 200px;
-          max-width: 200px;
-          transition: width .2s;
-          &:hover{
-            background-color: lighten($theme-color-2, 2%)!important;
-            cursor: pointer;
+    .menu-interaction-graphic-container{
+      .image-container{
+        height: 500px;
+        margin: 50px auto;
+        text-align: center;
+        img{
+          min-width: 250px;
+          &:first-child{
+            border: 1px solid darken(white, 60%);
           }
-        }
-        i{
-          margin-right: 20px;
-          font-size: 20px;
         }
       }
     }
