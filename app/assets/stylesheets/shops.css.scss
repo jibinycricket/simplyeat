@@ -1,14 +1,15 @@
 .directory-title{
-  margin-top: 20px;
-  font-size: 2.5em;
+  margin-top: 30px;
+  font-size: 24px;
   text-align: center;
   border-bottom: 1px solid white;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 .store-search-form{
   width: 300px;
   position: relative;
   float: right;
+  margin-top: 20px;
   #search{
     width: 90%;
     height: 50px;
@@ -22,41 +23,42 @@
   }
 }
 
-.restaurant-cards{
-  clear: both;
-  @include flex-box();
-  .restaurant-card-container{
-    text-align: center;
-    transition: all .2s ease-in-out;
-    &:hover{
-      transform: scale(1.05);
-    }
-    flex: 1;
-    padding: 20px 20px;
-    margin: 15px 10px;
-    border-radius: 10px;
-    min-width: 300px;
-    max-width: 400px;
+.restaurant-list{
+  margin: 0 auto;
+  margin-top: -20px;
+  max-width: 800px;
+  li{
+    color: $theme-color-3;
+    margin: 15px 0px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid darken(white, 50%);
+    border-radius: 5px;
     background-color: $theme-color-5;
-    @include box-shadow();
-    .restaurant-card-name{
-      font-size: 1.8em;
+    transition: width .7s, height .7s;
+    display: flex;
+    &:hover{
+      border: 1px solid $theme-color-2;
     }
-    .restaurant-card-image{
+    .restaurant-image{
+      //border: 1px solid red;
+      display: inline-block;
       img{
-        -moz-box-shadow:    inset 0 0 5px #000000;
-        -webkit-box-shadow: inset 0 0 5px #000000;
-        box-shadow:         inset 0 0 5px #000000;
-        border: 1px solid black;
-        background-color: darken(white, 5%);
-        padding: 10px;
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
       }
     }
-    .restaurant-card-address{
-      font-size: 1.2em;
-      color: darken($theme-color-3, 10%);
+    .restaurant-name{
+      flex: 1;
+      //border: 1px solid blue;
+      margin-left: 20px;
+      font-size: 18px;
+    }
+    .restaurant-address{
+      flex: 1;
+      margin-left: 20px;
+      text-align: left;
+      color: darken($theme-color-3, 30%);
     }
   }
 }

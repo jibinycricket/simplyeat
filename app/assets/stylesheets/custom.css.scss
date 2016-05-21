@@ -57,9 +57,9 @@ body{
 
 
 @mixin box-shadow(){
-  box-shadow: 2px 2px 3px #1D1D1D;
-  -moz-box-shadow: 2px 2px 3px #1D1D1D;
-  -webkit-box-shadow: 2px 2px 3px #1D1D1D;
+  -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
 }
 
 @mixin flex-box(){

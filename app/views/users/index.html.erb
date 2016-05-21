@@ -5,29 +5,30 @@
 <div class="store-search">
   <%= render 'users/search' %>
 </div>
+<br class="clearfix">
 <div class="page-container">
-  <div class="restaurant-cards">
-    <% @users.each do |user| %>
-      <div class="restaurant-card-container">
+  <div class="restaurant-list">
+    <ul>
+      <% @users.each do |user| %>
         <%= link_to user_path(user.user_name) do %>
-          <div class="restaurant-card">
-            <div class="restaurant-card-name">
-              <h1><%= user.restaurant.name %></h1>
+          <li>
+            <div class="restaurant-image">
+              <%= image_tag user.restaurant.restaurant_picture.small_pic %>
             </div>
-            <div class="restaurant-card-image">
-            <%= image_tag(user.restaurant.restaurant_picture.large_pic)%>
+            <div class="restaurant-name">
+              <%= user.restaurant.name %>
             </div>
-            <div class="restaurant-card-address">
-            <h2>
-              <%= user.restaurant.street_number.to_s + " " + user.restaurant.street_name%><br/>
-              <%= user.restaurant.city %><br/>
-              <%= user.restaurant.state + " " + user.restaurant.zip_code.to_s %><br/>
-              </h2>
+            <div class="restaurant-address">
+              <%= user.restaurant.street_number %>
+              <%= user.restaurant.street_name %>
+              <br>
+              <%= user.restaurant.city %>
+              <%= user.restaurant.zip_code %>
             </div>
-          </div>
+          </li>
         <% end %>
-      </div>
-    <% end %>
+      <% end %>
+    </ul>
   </div>
   
   <div class="pagination">

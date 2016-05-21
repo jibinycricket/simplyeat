@@ -15,15 +15,12 @@
       color: $theme-color-5;
       font-family: 'Lato', sans-serif;
       font-weight: 700;
-      font-size: 32px;
+      font-size: 28px;
       text-align: center;
       position: relative;
-      margin-top: 40px;
-      @include media(max-width 700px){
-        font-size: 2em;
-      }
-      @include media(max-width 600px){
-        font-size: 1.8em;
+      margin-top: 30px;
+      @include media(min-width 600px){
+        top: 30px;
       }
     }
 
@@ -68,9 +65,9 @@
           box-shadow: 2px 2px 3px #1D1D1D;
           background-color: white;
           background-position: center;
-          margin: -120px auto 0 auto;
-          height: 200px;
-          width: 200px;
+          margin: -90px auto 0 auto;
+          height: 150px;
+          width: 150px;
           border-width: 3px;
           position: relative;
           border-radius: 100%;
@@ -87,7 +84,7 @@
       .store-address-column{
         @include span-columns(3 of 12);
         position: relative;
-        top: -100px;
+        top: -70px;
         .store-address{
           display: inline-block;
           .nonuser-store-address-text{
@@ -184,7 +181,7 @@
 /***************** Restaurant Form ********/
 .store-info-title{
   margin-top: 30px;
-  font-size: 2.5em;
+  font-size: 24px;
   text-align: center;
   border-bottom: 1px solid white;
 }
@@ -195,7 +192,7 @@
   legend{
     margin: 0px;
     padding: 0px 10px;
-    font-size: 25px;
+    font-size: 18px;
   }
   .required-message{
     margin: 10px 5%;
@@ -215,6 +212,7 @@
     border-radius: 10px;
     background-color: $theme-color-5;
     @include box-shadow;
+    margin-bottom: 10px;
   }
   .address-form-fields{
     @include span-columns(12 of 12);
@@ -224,6 +222,7 @@
     border-radius: 10px;
     background-color: $theme-color-5;
     @include box-shadow;
+    margin-bottom: 10px;
     .street-number-field{
       display: inline-block;
       width: 30%;
